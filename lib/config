@@ -26,10 +26,9 @@ site.uris = {
     about       = "${site.uri}/about/index.html"
 }
 
-
 site.uris.locations = "${site.uris.schedule}#locations"
 site.uris.contact   = "${site.uris.about}#contact"
-
+site.uris.flyers    = "${site.uris.images}/flyers"
 
 # ----------------------------------------------------------------------
 # Page info
