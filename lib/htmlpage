@@ -8,7 +8,7 @@
     <meta name="date" content="[% date.format(date.now, "%Y-%m-%dT%H:%M%S") %]"/>
     <meta name="robots" content="index,follow" />
     <link rel="shortcut icon" type="text/x-icon" href="[% site.uris.images %]/favicon.ico" />
-    <link rel="canonical" href="[% site.uri %]/[% page.section %]/" />
+    <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/reset.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/text.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/960.css" />
