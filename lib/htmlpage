@@ -62,7 +62,7 @@ END %]
 
     <!-- Footer -->
     <div id="footer" class="grid_12 bar">
-      Copyright &copy; 2008-[% date.format(template.modtime, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a>
+      &copy; Copyright 2008-[% date.format(template.modtime, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a>
     </div>
 
   </body>
