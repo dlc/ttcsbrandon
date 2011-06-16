@@ -1,13 +1,19 @@
 [%
-    MACRO hotlink(l, t, s)
-        BLOCK;
-            u = s ? site.uris.$s : site.uris.$l;
-            IF page.section == l;
-            %]<strong>[% t %]</strong>[% 
-            ELSE;
-            %]<a href="[% u %]">[% t %]</a>[%
-            END;
-        END;
+    MACRO hotlink(l, t, s) BLOCK;
+      u = s ? site.uris.$s : site.uris.$l;
+      IF page.section == l;
+      %]<strong>[% t %]</strong>[% 
+      ELSE;
+      %]<a href="[% u %]">[% t %]</a>[%
+      END;
+    END;
 
+    # event("title", "date", "id")
+    # XXX This should also write to a file that can be included in main page, using redirect
+    MACRO event(t, d, i) BLOCK;
+      %]<h1 class="event section" id="[% d %]-[% i %]">[% t %]</h1>
+      <h2>[% d %]</h2>
+      <img src="[% site.uris.flyers %]/[% d %]-[% i %].jpg" />
+[% END
 
 -%]
