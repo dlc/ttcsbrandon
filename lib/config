@@ -1,0 +1,8 @@
+[%
+site = {
+    #uri = 'http://brandon.florida.usa.taoist.org'
+    #uri = 'http://brandon.florida.usa.taoist.org/devel'
+    uri = 'file:///Users/darren/tmp/ttcsbrandon/html'
+}
+# vim :set ft=tt2:
+-%]

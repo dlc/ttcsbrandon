@@ -1,0 +1,69 @@
+[%
+USE date;
+
+%]<html><!--
+[% date.format(date.now, '%Y/%m/%d %H:%M') %]
+
+The author disclaims copyright to this source code.
+In place a legal notice, here is a blessing:
+
+   May you do good and not evil.
+   May you find forgiveness for yourself and forgive others.
+   May you share freely, never taking more than you give.
+-->
+  <head>
+    <title>[% template.title %] | Taoist Tai Chi Society of the USA</title>
+    <link rel="stylesheet" type="text/css" media="all" href="[% site.uri %]/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="[% site.uri %]/css/text.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="[% site.uri %]/css/960.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="[% site.uri %]/css/ttcs.css" />
+
+  </head>
+  <body class="container_12">
+
+    <!-- Header -->
+    <div id="header" class="grid_12">
+      <div class="container_12">
+        <div class="grid_4">
+          <a href="[% site.uri %]/">
+            <img src="[% site.uri %]/img/logo.gif">
+          </a>
+        </div>
+        <div class="grid_8">
+          <h1><a href="[% site.uri %]/">Taoist Tai Chi Society of the USA</a></h1>
+          <h2>Brandon, Florida</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <!-- Menubar -->
+    <div id="menu" class="grid_12 bar">
+      <a href="[% site.uri %]/index.html">Home</a> | 
+      <a href="[% site.uri %]/schedule/index.html">Schedule</a> | 
+      <a href="[% site.uri %]/calendar/index.html">Calendar</a> | 
+      <a href="[% site.uri %]/schedule/index.html#locations">Locations</a> | 
+      <a href="[% site.uri %]/news/index.html">News</a> | 
+      <a href="[% site.uri %]/events/index.html">Events</a> |
+      <a href="[% site.uri %]/photos/index.html">Photos</a> | 
+      <a href="[% site.uri %]/membership/index.html">Membership</a> | 
+      <a href="[% site.uri %]/faq/index.html">FAQ</a> | 
+      <a href="[% site.uri %]/about/index.html">About Us</a> | 
+      <a href="[% site.uri %]/about/index.html#contact">Contact</a>
+    </div>
+
+    <div class="clear"></div>
+
+    <!-- Begin main content area -->
+[% content %]
+    <!-- End main content area -->
+    <div class="clear"></div>
+
+    <!-- Footer -->
+    <div id="footer" class="grid_12 bar">
+      Copyright &copy; 2008-[% date.format(template.modtime, '%Y') %] &middot; <a href="http://www.usa.taoist.org/">Toaist Tai Chi Society of the USA</a>
+    </div>
+
+  </body>
+</html>

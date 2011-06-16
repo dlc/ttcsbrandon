@@ -1,0 +1,100 @@
+/* The author disclaims copyright to this source code.
+** In place a legal notice, here is a blessing:
+**
+**    May you do good and not evil.
+**    May you find forgiveness for yourself and forgive others.
+**    May you share freely, never taking more than you give.
+*/
+
+body {
+  background: #fff;
+  color: #000;
+}
+
+/* Generic elements */
+.bar {
+  background: #000;
+  color: #eee;
+  padding: 5px 0;
+}
+
+.bar a {
+  color: #6495ed;
+  text-decoration: none;
+}
+
+.bar a:hover {
+  color: #fff;
+}
+
+.leader {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/* Specific page elements */
+
+/* Menu */
+#menu {
+  text-align: center;
+}
+
+/* Header */
+#header {
+  background: #000;
+  background-image: url(http://sevenroot.org/tmp/img/header.png);
+  height: 325px;
+}
+
+#header h1 {
+  color: #fff;
+}
+
+#header h1 a {
+  text-decoration: none;
+  color #fff;
+}
+
+#header h1 a:visited {
+  color: #fff;
+}
+
+#header h2 {
+  color: #6495ed;
+}
+
+/* Main content area */
+#main {
+}
+
+#main p {
+  padding: 0 1em;
+}
+
+#main a {
+  color: #029a9e;
+  text-decoration: none
+}
+
+#main a:hover {
+  border-bottom: 1px black dotted;
+}
+
+#main a:visited {
+  color: #6495ed;
+}
+
+/* Photo blob on main page */
+#photo {
+  padding: 1em 0;
+}
+
+/* Footer */
+#footer {
+  font-size: 60%;
+  text-align: center;
+}
+
+#identifier {
+  font-style: italic;
+}
