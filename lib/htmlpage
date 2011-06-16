@@ -9,6 +9,7 @@
     <meta name="robots" content="index,follow" />
     <link rel="shortcut icon" type="text/x-icon" href="[% site.uris.images %]/favicon.ico" />
     <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />
+    <link rel="history" href="https://github.com/dlc/ttcsbrandon/commits/master/src/[% page.file %]" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/reset.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/text.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/960.css" />
