@@ -10,7 +10,9 @@
 
     # event("title", "date", "id")
     MACRO event(t, d, i) BLOCK;
-      %]<h1 class="event section" id="[% d %]-[% i %]">[% t %]</h1>
+      %]<h1 class="event section" id="[% d %]-[% i %]"><a href="[%
+       site.uri %]/events/[% d %]-[% i %]/index.html"[% 
+        %]">[% t %]</a></h1>
       <h2>[% d %]</h2>
       <img src="[% site.uris.flyers %]/[% d %]-[% i %].jpg" />
 [% END
