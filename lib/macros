@@ -9,7 +9,6 @@
     END;
 
     # event("title", "date", "id")
-    # XXX This should also write to a file that can be included in main page, using redirect
     MACRO event(t, d, i) BLOCK;
       %]<h1 class="event section" id="[% d %]-[% i %]">[% t %]</h1>
       <h2>[% d %]</h2>

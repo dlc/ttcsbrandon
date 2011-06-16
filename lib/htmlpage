@@ -16,6 +16,12 @@
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/ttcs.css" />
     <link rel="author" href="[% site.uri %]/humans.txt" />
     <link rel="index" href="[% site.uris.home %]" title="[% site.name | html %]" />
+[% IF page.prev %]
+    <link rel="next" href="[% site.uri %]/[% page.prev %]" />
+[% END %]
+[% IF page.next %]
+    <link rel="next" href="[% site.uri %]/[% page.next %]" />
+[% END %]
 
   </head>
   <body class="container_12">

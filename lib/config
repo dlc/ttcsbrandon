@@ -41,6 +41,8 @@ page = {
     date        = template.date or template.modtime
     keywords    = template.keywords or ''
     top         = template.top or 0
+    next        = template.next or ''
+    prev        = template.prev or ''
 }
 
 page.section = page.file.replace('/?index.html$', '')
