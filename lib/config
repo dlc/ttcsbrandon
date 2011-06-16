@@ -3,6 +3,32 @@ site = {
     #uri = 'http://brandon.florida.usa.taoist.org'
     #uri = 'http://brandon.florida.usa.taoist.org/devel'
     uri = 'file:///Users/darren/tmp/ttcsbrandon/html'
+    name = 'Taoist Tai Chi Society of the USA'
+    subname = 'Brandon, Florida'
 }
+
+# ----------------------------------------------------------------------
+# URIs
+# ----------------------------------------------------------------------
+site.uris = {
+    css         = "${site.uri}/css"
+    js          = "${site.uri}/js"
+    images      = "${site.uri}/img"
+    home        = "${site.uri}/index.html"
+    about       = "${site.uri}/about/index.html"
+    schedule    = "${site.uri}/schedule/index.html"
+    calendar    = "${site.uri}/calendar/index.html"
+    news        = "${site.uri}/news/index.html"
+    events      = "${site.uri}/events/index.html"
+    photos      = "${site.uri}/photos/index.html"
+    membership  = "${site.uri}/membership/index.html"
+    faq         = "${site.uri}/faq/index.html"
+    about       = "${site.uri}/about/index.html"
+}
+
+
+site.uris.locations = "${site.uris.schedule}#locations"
+site.uris.contact   = "${site.uris.about}#contact"
+
 # vim :set ft=tt2:
 -%]
