@@ -67,6 +67,10 @@ body {
 #main {
 }
 
+#main h1.section {
+  border-bottom: 1px #6495ed dotted;
+}
+
 #main p {
   padding: 0 1em;
 }
