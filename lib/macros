@@ -1,0 +1,13 @@
+[%
+    MACRO hotlink(l, t, s)
+        BLOCK;
+            u = s ? site.uris.$s : site.uris.$l;
+            IF page.section == l;
+            %]<strong>[% t %]</strong>[% 
+            ELSE;
+            %]<a href="[% u %]">[% t %]</a>[%
+            END;
+        END;
+
+
+-%]

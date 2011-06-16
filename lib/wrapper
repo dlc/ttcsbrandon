@@ -1,0 +1,12 @@
+[%  SWITCH page.type;
+        CASE 'text';
+            content;
+
+        CASE 'html';
+            content WRAPPER htmlpage;
+
+        CASE;
+            THROW page.type "Unknown page type ${page.type}.";
+
+    END;
+%]

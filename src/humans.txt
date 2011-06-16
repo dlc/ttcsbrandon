@@ -1,0 +1,9 @@
+[%  USE date %]/* TEAM */
+
+    Implementor: Darren Chamberlain
+    Email: dlc@sevenroot.org
+
+/* SITE */
+
+    Last Update: [% date.format(date.now, '%Y/%m/%d %H:%M %p') %]
+    Tools: ViM, Perl, Template Toolkit
