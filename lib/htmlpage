@@ -1,22 +1,20 @@
 [%
-USE date;
-
-%]<html><!--
-[% date.format(date.now, '%Y/%m/%d %H:%M') %]
-
-The author disclaims copyright to this source code.
-In place a legal notice, here is a blessing:
-
-   May you do good and not evil.
-   May you find forgiveness for yourself and forgive others.
-   May you share freely, never taking more than you give.
--->
+    USE date;
+%]<html>
   <head>
-    <title>[% template.title %] | [% site.name %]</title>
+    <title>[% template.title | html %] | [% site.name | html %]</title>
+    <meta name="keywords" content="[% page.keywords OR page.section | html %]"/>
+    <meta name="generator" content="vim+ttree"/>
+    <meta name="date" content="[% date.format(date.now, "%Y-%m-%dT%H:%M%S") %]"/>
+    <meta name="robots" content="index,follow" />
+    <link rel="shortcut icon" type="text/x-icon" href="[% site.uris.images %]/favicon.ico" />
+    <link rel="canonical" href="[% site.uri %]/[% page.section %]/" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/reset.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/text.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/960.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/ttcs.css" />
+    <link rel="author" href="[% site.uri %]/humans.txt" />
+    <link rel="index" href="[% site.uris.home %]" title="[% site.name | html %]" />
 
   </head>
   <body class="container_12">
@@ -30,9 +28,9 @@ In place a legal notice, here is a blessing:
           </a>
         </div>
         <div class="grid_8">
-          <h1><a href="[% site.uris.home %]/">[% site.name %]</a></h1>[%
+          <h1><a href="[% site.uris.home %]">[% site.name | html %]</a></h1>[%
 IF site.subname %]
-          <h2>[% site.subname %]</h2>[%
+          <h2>[% site.subname | html %]</h2>[%
 END %]
         </div>
       </div>
@@ -42,17 +40,17 @@ END %]
 
     <!-- Menubar -->
     <div id="menu" class="grid_12 bar">
-      <a href="[% site.uris.home        %]">Home</a> | 
-      <a href="[% site.uris.schedule    %]">Schedule</a> | 
-      <a href="[% site.uris.calendar    %]">Calendar</a> | 
-      <a href="[% site.uris.locations   %]">Locations</a> | 
-      <a href="[% site.uris.news        %]">News</a> | 
-      <a href="[% site.uris.events      %]">Events</a> |
-      <a href="[% site.uris.photos      %]">Photos</a> | 
-      <a href="[% site.uris.membership  %]">Membership</a> | 
-      <a href="[% site.uris.faq         %]">FAQ</a> | 
-      <a href="[% site.uris.about       %]">About Us</a> | 
-      <a href="[% site.uris.contact     %]">Contact</a>
+      [% hotlink("",            "Home", "home") %] |
+      [% hotlink("schedule",    "Schedule")     %] |
+      [% hotlink("calendar",    "Calendar")     %] |
+      [% hotlink("locations",   "Locations")    %] |
+      [% hotlink("news",        "News")         %] |
+      [% hotlink("events",      "Events")       %] |
+      [% hotlink("photos",      "Photos")       %] |
+      [% hotlink("membership",  "Membership")   %] |
+      [% hotlink("faq",         "FAQ")          %] |
+      [% hotlink("about",       "About Us")     %] |
+      [% hotlink("contact",     "Contact")      %]
     </div>
 
     <div class="clear"></div>
@@ -64,7 +62,7 @@ END %]
 
     <!-- Footer -->
     <div id="footer" class="grid_12 bar">
-      Copyright &copy; 2008-[% date.format(template.modtime, '%Y') %] &middot; <a href="http://www.usa.taoist.org/">Toaist Tai Chi Society of the USA</a>
+      Copyright &copy; 2008-[% date.format(template.modtime, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a>
     </div>
 
   </body>

@@ -41,7 +41,7 @@ body {
 
 /* Header */
 #header {
-  background: #000;
+  background: #fff;
   background-image: url(http://sevenroot.org/tmp/img/header.png);
   height: 325px;
 }

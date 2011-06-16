@@ -30,5 +30,21 @@ site.uris = {
 site.uris.locations = "${site.uris.schedule}#locations"
 site.uris.contact   = "${site.uris.about}#contact"
 
+
+# ----------------------------------------------------------------------
+# Page info
+# ----------------------------------------------------------------------
+page = {
+    file        = template.name
+    title       = template.title
+    about       = template.about
+    type        = template.type or 'text'
+    date        = template.date or template.modtime
+    keywords    = template.keywords or ''
+    top         = template.top or 0
+}
+
+page.section = page.file.replace('/?index.html$', '')
+
 # vim :set ft=tt2:
 -%]
