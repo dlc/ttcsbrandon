@@ -88,6 +88,10 @@ body {
   color: #6495ed;
 }
 
+#main table.schedule {
+  margin: 0 1em;
+}
+
 /* Photo blob on main page */
 #photo {
   padding: 1em 0;
