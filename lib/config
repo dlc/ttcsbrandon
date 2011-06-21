@@ -18,6 +18,7 @@ site.uris = {
     about       = "${site.uri}/about/index.html"
     schedule    = "${site.uri}/schedule/index.html"
     calendar    = "${site.uri}/calendar/index.html"
+    locations   = "${site.uri}/locations/index.html"
     news        = "${site.uri}/news/index.html"
     events      = "${site.uri}/events/index.html"
     photos      = "${site.uri}/photos/index.html"
@@ -26,7 +27,6 @@ site.uris = {
     about       = "${site.uri}/about/index.html"
 }
 
-site.uris.locations = "${site.uris.schedule}#locations"
 site.uris.contact   = "${site.uris.about}#contact"
 site.uris.flyers    = "${site.uris.images}/flyers"
 
@@ -46,6 +46,74 @@ page = {
 }
 
 page.section = page.file.replace('/?index.html$', '')
+
+# ----------------------------------------------------------------------
+# Locations
+# ----------------------------------------------------------------------
+locations = [
+  { id        => "brandon"
+    lat       => 27.923484
+    lng       => -82.276953
+    title     => "Brandon, Brandon Center"
+    addr      => "911 Bryan Road, Brandon, FL 33511"
+    desc      => "1 mile south of Adamo Drive (US Hwy 60) at the NE corner of Lumsden Road and Bryan Road in Brandon."
+    nonmember => 0
+  }
+
+  { id        => "templeterrace"
+    lat       => 28.055144
+    lng       => -82.367503
+    title     => "Temple Terrace, First United Church of Tampa"
+    addr      => "7308 East Fowler Avenue, Tampa, FL 33617"
+    desc      => "Located 1.4 miles west of Interstate 75 (at the northeast corner of East Fowler Avenue and Riverhills Drive), near the Hillsborough River."
+    nonmember => 0
+  }
+
+  { id        => "sebastian"
+    lat       => 27.835786
+    lng       => -80.495395
+    title     => "Sebastian, Roseland Community Building"
+    addr      => "12973 Bay Street, Roseland, FL 32957"
+    desc      => "Located 0.7 miles west of US Highway 1 in Roseland"
+    nonmember => 0
+  }
+
+  { id        => "wesleychapel"
+    lat       => 28.219402
+    lng       => -82.263423
+    title     => "Wesley Chapel: Trinity Church"
+    addr      => "33425 SR 54, Wesley Chapel, FL 33543"
+    desc      => ""
+    nonmember => 1
+  }
+
+  { id        => "verobeach"
+    lat       => 27.629248
+    lng       => -80.423611
+    title     => "Vero Beach, Leisure Square Rec Center"
+    addr      => "3705 16th Street, Vero Beach, FL 32960"
+    desc      => "Located 4 blocks south of US Highway 60 on 16th St. between 43rd Ave. and 27th Ave."
+    nonmember => 0
+  }
+
+  { id        => "suncity"
+    lat       => 27.711043
+    lng       => -82.359693
+    title     => "Sun City Center, Kings Point Clubhouse"
+    addr      => ""
+    desc      => "Located 1.3 miles east of I-75 in Sun City Center. Turn right on Kings Blvd. Check in at guard gate."
+    nonmember => 1
+  }
+
+  { id        => "palmaceia"
+    lat       => 27.923904
+    lng       => -82.501405
+    title     => "Tampa, Palma Ceia Presbyterian Church"
+    addr      => "3501 San Jose, Tampa, FL 33609"
+    desc      => "0.4 miles north of Bay to Bay Boulevard at Himes Avenue and San Jose. Stop at the church office for classroom location."
+    nonmember => 1
+  }
+]
 
 # vim :set ft=tt2:
 -%]
