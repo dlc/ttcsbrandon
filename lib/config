@@ -3,7 +3,7 @@ site = {
     #uri = 'http://brandon.florida.usa.taoist.org'
     uri = 'http://brandon.florida.usa.taoist.org/dev'
     #uri = 'file:///Users/darren/tmp/ttcsbrandon/html'
-    analytics_id = 'UA-69931-3'
+    analytics_id = 'UA-24084418-1'
     name = 'Taoist Tai Chi Society of the USA'
     subname = 'Brandon, Florida'
 }
