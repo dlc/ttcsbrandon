@@ -1,0 +1,4 @@
+AuthName "Taoist Tai Chi Society of the USA, Brandon, FL"
+AuthType Basic
+AuthUserFile "/hosted/taoist/brandon/htaccess"
+require valid-user
