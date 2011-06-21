@@ -7,7 +7,8 @@
 */
 
 body {
-  background: #fff;
+  background: #eee;
+  border-top: #111 6px solid;
   color: #000;
 }
 
@@ -33,6 +34,10 @@ body {
 }
 
 /* Specific page elements */
+#page {
+  background: #fff;
+  padding: 1em 0;
+}
 
 /* Menu */
 #menu {
@@ -52,7 +57,7 @@ body {
 
 #header h1 a {
   text-decoration: none;
-  color #fff;
+  color: #fff;
 }
 
 #header h1 a:visited {
@@ -95,6 +100,13 @@ body {
 /* Photo blob on main page */
 #photo {
   padding: 1em 0;
+}
+
+#map {
+  margin: 1em;
+  text-align: center;
+  height: 600px;
+  width: 900px;
 }
 
 /* Footer */
