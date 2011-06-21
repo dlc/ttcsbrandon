@@ -1,6 +1,7 @@
 [%
     USE date;
-%]<html>
+%]<!DOCTYPE html>
+<html>
   <head>
     <title>[% template.title | html %] | [% site.name | html %]</title>
     <meta name="keywords" content="[% page.keywords OR page.section | html %]"/>
@@ -24,53 +25,53 @@
 [% END %]
 
   </head>
-  <body class="container_12">
-
-    <!-- Header -->
-    <div id="header" class="grid_12">
-      <div class="container_12">
-        <div class="grid_4">
-          <a href="[% site.uris.home %]">
-            <img src="[% site.uris.images %]/logo.gif">
-          </a>
-        </div>
-        <div class="grid_8">
-          <h1><a href="[% site.uris.home %]">[% site.name | html %]</a></h1>[%
-IF site.subname %]
-          <h2>[% site.subname | html %]</h2>[%
-END %]
+  <body>
+    <div id="page" class="container_12">
+      <!-- Header -->
+      <div id="header" class="grid_12">
+        <div class="container_12">
+          <div class="grid_4">
+            <a href="[% site.uris.home %]">
+              <img src="[% site.uris.images %]/logo.gif">
+            </a>
+          </div>
+          <div class="grid_8">
+            <h1><a href="[% site.uris.home %]">[% site.name | html %]</a></h1>[%
+  IF site.subname %]
+            <h2>[% site.subname | html %]</h2>[%
+  END %]
+          </div>
         </div>
       </div>
+
+      <div class="clear"></div>
+
+      <!-- Menubar -->
+      <div id="menu" class="grid_12 bar">
+        [% hotlink("",            "Home", "home") %] |
+        [% hotlink("schedule",    "Schedule")     %] |
+        [% hotlink("calendar",    "Calendar")     %] |
+        [% hotlink("locations",   "Locations")    %] |
+        [% hotlink("news",        "News")         %] |
+        [% hotlink("events",      "Events")       %] |
+        [% hotlink("photos",      "Photos")       %] |
+        [% hotlink("membership",  "Membership")   %] |
+        [% hotlink("faq",         "FAQ")          %] |
+        [% hotlink("about",       "About Us")     %] |
+        [% hotlink("contact",     "Contact")      %]
+      </div>
+
+      <div class="clear"></div>
+
+      <!-- Begin main content area -->
+  [% content %]
+      <!-- End main content area -->
+      <div class="clear"></div>
+
+      <!-- Footer -->
+      <div id="footer" class="grid_12 bar">
+        &copy; Copyright 2008-[% date.format(template.modtime, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a>
+      </div>
     </div>
-
-    <div class="clear"></div>
-
-    <!-- Menubar -->
-    <div id="menu" class="grid_12 bar">
-      [% hotlink("",            "Home", "home") %] |
-      [% hotlink("schedule",    "Schedule")     %] |
-      [% hotlink("calendar",    "Calendar")     %] |
-      [% hotlink("locations",   "Locations")    %] |
-      [% hotlink("news",        "News")         %] |
-      [% hotlink("events",      "Events")       %] |
-      [% hotlink("photos",      "Photos")       %] |
-      [% hotlink("membership",  "Membership")   %] |
-      [% hotlink("faq",         "FAQ")          %] |
-      [% hotlink("about",       "About Us")     %] |
-      [% hotlink("contact",     "Contact")      %]
-    </div>
-
-    <div class="clear"></div>
-
-    <!-- Begin main content area -->
-[% content %]
-    <!-- End main content area -->
-    <div class="clear"></div>
-
-    <!-- Footer -->
-    <div id="footer" class="grid_12 bar">
-      &copy; Copyright 2008-[% date.format(template.modtime, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a>
-    </div>
-
   </body>
 </html>
