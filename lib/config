@@ -1,8 +1,8 @@
 [%
 site = {
     #uri = 'http://brandon.florida.usa.taoist.org'
-    #uri = 'http://brandon.florida.usa.taoist.org/devel'
-    uri = 'file:///Users/darren/tmp/ttcsbrandon/html'
+    uri = 'http://brandon.florida.usa.taoist.org/dev'
+    #uri = 'file:///Users/darren/tmp/ttcsbrandon/html'
     name = 'Taoist Tai Chi Society of the USA'
     subname = 'Brandon, Florida'
 }
@@ -14,17 +14,17 @@ site.uris = {
     css         = "${site.uri}/css"
     js          = "${site.uri}/js"
     images      = "${site.uri}/img"
-    home        = "${site.uri}/index.html"
-    about       = "${site.uri}/about/index.html"
-    schedule    = "${site.uri}/schedule/index.html"
-    calendar    = "${site.uri}/calendar/index.html"
-    locations   = "${site.uri}/locations/index.html"
-    news        = "${site.uri}/news/index.html"
-    events      = "${site.uri}/events/index.html"
-    photos      = "${site.uri}/photos/index.html"
-    membership  = "${site.uri}/membership/index.html"
-    faq         = "${site.uri}/faq/index.html"
-    about       = "${site.uri}/about/index.html"
+    home        = "${site.uri}/"
+    about       = "${site.uri}/about/"
+    schedule    = "${site.uri}/schedule/"
+    calendar    = "${site.uri}/calendar/"
+    locations   = "${site.uri}/locations/"
+    news        = "${site.uri}/news/"
+    events      = "${site.uri}/events/"
+    photos      = "${site.uri}/photos/"
+    membership  = "${site.uri}/membership/"
+    faq         = "${site.uri}/faq/"
+    about       = "${site.uri}/about/"
 }
 
 site.uris.contact   = "${site.uris.about}#contact"
