@@ -1,8 +1,9 @@
 [%
     USE date;
 %]<!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-US">
   <head>
+    <meta charset="UTF-8" />
     <title>[% template.title | html %] | [% site.name | html %]</title>
     <meta name="keywords" content="[% page.keywords OR page.section | html %]"/>
     <meta name="generator" content="vim+ttree"/>
@@ -17,6 +18,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/ttcs.css" />
     <link rel="author" href="[% site.uri %]/humans.txt" />
     <link rel="index" href="[% site.uris.home %]" title="[% site.name | html %]" />
+    <link rel="start" href="[% site.uris.about %]" title="About Us" />
 [% IF page.prev
 %]    <link rel="prev" href="[% site.uri %]/[% page.prev %]" />
 [% END;
@@ -70,7 +72,7 @@
 
       <!-- Footer -->
       <div id="footer" class="grid_12 bar">
-        &copy; Copyright 2008-[% date.format(template.modtime, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a>
+        &copy; Copyright 2008-[% date.format(template.modtime, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a> &middot <a href="[% site.uris.colophon %]">Generated with love</a>
       </div>
     </div>
     <script type="text/javascript">
