@@ -12,20 +12,21 @@ site = {
 # URIs
 # ----------------------------------------------------------------------
 site.uris = {
-    css         = "${site.uri}/css"
-    js          = "${site.uri}/js"
-    images      = "${site.uri}/img"
-    home        = "${site.uri}/"
     about       = "${site.uri}/about/"
-    schedule    = "${site.uri}/schedule/"
+    about       = "${site.uri}/about/"
     calendar    = "${site.uri}/calendar/"
-    locations   = "${site.uri}/locations/"
-    news        = "${site.uri}/news/"
+    colophon    = "${site.uri}/colophon/"
+    css         = "${site.uri}/css"
     events      = "${site.uri}/events/"
-    photos      = "${site.uri}/photos/"
-    membership  = "${site.uri}/membership/"
     faq         = "${site.uri}/faq/"
-    about       = "${site.uri}/about/"
+    home        = "${site.uri}/"
+    images      = "${site.uri}/img"
+    js          = "${site.uri}/js"
+    locations   = "${site.uri}/locations/"
+    membership  = "${site.uri}/membership/"
+    news        = "${site.uri}/news/"
+    photos      = "${site.uri}/photos/"
+    schedule    = "${site.uri}/schedule/"
 }
 
 site.uris.contact   = "${site.uris.about}#contact"
