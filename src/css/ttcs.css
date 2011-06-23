@@ -1,4 +1,5 @@
-/* The author disclaims copyright to this source code.
+[% META type = 'text'
+%]/* The author disclaims copyright to this source code.
 ** In place a legal notice, here is a blessing:
 **
 **    May you do good and not evil.
@@ -47,7 +48,7 @@ body {
 /* Header */
 #header {
   background: #fff;
-  background-image: url(http://sevenroot.org/tmp/img/header.png);
+  background-image: url([% site.uris.images %]/header.png);
   height: 325px;
 }
 
