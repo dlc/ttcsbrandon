@@ -117,5 +117,12 @@ locations = [
   }
 ]
 
+colors = {
+    links = {
+        new     = "#025a9e"
+        visited = "#6495ed"
+    }
+}
+
 # vim :set ft=tt2:
 -%]
