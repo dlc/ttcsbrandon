@@ -112,7 +112,7 @@ body {
 }
 
 #main a:hover, #loclist a:hover {
-  border-bottom: 1px black dotted;
+  border-bottom: 1px [% colors.links.new %] dotted;
 }
 
 #main a:visited, #loclist a:visited {
