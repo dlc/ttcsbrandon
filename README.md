@@ -15,8 +15,8 @@ Andy Wardley, David Cross, and Darren Chamberlain.
 
 In order to build the site, you'll need a clone of this repo and a copy
 of [Template Toolkit][tt2] installed, with all its dependencies.  This
-includes a modern Perl. No database is used, and no assumptions are
-made about the type of web server or its capabilities.
+includes a modern Perl. No database is used, and very few assumptions are
+made about the type of web server or its capabilities, beyond being Apache.
 
 The commands to run are:
 
