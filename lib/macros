@@ -7,4 +7,14 @@
       %]<li[% IF a %] class="[% a %]"[% END %]><a href="[% u %]">[% t %]</a></li>[%
       END;
     END;
+
+    MACRO w(term, displ) BLOCK;
+      "<a href=\"http://en.wikipedia.org/wiki/";
+      term | uri | html;
+      "\" title=\"";
+      (displ OR term) | html;
+      "\">";
+      (displ OR term) | html;
+      "</a>";
+    END;
 -%]
