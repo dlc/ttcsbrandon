@@ -4,8 +4,7 @@
       type  = 'html'
 %]
       <div id="main" class="grid_8">
-        <h1 class="section">Class Schedules</h1>
-        <h2>Effective May 22, 2011</h2>
+        <h1 class="section">Class Schedules - Effective May 22, 2011</h2>
 
 <!-- Brandon Center -->
 <table class="schedule" border="0" cellpadding="10" width="100%">
@@ -301,11 +300,19 @@
 </tbody></table>
 
       </div>
+
       <div id="loclist" class="grid_4">
-        <h2>Schedules by location</h2>
+        <h2>Schedules by Location</h2>
         <ul>
 [% FOREACH loc IN locations %]
           <li><a href="#[% loc.id %]">[% loc.title %]</a></li>
+[% END %]
+        </ul>
+
+        <h2>Locations</h2>
+        <ul>
+[% FOREACH loc IN locations %]
+          <li><a href="http://maps.google.com/maps?q=[% loc.addr | uri | html %]" rel="external" target="_blank">[% loc.title %]</a></li>
 [% END %]
         </ul>
       </div>
