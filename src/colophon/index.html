@@ -11,7 +11,7 @@
   
   <p id="p-10">The site is hand-coded in (relatively) modern HTML, complete with metadata, and uses the fantastic <a href="http://960.gs/" rel="external">960 Grid System</a> for layout, since I'm a very poor designer.  The templates and content are stored in <a href="https://github.com/dlc/ttcsbrandon/" rel="external">GitHub</a>, edited in <a href="http://www.vim.org/" rel="external">vim</a>, and built using the <a href="http://www.tt2.org/" rel="external">Template Toolkit</a>.</p>
 
-  <p id="p-11">Some effort has been taken to ensure that pages validate correctly (using the <a href="http://validator.w3.org/" rel="external">W3's Validator</a>), and are <a href="http://en.wikipedia.org/wiki/HTML5" rel="external">HTML5</a>.
+  <p id="p-11">Some effort has been taken to ensure that pages validate correctly (using the <a href="http://validator.w3.org/" rel="external">W3's Validator</a>), and are [% w("HTML5") %].
 
   <p id="p-12">The <a href="[% site.uris.calendar %]">calendar</a>, <a href="[% site.uris.locations %]">location</a>, and <a href="[% site.uris.search %]">search</a> pages are made possible by <a href="http://www.google.com/calendar" rel="external">Google Calendar</a>, <a href="http://maps.google.com/" rel="external">Google Maps</a>, and <a href="http://www.google.com/cse" rel="external">Google Custom Search Engines</a>, respectively.</p>
 
@@ -21,13 +21,13 @@
 
   <h2>Feeds</h2>
 
-  <p id="p-30">There are <a href="http://en.wikipedia.org/wiki/Atom_(standard)" rel="external">Atom</a> feeds available for the following bits:</p>
+  <p id="p-30">There are [% w("Atom_(standard)", "Atom") %] feeds available for the following bits:</p>
 
     <ul>
       <li><a href="[% site.uris.events %]feed.atom" rel="alternate" type="application/atom+xml" title="Events Feed">Events</a></li>
       <!--li><a href="[% site.uris.news %]feed.atom" rel="alternate" type="application/atom+xml" title="News Feed">News</a></li-->
     </ul>
 
-  <p id="p-31">These feeds can be followed in any <a href="http://en.wikipedia.org/wiki/News_aggregator#Software-based_aggregation" rel="external">feed aggregator</a>.
+  <p id="p-31">These feeds can be followed in any [% w("News_aggregator#Software-based_aggregation", "feed aggregator") %].
 
 </div>
