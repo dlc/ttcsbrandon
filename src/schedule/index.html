@@ -1,10 +1,10 @@
 [%  META
-      title = 'Schdules & Location'
-      description = 'Schedule of classes'
+      title = 'Class Schedules'
+      description = 'Class Schedules'
       type  = 'html'
 %]
-      <div id="main" class="grid_12">
-        <h1 class="section">Class Schedule</h1>
+      <div id="main" class="grid_8">
+        <h1 class="section">Class Schedules</h1>
         <h2>Effective May 22, 2011</h2>
 
 <!-- Brandon Center -->
@@ -300,4 +300,12 @@
 
 </tbody></table>
 
+      </div>
+      <div id="loclist" class="grid_4">
+        <h2>Schedules by location</h2>
+        <ul>
+[% FOREACH loc IN locations %]
+          <li><a href="#[% loc.id %]">[% loc.title %]</a></li>
+[% END %]
+        </ul>
       </div>
