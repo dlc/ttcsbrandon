@@ -15,6 +15,7 @@ site.uris = {
     about       = "${site.uri}/about/"
     calendar    = "${site.uri}/calendar/"
     colophon    = "${site.uri}/colophon/"
+    contact     = "${site.uri}/contact/"
     css         = "${site.uri}/css"
     events      = "${site.uri}/events/"
     faq         = "${site.uri}/faq/"
@@ -29,7 +30,6 @@ site.uris = {
     schedule    = "${site.uri}/schedule/"
 }
 
-site.uris.contact   = "${site.uris.about}#contact"
 site.uris.flyers    = "${site.uris.images}/flyers"
 
 ; # If the base URI is file:///, fix the filename portion
@@ -41,6 +41,24 @@ IF site.uri.search("^file:");
         END;
     END;
 END;
+
+# ----------------------------------------------------------------------
+# Short links
+# ----------------------------------------------------------------------
+site.shortlinks {
+    about       = "http://bit.ly/mEffd2"
+    calendar    = "http://bit.ly/kMkJ0d"
+    colophon    = "http://bit.ly/lH6RvN"
+    contact     = "http://bit.ly/lX43o5"
+    events      = "http://bit.ly/l23Qch"
+    faq         = "http://bit.ly/k1Xmrl"
+    home        = "http://bit.ly/ttcsbrfl"
+    locations   = "http://bit.ly/l0t0hc"
+    membership  = "http://bit.ly/jVywaP"
+    news        = "http://bit.ly/mqCEi3"
+    photos      = "http://bit.ly/me3IR8"
+    schedule    = "http://bit.ly/kTpdyL"
+}
 
 # ----------------------------------------------------------------------
 # Page info
@@ -126,6 +144,11 @@ locations = [
     nonmember => 1
   }
 ]
+
+lochash = { };
+FOR loc IN locations;
+    lochash.${loc.id} = loc;
+END;
 
 # ----------------------------------------------------------------------
 # Colors
