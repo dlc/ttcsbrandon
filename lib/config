@@ -61,6 +61,7 @@ site.shortlinks = {
     news        = "http://bit.ly/mqCEi3"
     photos      = "http://bit.ly/me3IR8"
     schedule    = "http://bit.ly/kTpdyL"
+    search      = "http://bit.ly/kiBtNw"
 }
 
 # ----------------------------------------------------------------------
@@ -172,5 +173,5 @@ abbr = {
 
 abbr.ttcsusa = "${abbr.ttcs} of the USA"
 
-# vim :set ft=tt2:
+# vim: set ft=tt2:
 -%]
