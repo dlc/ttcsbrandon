@@ -1,0 +1,5 @@
+#!/bin/sh
+
+DEST=/public_html/dev/
+
+ncftpput -R -y -T .tmp taichi "$DEST" ./html/* ./html/.htaccess $@
