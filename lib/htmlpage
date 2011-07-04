@@ -12,19 +12,14 @@
     <meta charset="UTF-8" />
     <title>[% template.title | html %] | [% site.name | html %]</title>
     <meta name="keywords" content="[% page.keywords OR page.section | html %]"/>
-    <meta name="last modified date" content="[% date.format(page.date, '%Y-%m-%dT%H:%M:%S') %]"/>
-    <meta name="last build date" content="[% date.format(date.now, "%Y-%m-%dT%H:%M%S") %]"/>
     <meta name="robots" content="index,follow" />
     <link rel="shortcut icon" type="text/x-icon" href="[% site.uris.images %]/favicon.ico" />
     <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />
-    <link rel="history" href="https://github.com/dlc/ttcsbrandon/commits/master/src/[% page.file %]" />
+    <link rel="author" href="[% site.uris.humans %]" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/reset.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/text.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/960.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/ttcs.css" />
-    <link rel="author" href="[% site.uris.humans %]" />
-    <link rel="index" href="[% site.uris.home %]" title="[% site.name | html %]" />
-    <link rel="start" href="[% site.uris.about %]" title="About Us" />
 [% IF page.prev
 %]    <link rel="prev" href="[% site.uri %]/[% page.prev %]" />
 [% END;
@@ -40,7 +35,7 @@
         <div class="container_12">
           <div class="grid_4">
             <a href="[% site.uris.home %]">
-              <img src="[% site.uris.images %]/logo.gif">
+              <img src="[% site.uris.images %]/logo.gif" alt="logo">
             </a>
           </div>
           <div class="grid_8">
@@ -80,7 +75,7 @@
 
       <!-- Footer -->
       <div id="footer" class="grid_12">
-        &copy; Copyright 2008-[% date.format(date.now, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a> &middot <a href="[% site.uris.colophon %]">Generated with love</a>
+        &copy; Copyright 2008-[% date.format(date.now, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a> &middot; <a href="[% site.uris.colophon %]">Generated with love</a> &middot; <a href="http://validator.w3.org/check?uri=[% site.uri %]/[% page.section %]/"><img src="[% site.uris.images %]/html5.png"/></a>
       </div>
     </div>
     <script type="text/javascript">
