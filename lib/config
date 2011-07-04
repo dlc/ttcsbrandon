@@ -79,7 +79,8 @@ page = {
     prev        = template.prev or ''
 }
 
-page.section = page.file.replace('/?index.html$', '')
+page.section = page.file.replace('/?index.html$', '');
+page.section = 'home' IF template.title == "Home";
 
 # ----------------------------------------------------------------------
 # Locations
