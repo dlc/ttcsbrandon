@@ -193,6 +193,7 @@ body {
 
 #main p:hover a.plink, #main p a:hover.plink {
     color: #c8a8ff;
+    border-bottom: 0;
 }
 
 #identifier {
