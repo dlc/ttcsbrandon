@@ -1,11 +1,11 @@
 [%
 site = {
-    #uri = 'http://brandon.florida.usa.taoist.org'
-    uri = 'http://brandon.florida.usa.taoist.org/dev'
-    #uri = 'file:///Users/darren/tmp/ttcsbrandon/html'
-    analytics_id = 'UA-24084418-1'
-    name = 'Taoist Tai Chi Society of the USA'
-    subname = 'Brandon, Florida'
+    #uri             = 'http://brandon.florida.usa.taoist.org'
+    #uri             = 'http://brandon.florida.usa.taoist.org/dev'
+    uri             = 'file:///Users/darren/tmp/ttcsbrandon/html'
+    analytics_id    = 'UA-24084418-1'
+    name            = 'Taoist Tai Chi Society of the USA'
+    subname         = 'Brandon, Florida'
 }
 
 # ----------------------------------------------------------------------
@@ -28,9 +28,11 @@ site.uris = {
     news        = "${site.uri}/news/"
     photos      = "${site.uri}/photos/"
     schedule    = "${site.uri}/schedule/"
+    vcs         = "https://github.com/dlc/ttcsbrandon"
 }
 
 site.uris.flyers    = "${site.uris.images}/flyers"
+site.uris.src_link  = "${site.uris.vcs}/commits/master"
 
 ; # If the base URI is file:///, fix the filename portion
 IF site.uri.search("^file:");
