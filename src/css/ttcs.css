@@ -186,6 +186,15 @@ body {
   padding: 5px 0;
 }
 
+#main a.plink {
+    text-decoration: none;
+    color: #fff;
+}
+
+#main p:hover a.plink, #main p a:hover.plink {
+    color: #c8a8ff;
+}
+
 #identifier {
   font-style: italic;
 }
