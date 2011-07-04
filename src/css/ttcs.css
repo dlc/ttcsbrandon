@@ -1,33 +1,16 @@
 [% META type = 'text'
-%]/* The author disclaims copyright to this source code.
-** In place a legal notice, here is a blessing:
-**
-**    May you do good and not evil.
-**    May you find forgiveness for yourself and forgive others.
-**    May you share freely, never taking more than you give.
-*/
+%]
+/* (C) Copyright 2008-[% date.format(template.modtime, '%Y') %] Taoist Tai Chi Society of the USA
+ * See [% site.uris.contact %] to contact this branch of the Society.
+ * See [% site.uris.colophon %] for information about how this site is built, if that's your thing,
+ * or [% site.uris.humans %] to see who's to blame for this site.
+ */
 
 body {
   background: #eee;
-  border-top: #111 6px solid;
   color: #000;
 }
 
-/* Generic elements */
-.bar {
-  background: #000;
-  color: #eee;
-  padding: 5px 0;
-}
-
-.bar a {
-  color: [% color.links.visited %];
-  text-decoration: none;
-}
-
-.bar a:hover {
-  color: #fff;
-}
 
 .leader {
   font-size: 120%;
@@ -43,9 +26,51 @@ body {
 /* Menu */
 #menu {
   text-align: center;
+  background: #000;
+  color: #eee;
+  padding: 4px 0;
 }
 
-/* Header */
+#menu ul {
+  display: inline;
+  list-style-type: none;
+  list-style: none;
+}
+
+#menu ul li {
+  display: inline;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+#menu ul li.active {
+  font-weight: bold;
+  color: #fff;
+}
+
+#menu ul li:hover {
+  background: #333;
+  border-top: 3px [% colors.links.visited %] solid;
+}
+
+#menu a {
+  color: [% colors.links.visited %];
+  text-decoration: none;
+}
+
+#menu li.active a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: #fff;
+}
+
+/*
+ *
+ * Header
+ */
 #header {
   background: #fff;
   background-image: url([% site.uris.images %]/header.png);
@@ -66,7 +91,7 @@ body {
 }
 
 #header h2 {
-  color: [% color.links.visited %];
+  color: [% colors.links.visited %];
 }
 
 /* Main content area */
@@ -81,17 +106,17 @@ body {
   padding: 0 1em;
 }
 
-#main a {
+#main a, #loclist a {
   color: [% colors.links.new %];
   text-decoration: none
 }
 
-#main a:hover {
+#main a:hover, #loclist a:hover {
   border-bottom: 1px black dotted;
 }
 
-#main a:visited {
-  color: [% color.links.visited %];
+#main a:visited, #loclist a:visited {
+  color: [% colors.links.visited %];
 }
 
 #main table.schedule {
@@ -110,10 +135,48 @@ body {
   width: 900px;
 }
 
+#loclist {
+  background: #f5f5f5;
+}
+
+#loclist h2 {
+  padding: 5px;
+  border-bottom: 1px #ccc solid;
+}
+
+#loclist ul {
+  list-style-type: none;
+  list-style: none;
+}
+
+#loclist ul li {
+  margin-left: 1em;
+}
+
 /* Footer */
 #footer {
   font-size: 60%;
   text-align: center;
+  background: #000;
+  color: #eee;
+  padding: 5px 0;
+}
+
+#footer a {
+  color: [% colors.links.visited %];
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+#infobar {
+  font-size: 60%;
+  text-align: center;
+  background: #f5f5f5;
+  color: #bbb;
+  padding: 5px 0;
 }
 
 #identifier {
