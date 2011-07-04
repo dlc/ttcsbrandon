@@ -63,9 +63,9 @@ END %]
           [% ul_hotlink("schedule",    "Schedule")     %]
           [% ul_hotlink("calendar",    "Calendar")     %]
           [% ul_hotlink("locations",   "Locations")    %]
-          [% ul_hotlink("news",        "News")         %]
+<!--      [% ul_hotlink("news",        "News")         %] -->
           [% ul_hotlink("events",      "Events")       %]
-          [% ul_hotlink("photos",      "Photos")       %]
+<!--      [% ul_hotlink("photos",      "Photos")       %] -->
           [% ul_hotlink("membership",  "Membership")   %]
           [% ul_hotlink("search",      "Search")       %]
           [% ul_hotlink("about",       "About Us")     %]
