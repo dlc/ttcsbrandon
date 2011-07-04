@@ -1,0 +1,14 @@
+[% META
+    type = 'text';
+rewrite_base = site.uri.replace('^.*?://[^/]+', '');
+%]
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase [% rewrite_base %]/
+    RewriteRule ^index.html$ [% site.uris.home %] [R=301,L]
+    RewriteRule ^schedule.html$ [% site.uris.schedule %] [R=301,L]
+    RewriteRule ^membership.html$ [% site.uris.membership %] [R=301,L]
+    RewriteRule ^events.html$ [% site.uris.events %] [R=301,L]
+    RewriteRule ^news.html$ [% site.uris.news %] [R=301,L]
+    RewriteRule ^multimedia.html$ [% site.uris.photos %] [R=301,L]
+</IfModule>
