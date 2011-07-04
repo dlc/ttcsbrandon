@@ -1,13 +1,19 @@
 [%
     USE date;
 %]<!DOCTYPE html>
+<!--
+  (C) Copyright 2008-[% date.format(date.now, '%Y') %] Taoist Tai Chi Society of the USA
+  See [% site.uris.contact %] to contact this branch of the Society.
+  See [% site.uris.colophon %] for information about how this site is built, if that's your thing,
+  or [% site.uris.humans %] to see information about the author/maintainer.
+-->
 <html dir="ltr" lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <title>[% template.title | html %] | [% site.name | html %]</title>
     <meta name="keywords" content="[% page.keywords OR page.section | html %]"/>
-    <meta name="generator" content="vim+ttree"/>
-    <meta name="date" content="[% date.format(date.now, "%Y-%m-%dT%H:%M%S") %]"/>
+    <meta name="last modified date" content="[% date.format(page.date, '%Y-%m-%dT%H:%M:%S') %]"/>
+    <meta name="last build date" content="[% date.format(date.now, "%Y-%m-%dT%H:%M%S") %]"/>
     <meta name="robots" content="index,follow" />
     <link rel="shortcut icon" type="text/x-icon" href="[% site.uris.images %]/favicon.ico" />
     <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />
@@ -16,7 +22,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/text.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/960.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/ttcs.css" />
-    <link rel="author" href="[% site.uri %]/humans.txt" />
+    <link rel="author" href="[% site.uris.humans %]" />
     <link rel="index" href="[% site.uris.home %]" title="[% site.name | html %]" />
     <link rel="start" href="[% site.uris.about %]" title="About Us" />
 [% IF page.prev
@@ -49,30 +55,32 @@
       <div class="clear"></div>
 
       <!-- Menubar -->
-      <div id="menu" class="grid_12 bar">
-        [% hotlink("",            "Home", "home") %] |
-        [% hotlink("schedule",    "Schedule")     %] |
-        [% hotlink("calendar",    "Calendar")     %] |
-        [% hotlink("locations",   "Locations")    %] |
-        [% hotlink("news",        "News")         %] |
-        [% hotlink("events",      "Events")       %] |
-        [% hotlink("photos",      "Photos")       %] |
-        [% hotlink("membership",  "Membership")   %] |
-        [% hotlink("faq",         "FAQ")          %] |
-        [% hotlink("about",       "About Us")     %] |
-        [% hotlink("contact",     "Contact")      %]
+      <div id="menu" class="grid_12">
+        <ul>
+          [% ul_hotlink("",            "Home", "home") %]
+          [% ul_hotlink("schedule",    "Schedule")     %]
+          [% ul_hotlink("calendar",    "Calendar")     %]
+          [% ul_hotlink("locations",   "Locations")    %]
+          [% ul_hotlink("news",        "News")         %]
+          [% ul_hotlink("events",      "Events")       %]
+          [% ul_hotlink("photos",      "Photos")       %]
+          [% ul_hotlink("membership",  "Membership")   %]
+          [% ul_hotlink("faq",         "FAQ")          %]
+          [% ul_hotlink("about",       "About Us")     %]
+          [% ul_hotlink("contact",     "Contact")      %]
+        </ul>
       </div>
 
       <div class="clear"></div>
 
       <!-- Begin main content area -->
-  [% content %]
+[% content | indent(8) %]
       <!-- End main content area -->
       <div class="clear"></div>
 
       <!-- Footer -->
-      <div id="footer" class="grid_12 bar">
-        &copy; Copyright 2008-[% date.format(template.modtime, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a> &middot <a href="[% site.uris.colophon %]">Generated with love</a>
+      <div id="footer" class="grid_12">
+        &copy; Copyright 2008-[% date.format(date.now, '%Y') %] &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a> &middot <a href="[% site.uris.colophon %]">Generated with love</a>
       </div>
     </div>
     <script type="text/javascript">
