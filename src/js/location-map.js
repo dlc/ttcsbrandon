@@ -1,4 +1,11 @@
-[% META type = 'text' %]
+[% META
+    type = 'text'
+%]// (C) Copyright 2008-[% date.format(template.modtime, '%Y') %] Taoist Tai Chi Society of the USA
+// See [% site.uris.contact %] to contact this branch of the Society.
+// See [% site.uris.colophon %] for information about how this site is built, if that's your thing,
+// or [% site.uris.humans %] to see who's to blame for this site.
+//
+
 var iw = new google.maps.InfoWindow();
 var m = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
