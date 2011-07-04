@@ -13,7 +13,7 @@
     <title>[% template.title | html %] | [% site.name | html %]</title>
     <meta name="keywords" content="[% page.keywords OR page.section | html %]"/>
     <meta name="robots" content="index,follow" />
-    <link rel="shortcut icon" type="text/x-icon" href="[% site.uris.images %]/favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="[% site.uris.images %]/ttcs-tiny.png" />
     <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />
     <link rel="author" href="[% site.uris.humans %]" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/reset.css" />
