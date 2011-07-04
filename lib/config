@@ -80,7 +80,6 @@ page = {
 }
 
 page.section = page.file.replace('/?index.html$', '');
-page.section = 'home' IF template.title == "Home";
 
 # ----------------------------------------------------------------------
 # Locations
