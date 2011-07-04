@@ -13,13 +13,13 @@ site = {
 # ----------------------------------------------------------------------
 site.uris = {
     about       = "${site.uri}/about/"
-    about       = "${site.uri}/about/"
     calendar    = "${site.uri}/calendar/"
     colophon    = "${site.uri}/colophon/"
     css         = "${site.uri}/css"
     events      = "${site.uri}/events/"
     faq         = "${site.uri}/faq/"
     home        = "${site.uri}/"
+    humans      = "${site.uri}/humans.txt"
     images      = "${site.uri}/img"
     js          = "${site.uri}/js"
     locations   = "${site.uri}/locations/"
@@ -31,6 +31,16 @@ site.uris = {
 
 site.uris.contact   = "${site.uris.about}#contact"
 site.uris.flyers    = "${site.uris.images}/flyers"
+
+; # If the base URI is file:///, fix the filename portion
+IF site.uri.search("^file:");
+    FOREACH k IN site.uris.keys;
+        u = site.uris.$k;
+        IF u.search('/$');
+            site.uris.$k = "${site.uris.$k}index.html";
+        END;
+    END;
+END;
 
 # ----------------------------------------------------------------------
 # Page info
@@ -117,6 +127,9 @@ locations = [
   }
 ]
 
+# ----------------------------------------------------------------------
+# Colors
+# ----------------------------------------------------------------------
 colors = {
     links = {
         new     = "#025a9e"
