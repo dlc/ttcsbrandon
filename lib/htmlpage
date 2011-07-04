@@ -14,7 +14,10 @@
     <meta name="keywords" content="[% page.keywords OR page.section | html %]"/>
     <meta name="robots" content="index,follow" />
     <link rel="shortcut icon" type="image/png" href="[% site.uris.images %]/ttcs-tiny.png" />
-    <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />
+    <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />[%
+IF site.shortlinks.${page.section} %]
+    <link rel="shortlink" href="[% site.shortlinks.${page.section} %]"/>[%
+END %]
     <link rel="author" href="[% site.uris.humans %]" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/reset.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/text.css" />
