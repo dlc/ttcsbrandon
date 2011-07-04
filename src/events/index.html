@@ -1,10 +1,21 @@
 [%  META
       title = 'Events'
-      type  = 'html'
+      type  = 'html';
+
+USE events = datafile('data/events', delim = '|');
 %]
-      <div id = "main" class="grid_12">
-        [% event("Lok Hup Ba Fa National Workshop", "2011-06-04", "lokhup") %]
-        [% event("Chang San Feng Banquet", "2011-06-04", "changsanfeng") %]
-        [% event("Brandon Open House", "2011-05-21", "openhouse") %]
-        [% event("Brandon Tai Chi Intensive", "2011-05-14", "intensive") %]
-      </div>
+<div id="main" class="grid_8">
+[% FOREACH e IN events %]
+  <h1 class="event section" id="[% e.date %]-[% e.id %]"><a href="[% site.uris.events %][% e.date %]-[% e.id %]/"[% %]>[% e.title %]</a> - [% e.date %]</h1>
+  <img src="[% site.uris.flyers %]/[% e.date %]-[% e.id %].jpg" />
+[% END %]
+</div>
+
+<div id="loclist" class="grid_4">
+  <h2>Recent Events</h2>
+    <ul> 
+[% FOREACH e IN events %]
+      <li><a href="#[% e.date %]-[% e.id %]">[% e.title %]</a></li>
+[% END %]
+    </ul> 
+</div>
