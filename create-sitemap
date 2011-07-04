@@ -1,0 +1,33 @@
+#!/bin/sh
+
+if cd ./src
+then
+    echo "[% META type = 'text' %]<?xml version='1.0' encoding='UTF-8'?>" > sitemap.xml
+    echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+    (echo '  <url>'
+     echo '    <loc>[% site.uris.home %]</loc>'
+     echo '    <changefreq>weekly</changefreq>'
+     echo '  </url>'
+    ) >> sitemap.xml
+    ls */index.html | \
+        sed -e 's/index\.html$//' \
+            -e 's!^\./!!' \
+            -e 's!/$!!' \
+                | \
+        while read uri
+    do
+        if [ -n "$uri" ]
+        then
+           (echo "[% IF site.uris.$uri %]"
+            echo "  <url>" 
+            echo "    <loc>[% site.uris.$uri %]</loc>"
+            echo "    <changefreq>weekly</changefreq>"
+            echo "  </url>"
+            echo "[% END %]") >> sitemap.xml
+        fi
+    done
+    echo '</urlset>' >> sitemap.xml
+else
+    echo "Can't cd to ./src" >&2
+    exit 2
+fi

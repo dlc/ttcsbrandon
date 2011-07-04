@@ -1,0 +1,85 @@
+[% META type = 'text' %]<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>[% site.uris.home %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% IF site.uris.about %]
+  <url>
+    <loc>[% site.uris.about %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.calendar %]
+  <url>
+    <loc>[% site.uris.calendar %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.colophon %]
+  <url>
+    <loc>[% site.uris.colophon %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.contact %]
+  <url>
+    <loc>[% site.uris.contact %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.events %]
+  <url>
+    <loc>[% site.uris.events %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.faq %]
+  <url>
+    <loc>[% site.uris.faq %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.locations %]
+  <url>
+    <loc>[% site.uris.locations %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.membership %]
+  <url>
+    <loc>[% site.uris.membership %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.news %]
+  <url>
+    <loc>[% site.uris.news %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.photos %]
+  <url>
+    <loc>[% site.uris.photos %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.private %]
+  <url>
+    <loc>[% site.uris.private %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.schedule %]
+  <url>
+    <loc>[% site.uris.schedule %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+[% IF site.uris.search %]
+  <url>
+    <loc>[% site.uris.search %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
+</urlset>
