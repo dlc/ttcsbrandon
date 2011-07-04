@@ -28,6 +28,7 @@ site.uris = {
     news        = "${site.uri}/news/"
     photos      = "${site.uri}/photos/"
     schedule    = "${site.uri}/schedule/"
+    search      = "${site.uri}/search/"
     vcs         = "https://github.com/dlc/ttcsbrandon"
 }
 

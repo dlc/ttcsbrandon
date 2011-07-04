@@ -16,6 +16,7 @@
     <meta name="generator" content="[% site.uris.humans %]" />
     <link rel="shortcut icon" type="image/png" href="[% site.uris.images %]/ttcs-tiny.png" />
     <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />[%
+    <link rel="search" href="[% site.uris.search %]"/>
 IF site.shortlinks.${page.section} %]
     <link rel="shortlink" href="[% site.shortlinks.${page.section} %]"/>[%
 END %]
