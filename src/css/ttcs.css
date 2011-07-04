@@ -248,3 +248,17 @@ table.schedule tr.even {
 table.schedule tr.even:hover {
   background: #ddd;
 }
+
+table.payments {
+  padding: 1em;
+  width: 95%;
+  margin: 1em;
+}
+
+table.payments th {
+  font-weight: bold;
+}
+
+table.payments tr:hover {
+  background: #eee;
+}
