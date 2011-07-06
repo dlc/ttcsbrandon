@@ -30,6 +30,7 @@ site.uris = {
     schedule    = "${site.uri}/schedule/"
     search      = "${site.uri}/search/"
     vcs         = "https://github.com/dlc/ttcsbrandon"
+    workshops   = "${site.uri}/workshops/"
 }
 
 site.uris.flyers    = "${site.uris.images}/flyers"
