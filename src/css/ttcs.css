@@ -29,6 +29,7 @@ body {
   background: #000;
   color: #eee;
   padding: 4px 0;
+  margin-bottom: 1em;
   border-top: 1px solid [% colors.links.visited %];
   border-bottom: 1px solid [% colors.links.visited %];
 }
@@ -110,16 +111,16 @@ body {
   padding: 0 1em;
 }
 
-#main a, #loclist a {
+#main a, #sidebar a {
   color: [% colors.links.new %];
   text-decoration: none
 }
 
-#main a:hover, #loclist a:hover {
+#main a:hover, #sidebar a:hover {
   border-bottom: 1px [% colors.links.new %] dotted;
 }
 
-#main a:visited, #loclist a:visited {
+#main a:visited, #sidebar a:visited {
   color: [% colors.links.visited %];
 }
 
@@ -142,21 +143,21 @@ body {
   padding: 1em;
 }
 
-#loclist {
+#sidebar {
   background: #eee;
 }
 
-#loclist h2 {
+#sidebar h2 {
   padding: 5px;
   border-bottom: 1px #ccc solid;
 }
 
-#loclist ul {
+#sidebar ul {
   list-style-type: none;
   list-style: none;
 }
 
-#loclist ul li {
+#sidebar ul li {
   margin-left: 1em;
 }
 
@@ -169,6 +170,7 @@ body {
   padding: 5px 0;
   border-bottom: 1px solid [% colors.links.visited %];
   border-top: 1px solid [% colors.links.visited %];
+  margin-top: 1em;
 }
 
 #footer a {
