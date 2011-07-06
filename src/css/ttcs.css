@@ -198,8 +198,13 @@ body {
     border-bottom: 0;
 }
 
-#identifier {
+/* Some generic classes */
+.identifier {
   font-style: italic;
+}
+
+.centered {
+  text-align: center;
 }
 
 h2.section {
