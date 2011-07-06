@@ -82,4 +82,10 @@
     <changefreq>weekly</changefreq>
   </url>
 [% END %]
+[% IF site.uris.workshops %]
+  <url>
+    <loc>[% site.uris.workshops %]</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+[% END %]
 </urlset>
