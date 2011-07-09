@@ -16,6 +16,7 @@ site.uris = {
     calendar    = "${site.uri}/calendar/"
     colophon    = "${site.uri}/colophon/"
     contact     = "${site.uri}/contact/"
+    contrib     = "${site.uri}/membership/contrib/"
     css         = "${site.uri}/css"
     events      = "${site.uri}/events/"
     faq         = "${site.uri}/faq/"
