@@ -79,7 +79,9 @@ END %]
 [% content | indent(8) %]
       <!-- End main content area -->
       <div class="clear"></div>
-
+[% IF site.shortlinks.${page.section} %]
+      <div id="qrcode" class="grid_12"><img src="[% site.shortlinks.${page.section} %].qrcode?s=64"/></div>
+[% END %]
       <!-- Footer -->
       <div id="footer" class="grid_12">
         &copy; Copyright 2008-[% date.format(date.now, '%Y') %]

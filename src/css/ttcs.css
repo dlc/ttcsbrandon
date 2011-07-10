@@ -190,6 +190,10 @@ body {
   padding: 5px 0;
 }
 
+#qrcode {
+  display: none;
+}
+
 #main a.plink {
     text-decoration: none;
     color: #fff;
