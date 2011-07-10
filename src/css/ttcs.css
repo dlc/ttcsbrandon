@@ -7,7 +7,7 @@
  */
 
 body {
-  background: #eee;
+  background: [% colors.links.visited %];
   color: #000;
 }
 
