@@ -1,6 +1,6 @@
 [% META
     type = 'text'
-%]// (C) Copyright 2008-[% date.format(template.modtime, '%Y') %] Taoist Tai Chi Society of the USA
+%]// (C) Copyright 2008-[% USE date; date.format(date.now, '%Y') %] Taoist Tai Chi Society of the USA
 // See [% site.uris.contact %] to contact this branch of the Society.
 // See [% site.uris.colophon %] for information about how this site is built, if that's your thing,
 // or [% site.uris.humans %] to see who's to blame for this site.
