@@ -39,19 +39,10 @@ END %]
     <div id="page" class="container_12">
       <!-- Header -->
       <div id="header" class="grid_12">
-        <div class="container_12">
-          <div class="grid_4">
-            <a href="[% site.uris.home %]">
-              <img src="[% site.uris.images %]/logo.gif" alt="logo">
-            </a>
-          </div>
-          <div class="grid_8">
             <h1><a href="[% site.uris.home %]">[% site.name | html %]</a></h1>[%
   IF site.subname %]
             <h2>[% site.subname | html %]</h2>[%
   END %]
-          </div>
-        </div>
       </div>
 
       <div class="clear"></div>
