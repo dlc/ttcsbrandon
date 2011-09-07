@@ -27,6 +27,7 @@ site.uris = {
     locations   = "${site.uri}/locations/"
     membership  = "${site.uri}/membership/"
     news        = "${site.uri}/news/"
+    pdfs        = "${site.uri}/pdfs/"
     photos      = "${site.uri}/photos/"
     schedule    = "${site.uri}/schedule/"
     search      = "${site.uri}/search/"
