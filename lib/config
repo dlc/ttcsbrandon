@@ -38,7 +38,8 @@ site.uris = {
 site.uris.css     = "${site.uris.assets}/css"
 site.uris.images  = "${site.uris.assets}/images"
 site.uris.js      = "${site.uris.assets}/js"
-site.uris.pdfs    = "${site.uris.assets}/pdfs/"
+site.uris.pdf     = "${site.uris.assets}/pdf/" 
+site.uris.pdfs    = site.uris.pdf
 
 site.uris.flyers    = "${site.uris.images}/flyers"
 site.uris.src_link  = "${site.uris.vcs}/commits/master"
