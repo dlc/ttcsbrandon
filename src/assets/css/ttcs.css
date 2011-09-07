@@ -144,6 +144,11 @@ body {
   padding: 1em;
 }
 
+img.floater {
+  float: right;
+  padding: 1em;
+}
+
 #sidebar {
   background: #eee;
 }
