@@ -79,7 +79,7 @@ END %]
         &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a>
         &middot; <a href="[% site.uris.colophon %]">Generated with love</a>
         &middot; <a href="[% site.uris.src_link %]/src/[% template.name %]" target="_blank">Last modified on [% date.format(template.modtime, '%A, %B %e, %Y') %]</a>
-        &middot; <a href="[% site.uris.events %]feed.atom" type="application/atom+xml" rel="alternate"><img src="[% site.uris.images %]/events-feed.png" alt="events feed"/></a>
+<!--        &middot; <a href="[% site.uris.events %]feed.atom" type="application/atom+xml" rel="alternate"><img src="[% site.uris.images %]/events-feed.png" alt="events feed"/></a> -->
 <!--        &middot; <a href="[% site.uris.news %]feed.atom" type="application/atom+xml" rel="alternate"><img src="[% site.uris.images %]/news-feed.png" alt="news feed"/></a> -->
 <!--        &middot; <a href="http://validator.w3.org/check?uri=[% site.uri | uri %][% "/${page.section}/" | uri %]" target="_blank"><img src="[% site.uris.images %]/html5.png" alt="html5 logo"/></a> -->
       </div>
