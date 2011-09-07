@@ -12,28 +12,33 @@ site = {
 # URIs
 # ----------------------------------------------------------------------
 site.uris = {
+    assets      = "${site.uri}/assets"
     about       = "${site.uri}/about/"
     calendar    = "${site.uri}/calendar/"
     colophon    = "${site.uri}/colophon/"
     contact     = "${site.uri}/contact/"
     contrib     = "${site.uri}/membership/contrib/"
-    css         = "${site.uri}/css"
     events      = "${site.uri}/events/"
     faq         = "${site.uri}/faq/"
     home        = "${site.uri}/"
-    humans      = "${site.uri}/humans.txt"
-    images      = "${site.uri}/img"
-    js          = "${site.uri}/js"
+    humanstxt   = "${site.uri}/humans.txt"
     locations   = "${site.uri}/locations/"
     membership  = "${site.uri}/membership/"
     news        = "${site.uri}/news/"
-    pdfs        = "${site.uri}/pdfs/"
     photos      = "${site.uri}/photos/"
+    robotstxt   = "${site.uri}/robots.txt"
     schedule    = "${site.uri}/schedule/"
     search      = "${site.uri}/search/"
+    sitemap     = "${site.uri}/sitemap.xml"
     vcs         = "https://github.com/dlc/ttcsbrandon"
     workshops   = "${site.uri}/workshops/"
 }
+
+# Assets
+site.uris.css     = "${site.uris.assets}/css"
+site.uris.images  = "${site.uris.assets}/images"
+site.uris.js      = "${site.uris.assets}/js"
+site.uris.pdfs    = "${site.uris.assets}/pdfs/"
 
 site.uris.flyers    = "${site.uris.images}/flyers"
 site.uris.src_link  = "${site.uris.vcs}/commits/master"
