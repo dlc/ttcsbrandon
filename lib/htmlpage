@@ -5,7 +5,7 @@
   (C) Copyright 2008-[% date.format(date.now, '%Y') %] Taoist Tai Chi Society of the USA
   See [% site.uris.contact %] to contact this branch of the Society.
   See [% site.uris.colophon %] for information about how this site is built, if that's your thing,
-  or [% site.uris.humans %] to see information about the author/maintainer.
+  or [% site.uris.humanstxt %] to see information about the author/maintainer.
 -->
 <html dir="ltr" lang="en-US">
   <head>
@@ -13,14 +13,14 @@
     <title>[% template.title | html %] | [% site.name | html %]</title>
     <meta name="keywords" content="[% page.keywords OR page.section | html %]"/>
     <meta name="robots" content="index,follow" />
-    <meta name="generator" content="[% site.uris.humans %]" />
+    <meta name="generator" content="[% site.uris.humanstxt %]" />
     <link rel="shortcut icon" type="image/png" href="[% site.uris.images %]/ttcs-tiny.png" />
     <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />
     <link rel="search" href="[% site.uris.search %]"/>[%
 IF site.shortlinks.${page.section} %]
     <link rel="shortlink" href="[% site.shortlinks.${page.section} %]"/>[%
 END %]
-    <link rel="author" href="[% site.uris.humans %]" />
+    <link rel="author" href="[% site.uris.humanstxt %]" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/reset.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/text.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/960.css" />
