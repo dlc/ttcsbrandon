@@ -2,90 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>[% site.uris.home %]</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
-[% IF site.uris.about %]
+[% FOREACH p IN site.uris.keys;
+   u = site.uris.$p;
+   IF NOT u.search("/assets") AND
+      NOT u.search("github") AND
+      p != "home";            # Because it's included above
+%]
   <url>
-    <loc>[% site.uris.about %]</loc>
+    <loc>[% site.uris.$p %]</loc>
     <changefreq>weekly</changefreq>
   </url>
-[% END %]
-[% IF site.uris.calendar %]
-  <url>
-    <loc>[% site.uris.calendar %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.colophon %]
-  <url>
-    <loc>[% site.uris.colophon %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.contact %]
-  <url>
-    <loc>[% site.uris.contact %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.events %]
-  <url>
-    <loc>[% site.uris.events %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.faq %]
-  <url>
-    <loc>[% site.uris.faq %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.locations %]
-  <url>
-    <loc>[% site.uris.locations %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.membership %]
-  <url>
-    <loc>[% site.uris.membership %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.news %]
-  <url>
-    <loc>[% site.uris.news %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.photos %]
-  <url>
-    <loc>[% site.uris.photos %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.private %]
-  <url>
-    <loc>[% site.uris.private %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.schedule %]
-  <url>
-    <loc>[% site.uris.schedule %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.search %]
-  <url>
-    <loc>[% site.uris.search %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
-[% IF site.uris.workshops %]
-  <url>
-    <loc>[% site.uris.workshops %]</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-[% END %]
+[% END;
+END %]
 </urlset>
