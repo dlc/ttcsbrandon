@@ -23,7 +23,7 @@ var [% loc.id %] = new google.maps.Marker({
 
 google.maps.event.addListener([% loc.id %], "click", function () {
     var c = "<div id=\"map-[% loc.id %]\" style=\"height: 100px; width: 400px; \"><strong>[% loc.title %]</strong>";
-[% IF loc.addr %]    c += "<br/><a href=\"http://maps.google.com/maps?q=[% loc.addr | uri | html %]\" target=\"_blank\">[% loc.addr %]</a>";[% END %]
+[% IF loc.addr %]    c += "<br/><a href=\"http://maps.google.com/maps?q=[% loc.addr | uri | html %]\" target=\"_gmap\">[% loc.addr %]</a>";[% END %]
     c += "<br/>[% loc.desc %]";
     c += "<br/><a href=\"[% site.uris.schedule %]#[% loc.id %]\">Schedule</a></div>";
 [% IF loc.nonmember %]    c += "<br/><em>Non-member instruction and participation available</em>";[% END %]
