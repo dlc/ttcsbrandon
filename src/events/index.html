@@ -2,21 +2,9 @@
       title = 'Events'
       type  = 'html';
 
-USE events = datafile('data/events', delim = '|');
 %]
 <div id="main" class="grid_8">
-[% FOREACH e IN events %]
-  <h1 class="event section" id="[% e.date %]-[% e.id %]"><a href="[% site.uris.events %][% e.date %]-[% e.id %]/"[% %]>[% e.title %]</a> - [% e.date %]</h1>
-  <img src="[% site.uris.flyers %]/[% e.date %]-[% e.id %].jpg" />
-[% END %]
-</div>
+  <a href="[% site.uris.pdfs %]/2011-09-17-openhouse.pdf" title="Open House Flyer, 2011/09/17"><img src="[% site.uris.flyers %]/2011-09-17-openhouse.jpg"></a>
 
-<div id="sidebar" class="grid_4">
   <h2><a href="[% site.uris.workshops %]">2011 Workshop Schedule</a></h2>
-  <h2>Recent Events</h2>
-    <ul> 
-[% FOREACH e IN events %]
-      <li><a href="#[% e.date %]-[% e.id %]">[% e.title %]</a></li>
-[% END %]
-    </ul> 
 </div>
