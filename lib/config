@@ -135,7 +135,7 @@ locations = [
     lng       => -82.226693
     title     => "Vero Beach, Environmental Learning Center"
     addr      => "255 Live Oak Drive, Vero Beach, FL 32963"
-    desc      => "Located off CR 510 just east of the Intracoastalwaterway"
+    desc      => "Located off CR 510 just east of the Intracoastal Waterway"
     nonmember => 0
   }
 
