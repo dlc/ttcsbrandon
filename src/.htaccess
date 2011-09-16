@@ -5,6 +5,7 @@ rewrite_base = site.uri.replace('^.*?://[^/]+', '');
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase [% rewrite_base %]/
+    RewriteRule ^index.htm$ [% site.uris.home %] [R=301,L]
     RewriteRule ^index.html$ [% site.uris.home %] [R=301,L]
     RewriteRule ^schedule.html$ [% site.uris.schedule %] [R=301,L]
     RewriteRule ^membership.html$ [% site.uris.membership %] [R=301,L]
