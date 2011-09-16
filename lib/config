@@ -130,12 +130,12 @@ locations = [
     nonmember => 1
   }
 
-  { id        => "verobeach"
-    lat       => 27.629248
-    lng       => -80.423611
-    title     => "Vero Beach, Leisure Square Rec Center"
-    addr      => "3705 16th Street, Vero Beach, FL 32960"
-    desc      => "Located 4 blocks south of US Highway 60 on 16th St. between 43rd Ave. and 27th Ave."
+  { id        => "verobeach" 
+    lat       => 27.849055
+    lng       => -82.226693
+    title     => "Vero Beach, Environmental Learning Center"
+    addr      => "255 Live Oak Drive, Vero Beach, FL 32963"
+    desc      => "Located off CR 510 just east of the Intracoastalwaterway"
     nonmember => 0
   }
 
