@@ -3,12 +3,12 @@
       description = 'Class Schedules'
       type  = 'html'
 %]
-<div id="main" class="grid_8">
-  <h1 class="section">Class Schedules - Effective May 22, 2011</h2>
+<div id="main" class="grid_12">
+  <h1 class="section">Class Schedules - Effective September 17, 2011</h2>
 
   <!-- Brandon Center -->
   <div id="brandon" class="schedule">
-    <h2 class="section">Brandon Center</h2>
+    <h2 class="section"><a href="http://maps.google.com/maps?q=[% lochash.brandon.addr | uri | html %]" target="_gmap">Brandon Center</a></h2>
 
     <table class="schedule">
       <!-- Beginner -->
@@ -128,7 +128,7 @@
 
   <!-- Temple Terrace -->
   <div id="templeterrace" class="schedule">
-    <h2 class="section">Temple Terrace</h2>
+    <h2 class="section"><a href="http://maps.google.com/maps?q=[% lochash.templeterrace.addr | uri | html %]" target="_gmap">Temple Terrace</a></h2>
 
     <table class="schedule">
       <tr>
@@ -224,7 +224,7 @@
 
   <!-- Tampa -->
   <div id="palmaceia" class="schedule">
-    <h2 class="section">Tampa: Palma Ceia Presbyterian Church</h2>
+    <h2 class="section"><a href="http://maps.google.com/maps?q=[% lochash.palmaceia.addr | uri | html %]" target="_gmap">Tampa: Palma Ceia Presbyterian Church</a></h2>
 
     <table class="schedule">
       <tr>
@@ -240,7 +240,7 @@
 
   <!-- Sebastian -->
   <div id="sebastian" class="schedule">
-    <h2 class="section">Sebastian: Roseland Community Building</h2>
+    <h2 class="section"><a href="http://maps.google.com/maps?q=[% lochash.sebastian.addr | uri | html %]" target="_gmap">Sebastian: Roseland Community Building</a></h2>
 
     <table class="schedule">
       <tr>
@@ -276,7 +276,7 @@
 
   <!-- Vero Beach -->
   <div id="verobeach" class="schedule">
-    <h2 class="section">Vero Beach: Leisure Square Recreational Center</h2>
+    <h2 class="section"><a href="http://maps.google.com/maps?q=[% lochash.verobeach.addr | uri | html %]" target="_gmap">Vero Beach: Leisure Square Recreational Center</a></h2>
 
     <table class="schedule">
       <tr>
@@ -300,11 +300,11 @@
 
   <!-- Wesley Chapel -->
   <div id="wesleychapel" class="schedule">
-    <h2 class="section">Wesley Chapel: Trinity Church of Wesley Chapel</h2>
+    <h2 class="section"><a href="http://maps.google.com/maps?q=[% lochash.wesleychapel.addr | uri | html %]" target="_gmap">Wesley Chapel: Trinity Church of Wesley Chapel</a></h2>
 
     <table class="schedule">
       <tr>
-        <th id="wesleychapen-fun" colspan="2">Tai Chi For Fun And Fitness</th>
+        <th id="wesleychapel-fun" colspan="2">Tai Chi For Fun And Fitness</th>
       </tr>
       <tr class="odd">
         <td>Wednesday</td>
@@ -316,20 +316,4 @@
   <br />
   <br />
 
-</div>
-
-<div id="sidebar" class="grid_4">
-  <h2>Schedules by Location</h2>
-  <ul>
-[% FOREACH loc IN locations %]
-    <li><a href="#[% loc.id %]">[% loc.title %]</a></li>[%
-END %]
-  </ul>
-
-  <h2>Location Maps</h2>
-  <ul>
-[% FOREACH loc IN locations %]
-    <li><a href="http://maps.google.com/maps?q=[% loc.addr | uri | html %]" rel="external" target="_blank">[% loc.title %]</a></li>[%
-END %]
-  </ul>
 </div>
