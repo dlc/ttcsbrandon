@@ -12,4 +12,7 @@ rewrite_base = site.uri.replace('^.*?://[^/]+', '');
     RewriteRule ^events.html$ [% site.uris.events %] [R=301,L]
     RewriteRule ^news.html$ [% site.uris.news %] [R=301,L]
     RewriteRule ^multimedia.html$ [% site.uris.photos %] [R=301,L]
+    RewriteRule ^about.html$ [% site.uris.about %] [R=301,L]
+    RewriteRule ^oh-2011-09.pdf$ [% site.uris.pdfs %]/2011-09-17-openhouse.pdf [R=301,L]
+    RewriteRule ^wesley-chapel-2011-09.pdf$ [% site.uris.pdfs %]/2011-09-wesleychapel.pdf [R=301,L]
 </IfModule>
