@@ -1,5 +1,8 @@
 #!/bin/sh
 
-DEST=/public_html/dev/
+DEST=/public_html/
+
+echo "Publishing live site to $DEST"
+echo 
 
 ncftpput -R -y -T .tmp taichi "$DEST" ./html/* ./html/.htaccess $@
