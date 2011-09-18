@@ -2,5 +2,5 @@
 AuthName "[% abbr.ttcsusa %], Brandon, FL"
 AuthType Basic
 AuthBasicProvider file
-AuthUserFile "/hosted/taoist/brandon/htaccess"
+AuthUserFile "/hosted/taoist/brandon/htpasswd"
 require valid-user
