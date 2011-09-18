@@ -11,7 +11,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>[% template.title | html %] | [% site.name | html %] | [% site.subname | html %][% IF page.protected %] [TTCS Members Only][% END %]</title>
-    <meta name="keywords" content="[% page.keywords OR page.section | html %]"/>
+    <meta name="keywords" content="[% page.keywords OR page.section | html %]"/>[%
+IF page.description %]
+    <meta name="description" content="[% page.description | html %]"/>[%
+END %]
     <meta name="robots" content="index,follow" />
     <meta name="generator" content="[% site.uris.humanstxt %]" />
     <link rel="shortcut icon" type="image/png" href="[% site.uris.images %]/ttcs-tiny.png" />
