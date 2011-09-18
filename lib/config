@@ -86,6 +86,7 @@ page = {
     top         = template.top or 0
     next        = template.next or ''
     prev        = template.prev or ''
+    protected   = template.protected or 0
 }
 
 page.section = page.file.replace('/?index.html$', '');
