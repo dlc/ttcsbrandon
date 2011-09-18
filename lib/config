@@ -83,6 +83,7 @@ page = {
     type        = template.type or 'text'
     date        = template.date or template.modtime
     keywords    = template.keywords or ''
+    description = template.description or ''
     top         = template.top or 0
     next        = template.next or ''
     prev        = template.prev or ''
