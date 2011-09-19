@@ -1,0 +1,15 @@
+[% META
+    title   = 'Photograph - [* photo_date *]/[* photo_name *]'
+    type    = 'html'
+%]
+<div id="main" class="grid_12">
+    <div class="photo">
+      <img src="[% site.uris.photos %]/[* photo_date *]/[* photo_name *].[* photo_ext *]"/>
+    </div>
+
+    <div id="photo-info">
+      <span class="previous">[* IF photo_prev_name *]<a href="[% site.uris.media %]/[* photo_prev_name *]/">[* END *]Previous Photo[* IF photo_prev_name *]</a> ([* photo_prev_date *])[* END *]</span>
+      <span class="current">This photo was taken on [* photo_date *].</span>
+      <span class="next">[* IF photo_next_name *]<a href="[% site.uris.media %]/[* photo_next_name *]/">[* END *]Next Photo[* IF photo_next_name *]</a> ([* photo_next_date *])[* END *]</span>
+    </div>
+</div>

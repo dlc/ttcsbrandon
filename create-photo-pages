@@ -1,0 +1,94 @@
+#!/usr/bin/perl -w
+
+# ----------------------------------------------------------------------
+# This script assumes it is invoked with the path to the images as
+# $ARGV[0], and that it will create photo pages under src/media
+# ----------------------------------------------------------------------
+
+use strict;
+use Cwd qw(cwd);
+use Data::Dumper;
+use File::Basename qw(basename dirname);
+use File::Find qw(find);
+use File::Path qw(mkpath);
+
+my $start = $ARGV[0]
+    || die "Usage: $0 /path/to/images\n";
+
+unless (-d $start) {
+    die "Photo source directory ($start) doesn't exists\n"
+}
+
+my @photos;
+find(sub {
+    if (-f $_) {
+        my ($ext) = /\.([a-zA-Z]+)$/;
+        my $name = basename($_, $ext);
+        $name =~ s/\.$//;
+        my ($date) = $File::Find::name =~ m!/(\d\d\d\d/\d\d/\d\d)/$name\.$ext$!;
+
+        push @photos, {
+            name  => $name,
+            date  => $date,
+            ext   => $ext,
+        }
+    }
+}, $start);
+
+@photos = sort { $a->{'name'} <=> $b->{'name'} } @photos;
+
+my $c = 0;
+for (my $i = 0; $i < @photos; $i++) {
+    my $photo = $photos[$i];
+    mkpath "src/media/$photo->{'name'}";
+
+    my @defines = (
+        map {
+            my $x = $_;
+            "--define", qq!photo_$x="$photo->{$x}"!,
+        } qw(name date ext)
+    );
+
+    if ($i != 0) {
+        my $prev = $photos[ $i - 1 ];
+        push @defines, 
+            map {
+                my $x = $_;
+                "--define", qq!photo_prev_$x="$prev->{$x}"!
+            } qw(name date ext);
+    }
+
+    if ($i != (@photos - 1)) {
+        my $next = $photos[ $i - 1 ];
+        push @defines, 
+            map {
+                my $x = $_;
+                "--define", qq!photo_next_$x="$next->{$x}"!
+            } qw(name date ext);
+    }
+
+    print "Building src/media/$photo->{'name'}\n";
+    system(qq!tpage --tag_style=star @defines !
+         . qq!lib/photopage > src/media/$photo->{'name'}/index.html!);
+    $c++;
+}
+
+print "Built $c image pages\n";
+
+my $htaccess = "src/.htaccess";
+my $htdata;
+if (open my $fh, $htaccess) {
+    local $/;
+    $htdata = <$fh>;
+}
+else {
+    die "Can't update $htaccess: $!";
+}
+
+if (open my $fh, ">", $htaccess) {
+    $htdata =~ s!(RewriteRule\s+\^media/\$)\s+.*!\1 [% site.uris.media %]/$photos[-1]->{'name'}/ [R=301,L]!;
+    print $fh $htdata;
+}
+else {
+    die "Can't open $htaccess for writing: $!";
+}
