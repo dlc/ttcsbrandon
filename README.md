@@ -32,6 +32,17 @@ suitable for uploading to a web server.  You might need to edit the
 configuration bits in lib/config, specifically the uri line, so that
 they are consistent with the environment to which you're publishing.
 
+Adding Photos
+=============
+
+Adding photos is a multi-step process.  First, add the images themselves to
+`src/assets/photos`, then run `create-photo-pages`.  `create-photo-pages`
+will create a bunch of directories and files in `src/media` that point to
+the new photos and contain next/previous links.  When it finishes running,
+`create-photo-pages` will modify `src/.htaccess` so that `media/` redirects
+to the latest photo.
+
   [ptt]: http://oreilly.com/catalog/9780596004767
   [tt2]: http://www.tt2.org/download/
   [Perl]: http://www.perl.org/get.html
+

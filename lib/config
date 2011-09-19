@@ -25,7 +25,7 @@ site.uris = {
     locations   = "${site.uri}/locations/"
     membership  = "${site.uri}/membership/"
     news        = "${site.uri}/news/"
-    photos      = "${site.uri}/photos/"
+    media       = "${site.uri}/media/"
     robotstxt   = "${site.uri}/robots.txt"
     schedule    = "${site.uri}/schedule/"
     search      = "${site.uri}/search/"
@@ -37,6 +37,7 @@ site.uris = {
 # Assets
 site.uris.css     = "${site.uris.assets}/css"
 site.uris.images  = "${site.uris.assets}/images"
+site.uris.photos  = "${site.uris.assets}/photos"
 site.uris.js      = "${site.uris.assets}/js"
 site.uris.pdf     = "${site.uris.assets}/pdf"
 site.uris.pdfs    = site.uris.pdf

@@ -58,6 +58,7 @@ END %]
           [% ul_hotlink("locations",   "Locations")    %]
           [% ul_hotlink("events",      "Events")       %]
           [% ul_hotlink("membership",  "Membership")   %]
+          [% ul_hotlink("media",       "Media")        %]
           [% ul_hotlink("about",       "About Us")     %]
           [% ul_hotlink("contact",     "Contact")      %]
         </ul>
