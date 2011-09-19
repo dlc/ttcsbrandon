@@ -75,6 +75,7 @@ for (my $i = 0; $i < @photos; $i++) {
 
 print "Built $c image pages\n";
 
+# Rewrite .htaccess to point /media to the latest
 my $htaccess = "src/.htaccess";
 my $htdata;
 if (open my $fh, $htaccess) {
@@ -88,7 +89,26 @@ else {
 if (open my $fh, ">", $htaccess) {
     $htdata =~ s!(RewriteRule\s+\^media/\$)\s+.*!$1 [% site.uris.media %]$photos[-1]->{'name'}/ [R=301,L]!;
     print $fh $htdata;
+    close $fh;
+    print "Rewrote $htaccess\n";
 }
 else {
     die "Can't open $htaccess for writing: $!";
+}
+
+# Build random image thingie
+if (open my $fh, ">", "lib/photos") {
+    print $fh "[%\nphotos = [\n";
+    for my $p (@photos) {
+        print $fh "   {\n";
+        print $fh "       name = '$p->{'name'}'\n";
+        print $fh "       date = '$p->{'date'}'\n";
+        print $fh "       ext  = '$p->{'ext'}'\n";
+        print $fh "   }\n";
+    }
+    print $fh "]\n-%]";
+    print "Rebuilt lib/photos\n";
+}
+else {
+    die "Can't open lib/photos for writing: $!";
 }
