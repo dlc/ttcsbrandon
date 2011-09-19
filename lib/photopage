@@ -1,6 +1,7 @@
 [% META
-    title   = 'Photograph - [* photo_date *]/[* photo_name *]'
+    title   = 'Photograph ([* photo_date *])'
     type    = 'html'
+    section = 'media'
 %]
 <div id="main" class="grid_12">
     <div class="photo">
@@ -9,9 +10,9 @@
 
     <table id="photo-info" width="100%">
       <tr>
-        <td class="previous" width="25%" style="text-align: left;">[* IF photo_prev_name *]<a href="[% site.uris.media %]/[* photo_prev_name *]/">[* END *]Previous Photo[* IF photo_prev_name *]</a> ([* photo_prev_date *])[* END *]</td>
-        <td class="current" width="50%" style="text-align: center;">This photo was taken on [* photo_date *].</td>
-        <td class="next" width="25%" style="text-align: right;">[* IF photo_next_name *]<a href="[% site.uris.media %]/[* photo_next_name *]/">[* END *]Next Photo[* IF photo_next_name *]</a> ([* photo_next_date *])[* END *]</td>
+        <td class="previous" width="25%" style="text-align: left;">[* IF photo_prev_name *]<a href="[% site.uris.media %][* photo_prev_name *]/">[* END *]Previous Photo[* IF photo_prev_name *]</a> ([* photo_prev_date *])[* END *]</td>
+        <td class="current" width="50%" style="text-align: center;"><a href="[% site.uris.media %][* photo_name *]/">This photo</a> was taken on <strong>[* photo_date *]</strong>.</td>
+        <td class="next" width="25%" style="text-align: right;">[* IF photo_next_name *]<a href="[% site.uris.media %][* photo_next_name *]/">[* END *]Next Photo[* IF photo_next_name *]</a> ([* photo_next_date *])[* END *]</td>
       </tr>
     </table>
 </div>

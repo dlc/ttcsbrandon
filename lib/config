@@ -89,9 +89,12 @@ page = {
     next        = template.next or ''
     prev        = template.prev or ''
     protected   = template.protected or 0
-}
+    section     = template.section or ''
+};
 
-page.section = page.file.replace('/?index.html$', '');
+IF NOT page.section;
+    page.section = page.file.replace('/?index.html$', '');
+END;
 
 # ----------------------------------------------------------------------
 # Locations

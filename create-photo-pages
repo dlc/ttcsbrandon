@@ -86,7 +86,7 @@ else {
 }
 
 if (open my $fh, ">", $htaccess) {
-    $htdata =~ s!(RewriteRule\s+\^media/\$)\s+.*!\1 [% site.uris.media %]/$photos[-1]->{'name'}/ [R=301,L]!;
+    $htdata =~ s!(RewriteRule\s+\^media/\$)\s+.*!$1 [% site.uris.media %]$photos[-1]->{'name'}/ [R=301,L]!;
     print $fh $htdata;
 }
 else {

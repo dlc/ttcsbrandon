@@ -16,5 +16,5 @@ rewrite_base = site.uri.replace('^.*?://[^/]+', '');
     RewriteRule ^oh-2011-09.pdf$ [% site.uris.pdfs %]/2011-09-17-openhouse.pdf [R=301,L]
     RewriteRule ^wesley-chapel-2011-09.pdf$ [% site.uris.pdfs %]/2011-09-wesleychapel.pdf [R=301,L]
     RewriteRule ^dev(/.*) [% site.uri %]$1 [R=301,L]
-    RewriteRule ^media/$ [% site.uris.media %]/1316231565/ [R=301,L]
+    RewriteRule ^media/$ [% site.uris.media %]1316231565/ [R=301,L]
 </IfModule>
