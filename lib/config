@@ -90,6 +90,7 @@ page = {
     prev        = template.prev or ''
     protected   = template.protected or 0
     section     = template.section or ''
+    pdf_version = template.pdf_version or ''
 };
 
 IF NOT page.section;

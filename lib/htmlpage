@@ -18,7 +18,10 @@ END %]
     <meta name="robots" content="index,follow" />
     <meta name="generator" content="[% site.uris.humanstxt %]" />
     <link rel="shortcut icon" type="image/png" href="[% site.uris.images %]/ttcs-tiny.png" />
-    <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />
+    <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />[%
+IF page.pdf_version %]
+    <link rel="alternate" type="application/pdf" href="[% site.uris.pdf %]/[% page.pdf_version %]"/>[%
+END %]
     <link rel="search" href="[% site.uris.search %]"/>[%
 IF site.shortlinks.${page.section} %]
     <link rel="shortlink" href="[% site.shortlinks.${page.section} %]"/>[%
