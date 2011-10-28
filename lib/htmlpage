@@ -17,6 +17,7 @@ IF page.description %]
 END %]
     <meta name="robots" content="index,follow" />
     <meta name="generator" content="[% site.uris.humanstxt %]" />
+    <meta name="google-site-verification" content="ttSzqqX68d5Dl7uYq9k6fcTmZO5F4vtcsTOXzs1ssaQ" />
     <link rel="shortcut icon" type="image/png" href="[% site.uris.images %]/ttcs-tiny.png" />
     <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />[%
 IF page.pdf_version %]
