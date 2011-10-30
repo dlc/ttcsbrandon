@@ -1,10 +1,8 @@
 [% META
-    title   = 'Random Photo'
-    type    = 'html';
+    type    = 'text';
 
     PROCESS 'photos';
-%]
-<?php
+%]<?php
 $photos = array(
 [% FOREACH photo IN photos %]
     array(
@@ -13,13 +11,9 @@ $photos = array(
         'ext'   => '[% photo.ext %]'
     ),
 [% END %]);
-?>
-<div id="main">
-  <a href="[% site.uris.media %]<?php
 
-            $sel = $photos[ rand(0, (count($photos) - 1)) ];
-        
-            echo $sel['name'];
-        ?>/"/><img src="[% site.uris.photos %]/<?php echo $sel['date'] ?>/<?php echo $sel['name'] ?>.<?php echo $sel['ext'] ?>"/>
-  </a>
-</div>
+$sel = $photos[ rand(0, (count($photos) - 1)) ];
+
+header("Location: [% site.uris.media %]" . $sel['name'] . "/");
+
+?>
