@@ -15,12 +15,11 @@ $photos = array(
 [% END %]);
 ?>
 <div id="main">
-    <a href="[% site.uris.media %]random.php">
-        <a href="[% site.uris.media %]<?php
+  <a href="[% site.uris.media %]<?php
 
             $sel = $photos[ rand(0, (count($photos) - 1)) ];
         
             echo $sel['name'];
-        ?>/"/>
-    </a>
+        ?>/"/><img src="[% site.uris.photos %]/<?php echo $sel['date'] ?>/<?php echo $sel['name'] ?>.<?php echo $sel['ext'] ?>"/>
+  </a>
 </div>
