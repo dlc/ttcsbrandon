@@ -1,1 +1,1 @@
-        Twitter widget 
+[% PROCESS "twitter-widget" %]
