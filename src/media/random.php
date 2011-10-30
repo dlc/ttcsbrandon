@@ -15,7 +15,7 @@ $photos = array(
 [% END %]);
 ?>
 <div id="main">
-    <a href="[% site.uris.media %]randon.php">
+    <a href="[% site.uris.media %]random.php">
         <a href="[% site.uris.media %]<?php
 
             $sel = $photos[ rand(0, (count($photos) - 1)) ];
