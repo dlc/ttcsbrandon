@@ -17,4 +17,9 @@
       (displ OR term) | html;
       "</a>";
     END;
+
+    MACRO gmap(addr) BLOCK;
+        "http://maps.google.com/maps?q=";
+        addr | uri | html;
+    END;
 -%]
