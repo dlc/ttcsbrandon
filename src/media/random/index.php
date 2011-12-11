@@ -7,6 +7,6 @@ include "../photo-data.php";
 
 $sel = $photos[ rand(0, (count($photos) - 1)) ];
 
-header("Location: [% site.uris.media %]" . $sel['name'] . "/");
+header("Location: [% site.uris.media %]" . $sel['name'] . "/#photo");
 
 ?>
