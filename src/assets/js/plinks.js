@@ -16,7 +16,7 @@ function addpLinks() {
             var plink = document.createElement('a');
             plink.href = document.location.href.split('#')[0] + '#' + current.id;
             plink.className = 'plink';
-            plink.appendChild(document.createTextNode(' ¶'));
+            plink.appendChild(document.createTextNode(' ☯'));
             current.appendChild(plink);
         }
     }
