@@ -112,11 +112,11 @@ locations = [
   }
 
   { id        => "templeterrace"
-    lat       => 28.055144
-    lng       => -82.367503
-    title     => "Temple Terrace, First United Church of Tampa"
-    addr      => "7308 East Fowler Avenue, Tampa, FL 33617"
-    desc      => "Located 1.4 miles west of Interstate 75 (at the northeast corner of East Fowler Avenue and Riverhills Drive), near the Hillsborough River."
+    lat       => 28.046985
+    lng       => -82.393545
+    title     => "Temple Terrace, Sherwood Forest"
+    addr      => "10919 N 56th Street, Temple Terrace, FL 33617"
+    desc      => "South of Fowler and north of Whiteway, on the east side of 56th St.  We are in the southern most building in Sherwood Forest, next to Emma's Cakes."
     nonmember => 0
   }
 
