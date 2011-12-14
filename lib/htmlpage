@@ -71,7 +71,7 @@ END %]
         <ul>
           [% ul_hotlink("",            "Home", "home") %]
           [% ul_hotlink("schedule",    "Schedule")     %]
-          [% ul_hotlink("calendar",    "Calendar")     %]
+          <!-- Google broke this! [% ul_hotlink("calendar",    "Calendar")     %]-->
           [% ul_hotlink("locations",   "Locations")    %]
           [% ul_hotlink("events",      "Events")       %]
           [% ul_hotlink("membership",  "Membership")   %]
