@@ -1,8 +1,30 @@
 #!/bin/sh
 
-DEST=/public_html/
+SITE=taichi
+DEST=/public_html
+CWD=`pwd`
 
-echo "Publishing live site to $DEST"
+PUBLIST=/tmp/publist
+rm -f "$PUBLIST"
+
+case "$1" in
+    images)
+        if cd ./html; then find . -name \*.jpg -o -name \*.gif -o -name \*.png -o -name \*.ico -o -name \*.pdf | sed -e 's!^\./!!' | while read i; do d=`dirname $i`; echo "cd $DEST/$d"; echo "put $CWD/html/$i" ; done ; fi > "$PUBLIST"
+        ;;
+    site|html)
+        if cd ./html; then find . -type f | grep -v jpg | grep -v png | grep -v gif | grep -v ico | grep -v pdf | sed -e 's!^\./!!' | while read i; do d=`dirname $i`; f=`basename $i`; echo "cd $DEST/$d"; echo "put $CWD/html/$i"; done; fi > "$PUBLIST"
+        ;;
+
+    *)
+        echo "Usage: $0 [images|site]"
+        exit 1
+        ;;
+esac
+
+
+echo "Publishing $1 to $SITE:$DEST"
 echo 
 
-ncftpput -R -y -T .tmp taichi "$DEST" ./html/* ./html/.htaccess $@
+cat "$PUBLIST" | ncftp $SITE
+
+rm -f "$PUBLIST"
