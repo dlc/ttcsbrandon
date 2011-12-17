@@ -22,7 +22,8 @@
 
   <p id="p-20120107"><span class="leader">January 7</span> &middot; We will be having our <a href="[% site.uris.pdfs %]/2012-01-07-openhouse.pdf">January 2012 Open House</a>, from 11:00 to 1:00 at our <a href="[% gmap(lochash.brandon.addr) %]" rel="external" target="_gmap">Brandon location</a> and from 2:00 to 3:00 at our <a href="[% gmap(lochash.templeterrace.addr) %]" rel="external" target="_gmap">Temple Terrace location</a>.
 
-  <p id="p-20120114"><span class="leader">January 14-15</span> &middot; Dunedin will be hosting a tai chi workshop that Brandon was originally supposed to have.</p>
+  <p id="p-20120114"><span class="leader">January 14-15</span> &middot; <a href="[% gmap("1370 Main Street, Dunedin, FL 34698") %]">Dunedin</a> will be hosting a <a href="http://www.usa.taoist.org/Dunedin_January_2012.pdf">Tai Chi Intensive</a>, led by Tony Kwong. Tony is the Treasurer for the <a href="http://www.taoist.org/">International [% abbr.ttcs %]</a> and he's the person who has been training your CIT's the last two years.  He has dedicated himself to helping the rest of us improve in our training faster and more efficiently. Tony hasn't been in our area for several years now. Please take advantage of this asset if you are able.</p>
+
 
       <p>See more events on the <a href="[% site.uris.events %]">events page</a>.</p>
       <hr/>
