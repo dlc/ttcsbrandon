@@ -15,9 +15,16 @@ case "$1" in
         if cd ./html; then find . -type f | grep -v jpg | grep -v png | grep -v gif | grep -v ico | grep -v pdf | sed -e 's!^\./!!' | while read i; do d=`dirname $i`; f=`basename $i`; echo "cd $DEST/$d"; echo "put $CWD/html/$i"; done; fi > "$PUBLIST"
         ;;
 
-    *)
-        echo "Usage: $0 [images|site]"
-        exit 1
+    */*)
+        if [ -f "$1" ]
+        then
+            i=`echo $1 | sed -e 's!^html/!!'`
+            d=`dirname $i`
+            (echo "cd $DEST/$d" ; echo "put $CWD/html/$i") > "$PUBLIST"
+        else
+            echo "Usage: $0 [images|site]"
+            exit 1
+        fi
         ;;
 esac
 
