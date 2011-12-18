@@ -6,8 +6,7 @@
   <div class="container_12">
 
     <div class="grid_5">
-      <!--a href="[% site.uris.pdfs %]/2012-01-07-openhouse.pdf"><img src="[% site.uris.images %]/thumbs/2012-01-07-openhouse.jpg" /></a-->
-      <a href="[% site.uris.pdfs %]/2011-12-17-tea-and-cookies.pdf"><img src="[% site.uris.images %]/thumbs/2011-12-17-tea-and-cookies.jpg" /></a>
+      <a href="[% site.uris.pdfs %]/2012-01-07-openhouse.pdf"><img src="[% site.uris.images %]/thumbs/2012-01-07-openhouse.jpg" /></a>
 
       <hr/>
 
@@ -15,8 +14,6 @@
     </div>
 
     <div class="grid_7">
-      <h2>Tea &amp; Cookies</h2>
-        <p id="p-20111217">Come join us <a href="[% gmap(lochash.templeterrace.addr) %]">at our new Temple Terrace location</a> on Saturday, December 17, 2011, from 10:30 to 2:00, to check out our new space, drink some tea, eat some cookies and do a little Tai Chi to celebrate. A $5.00 donation is requested, but not required.</p>
 
       <h2>Upcoming Branch Events</h2>
 
