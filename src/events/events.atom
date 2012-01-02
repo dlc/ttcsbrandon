@@ -1,0 +1,18 @@
+[% META
+    title = 'Events'
+    type  = 'text';
+
+  USE date;
+%]<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>[% template.title | html %] | [% site.name | html %] | [% site.subname | html %][% IF page.protected %] [TTCS Members Only][% END %]</title>
+  <link rel="alternate" type="text/html" href="[% site.uris.events %]"/>
+  <link rel="self" type="application/atom+xml" href="[% site.uris.events %]events.atom"/>
+  <rights>Copyright &#x39; 2008-[% date.format(date.now, "%Y") %], [% abbr.ttcsusa %]</rights>
+  <generator uri="[% site.uris.colophon %]">Love</generator>
+  <updated>[% date.format(date.now, "%Y-%m-%dT%H%:%M:%SZ", gmt = 1) %]</updated>
+  <id>[% site.uris.home %]</id>
+
+[% events(100, "events_xml") %]
+
+</feed>

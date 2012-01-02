@@ -79,23 +79,24 @@ site.shortlinks = {
 # Page info
 # ----------------------------------------------------------------------
 page = {
-    file        = template.name
-    title       = template.title
-    about       = template.about
-    type        = template.type or 'text'
-    date        = template.date or template.modtime
-    keywords    = template.keywords or ''
-    description = template.description or ''
-    top         = template.top or 0
-    next        = template.next or ''
-    prev        = template.prev or ''
-    protected   = template.protected or 0
-    section     = template.section or ''
-    pdf_version = template.pdf_version or ''
+    file            = template.name
+    title           = template.title
+    about           = template.about
+    type            = template.type or 'text'
+    date            = template.date or template.modtime
+    keywords        = template.keywords or ''
+    description     = template.description or ''
+    top             = template.top or 0
+    next            = template.next or ''
+    prev            = template.prev or ''
+    protected       = template.protected or 0
+    section         = template.section or ''
+    pdf_version     = template.pdf_version or ''
+    atom_version    = template.atom_version or ''
 };
 
 IF NOT page.section;
-    page.section = page.file.replace('/?index.html$', '');
+    page.section = page.file.replace('/?index.(html|php)$', '');
 END;
 
 # ----------------------------------------------------------------------

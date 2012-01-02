@@ -1,0 +1,5 @@
+  <!-- [% evt.title %] -->
+  <p id="p-[% date.format("${evt.dtime} 12:00:00", '%Y%m%d') %]">
+    <span class="leader">[% date.format("${evt.dtime} 12:00:00", '%B %e') %]</span> &middot;
+    [% evt.content | eval %]
+  </p> 

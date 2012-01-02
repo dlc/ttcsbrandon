@@ -17,7 +17,7 @@
 
       <h2>Upcoming Branch Events</h2>
 
-[% events(3) %]
+[% events(3, "events_html") %]
 
       <p>See more events on the <a href="[% site.uris.events %]">events page</a>.</p>
       <hr/>

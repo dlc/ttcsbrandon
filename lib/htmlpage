@@ -22,7 +22,10 @@ END %]
     <link rel="canonical" href="[% site.uri %]/[% page.section %][% page.section AND "/" %]" />[%
 IF page.pdf_version %]
     <link rel="alternate" type="application/pdf" href="[% site.uris.pdf %]/[% page.pdf_version %]"/>[%
-END %]
+END;
+IF page.atom_version %]
+    <link rel="alternate" type="application/atom+xml" href="[% page.atom_version %]"/>[%
+END; %]
     <link rel="search" href="[% site.uris.search %]"/>[%
 IF site.shortlinks.${page.section} %]
     <link rel="shortlink" href="[% site.shortlinks.${page.section} %]"/>[%
@@ -35,9 +38,10 @@ END %]
 [% IF page.prev
 %]    <link rel="prev" href="[% site.uri %]/[% page.prev %]" />
 [% END;
-    IF page.next
+   IF page.next
 %]    <link rel="next" href="[% site.uri %]/[% page.next %]" />
-[% END %]
+[% END;
+%]
     <script src="[% site.uris.js %]/plinks.js" type="text/javascript"></script>
 
     <!-- Google Analytics W00t -->
@@ -93,7 +97,7 @@ END %]
       <!-- Footer -->
       <div id="footer" class="grid_12">
         &copy; Copyright 2008-[% date.format(date.now, '%Y') %]
-        &middot; <a href="http://www.usa.taoist.org/" target="taichi">Toaist Tai Chi Society of the USA</a>&reg;
+        &middot; <a href="http://www.usa.taoist.org/" target="taichi">[% abbr.ttcsusa %]</a>&reg;
         &middot; <a href="[% site.uris.colophon %]">Generated with love</a>
         &middot; Last modified on [% date.format(template.modtime, '%A, %B %e, %Y') %]
       </div>

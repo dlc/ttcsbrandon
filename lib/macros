@@ -26,19 +26,16 @@
     END;
 
     # Parses the events data file and emits the Right Things
-    MACRO events(num) BLOCK;
+    MACRO events(num, tpl) BLOCK;
         SET cur = 0;
         SET today = date.format(date.now, "%Y%m%d");
         USE evts = datafile("data/events.csv", delim="\t");
         FOREACH evt = evts;
             dt = evt.dtime.replace("[^0-9]", "");
             IF today <= dt;
-                IF cur < num %]
-  <p id="p-[% date.format("${evt.dtime} 12:00:00", '%Y%m%d') %]">
-    <span class="leader">[% date.format("${evt.dtime} 12:00:00", '%B %e') %]</span> &middot;
-    [% evt.content | eval %]
-  </p> 
-[%              END;
+                IF cur < num;
+                    PROCESS $tpl;
+                END;
                 cur = cur + 1;
             END;
         END;
