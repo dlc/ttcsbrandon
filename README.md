@@ -24,8 +24,9 @@ The commands to run are:
 
     $ git clone git://github.com/dlc/ttcsbrandon.git
     $ cd ttcsbrandon
-    $ ttree -f ttree.cfg
-    $ ncftpput -R taichi /public_html html/*
+    $ sh build -a
+    $ sh publish site
+    $ sh publish images
 
 The resulting site will be built into ./html, and it is then
 suitable for uploading to a web server.  You might need to edit the
