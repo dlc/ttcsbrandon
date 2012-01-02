@@ -10,7 +10,7 @@
 
       <hr/>
 
-      <p id="20111101"><span class="leader">The Empty Step</span> &middot; The <a href="http://dunedin.florida.usa.taoist.org/pdf/201112issue29.pdf">December 2011 edition</a> is now available!  Previous issues are also <a href="http://dunedin.florida.usa.taoist.org/archive.php">available from the archive</a>.</p>
+      <p id="20111101"><span class="leader">The Empty Step</span> &middot; The <a href="http://dunedin.florida.usa.taoist.org/pdf/201201issue30.pdf">January 2012 edition</a> is now available!  Previous issues are also <a href="http://dunedin.florida.usa.taoist.org/archive.php">available from the archive</a>.</p>
     </div>
 
     <div class="grid_7">
@@ -21,7 +21,7 @@
 
   <p id="p-20120108"><span class="leader">January 8</span> &middot; Our <a href="[% site.uris.schedule %]">new class schedule</a> begins today! The <a href="[% site.uris.calendar %]">calendar</a> has been updated to include the classes at our <a href="[% gmap(lochash.templeterrace.addr) %]" target="_gmap">Temple Terrace</a> location as well as our <a href="[% gmap(lochash.brandon.addr) %]" target="_gmap">Brandon</a> location.</p>
 
-  <p id="p-20120114"><span class="leader">January 14-15</span> &middot; <a href="[% gmap("1370 Main Street, Dunedin, FL 34698") %]">Dunedin</a> will be hosting a <a href="http://www.usa.taoist.org/Dunedin_January_2012.pdf">Tai Chi Intensive</a>, led by Tony Kwong. Tony is the Treasurer for the <a href="http://www.taoist.org/">International [% abbr.ttcs %]</a> and he's the person who has been training your CIT's the last two years.  He has dedicated himself to helping the rest of us improve in our training faster and more efficiently. Tony hasn't been in our area for several years now. Please take advantage of this asset if you are able.</p>
+  <p id="p-20120114"><span class="leader">January 14-15</span> &middot; <a href="[% gmap("1370 Main Street, Dunedin, FL 34698") %]">Dunedin</a> will be hosting a <a href="http://www.usa.taoist.org/Dunedin_January_2012.pdf">Tai Chi Intensive</a>, led by Tony Kwong. We've had many people from Brandon, Temple Terrace, and Vero Beach sign (over 30 at this date).  If you're not sure if you can go, or are undecided, please fax a registration form as soon as possible so the hosting branch can prepare for billeting and meals.</p>
 
 
       <p>See more events on the <a href="[% site.uris.events %]">events page</a>.</p>
