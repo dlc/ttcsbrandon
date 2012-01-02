@@ -23,6 +23,7 @@
 
   <p id="p-20120114"><span class="leader">January 14-15</span> &middot; <a href="[% gmap("1370 Main Street, Dunedin, FL 34698") %]">Dunedin</a> will be hosting a <a href="http://www.usa.taoist.org/Dunedin_January_2012.pdf">Tai Chi Intensive</a>, led by Tony Kwong. We've had many people from Brandon, Temple Terrace, and Vero Beach sign (over 30 at this date).  If you're not sure if you can go, or are undecided, please fax a registration form as soon as possible so the hosting branch can prepare for billeting and meals.</p>
 
+  <p id="p-20120129"><span class="leader">January 29</span> &middot; January 29 will be the Chinese New Year banquet hosted by the <a href="http://stpetersburg.florida.usa.taoist.org/">St. Petersburg branch</a>.  Tickets are $25 each.</p>
 
       <p>See more events on the <a href="[% site.uris.events %]">events page</a>.</p>
       <hr/>
