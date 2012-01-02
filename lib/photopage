@@ -10,9 +10,9 @@
 
     <table id="photo-info" width="100%">
       <tr>
-        <td class="previous" width="25%" style="text-align: left;">[* IF photo_prev_name *]<a href="[% site.uris.media %][* photo_prev_name *]/#photo">[* END *]Previous Photo[* IF photo_prev_name *]</a> ([* photo_prev_date *])[* END *]</td>
-        <td class="current" width="50%" style="text-align: center;"><a href="[% site.uris.media %][* photo_name *]/">This photo</a> was taken on <strong>[* photo_date *]</strong>.<br/>View a <strong><a href="[% site.uris.media %]random/">random photo</a></strong></td>
-        <td class="next" width="25%" style="text-align: right;">[* IF photo_next_name *]<a href="[% site.uris.media %][* photo_next_name *]/#photo">[* END *]Next Photo[* IF photo_next_name *]</a> ([* photo_next_date *])[* END *]</td>
+        <td class="previous" width="25%" style="text-align: left;">[* IF photo_prev_name *]<a href="[% site.uris.media %][* photo_prev_name *]/#photo" rel="previous">[* END *]Previous Photo[* IF photo_prev_name *]</a> ([* photo_prev_date *])[* END *]</td>
+        <td class="current" width="50%" style="text-align: center;"><a href="[% site.uris.media %][* photo_name *]/" rel="canonical">This photo</a> was taken on <strong>[* photo_date *]</strong>.<br/>View a <strong><a href="[% site.uris.media %]random/">random photo</a></strong></td>
+        <td class="next" width="25%" style="text-align: right;">[* IF photo_next_name *]<a href="[% site.uris.media %][* photo_next_name *]/#photo" rel="next">[* END *]Next Photo[* IF photo_next_name *]</a> ([* photo_next_date *])[* END *]</td>
       </tr>
     </table>
 </div>
