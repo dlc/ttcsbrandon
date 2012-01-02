@@ -136,6 +136,11 @@ body {
   width: 950px;
 }
 
+#calendar-info {
+  text-align: center;
+  font-style: italic;
+}
+
 #address {
   border: 1px solid #ddd;
   background: #eee;
