@@ -155,6 +155,15 @@ locations = [
     desc      => "0.4 miles north of Bay to Bay Boulevard at Himes Avenue and San Jose. Stop at the church office for classroom location."
     nonmember => 1
   }
+
+  { id        => "lettucelake"
+    lat       => 27.849055
+    lng       => -82.226693
+    title     => "Lettuce Lake Park"
+    addr      => "6920 E Fletcher Avenue, Tampa, FL 33637"
+    desc      => "Fletcher Avenue at Hillsborough River (just went of Interstate 75)"
+    nonmember => 0
+  }
 ]
 
 lochash = { };
