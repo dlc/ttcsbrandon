@@ -2,6 +2,8 @@
     title   = 'Photograph ([* photo_date *])'
     type    = 'html'
     section = 'media'
+    prev    = "[* IF photo_prev_name *][* photo_prev_name *]/#photo[* END *]"
+    next    = "[* IF photo_next_name *][* photo_next_name *]/#photo[* END *]"
 %]
 <div id="main" class="grid_12">
     <div id="photo" class="photo">
