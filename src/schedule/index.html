@@ -2,10 +2,13 @@
       title       = 'Class Schedules'
       description = 'Class Schedules'
       type        = 'html'
-      pdf_version = '2011-09-18-schedule.pdf'
+      pdf_version = '2012-01-08-schedule.pdf'
 %]
 <div id="main" class="grid_12">
-  <h1 class="section">Class Schedules - Effective September 17, 2011</h1>
+  <h1 class="section">Class Schedules - Effective January 8, 2012</h1>
+[% IF template.pdf_version %]
+  <p id="info">A <a href="[% site.uris.pdf %]/[% template.pdf_version %]">PDF version</a> is also available.</p>
+[% END %]
 
   <!-- Brandon Center -->
   <div id="brandon" class="schedule">
@@ -18,21 +21,29 @@
       </tr>
       <tr class="odd">
         <td>Monday</td>
+        <td>12:00 - 1:00 PM</td>
+      </tr>
+      <tr class="even">
+        <td>Monday</td>
         <td>7:30 - 9:00 PM</td>
       </tr>
       <tr class="odd">
         <td>Tuesday</td>
         <td>9:00 - 10:30 AM</td>
       </tr>
-      <tr class="odd">
+      <tr class="even">
         <td>Tuesday</td>
         <td>6:00 - 7:30 PM</td>
+      </tr>
+      <tr class="odd">
+        <td>Wednesday</td>
+        <td>12:00 - 1:00 PM</td>
       </tr>
       <tr class="even">
         <td>Wednesday</td>
         <td>7:30 - 9:00 PM</td>
       </tr>
-      <tr class="even">
+      <tr class="odd">
         <td>Thursday</td>
         <td>9:00 - 10:30 AM</td>
       </tr>
@@ -44,7 +55,7 @@
         <td>Friday</td>
         <td>11:30AM - 1:00PM</td>
       </tr>
-      <tr class="odd">
+      <tr class="even">
         <td>Saturday</td>
         <td>9:00 - 10:30 AM</td>
       </tr>
@@ -61,31 +72,31 @@
         <td>Monday</td>
         <td>9:00 - 10:30 AM</td>
       </tr>
-      <tr class="odd">
+      <tr class="even">
         <td>Monday</td>
         <td>6:00 - 7:30 PM</td>
       </tr>
       <tr class="odd">
         <td>Tuesday</td>
-        <td>7:30 - 9:00 PM</td>
+        <td>4:30 - 6:00 PM</td>
       </tr>
       <tr class="even">
         <td>Wednesday</td>
         <td>9:00 - 10:30 AM</td>
       </tr>
-      <tr class="even">
+      <tr class="odd">
         <td>Wednesday</td>
         <td>6:00 - 7:30 PM</td>
       </tr>
       <tr class="even">
         <td>Thursday</td>
-        <td>7:30 - 9:00 PM</td>
+        <td>4:30 - 6:00 PM</td>
       </tr>
       <tr class="odd">
         <td>Friday</td>
         <td>9:00 - 10:30 AM</td>
       </tr>
-      <tr class="odd">
+      <tr class="even">
         <td>Saturday</td>
         <td>10:30AM - 12:00 PM</td>
       </tr>
@@ -102,11 +113,11 @@
         <td>Monday</td>
         <td>10:30 - 11:30 AM</td>
       </tr>
-      <tr class="odd">
+      <tr class="even">
         <td>Wednesday</td>
         <td>10:30 - 11:30 AM</td>
       </tr>
-      <tr class="even">
+      <tr class="odd">
         <td>Friday</td>
         <td>10:30 - 11:30 AM</td>
       </tr>
@@ -137,20 +148,40 @@
       </tr>
 
       <tr class="odd">
-        <td>Tuesday</td>
-        <td>9:00 - 10:30 AM</td>
+        <td>Monday</td>
+        <td>7:00 - 8:00 AM</td>
+      </tr>
+      <tr class="even">
+        <td>Monday</td>
+        <td>5:30 - 6:40 PM</td>
       </tr>
       <tr class="odd">
+        <td>Tuesday</td>
+        <td>9:30 - 11:00 AM</td>
+      </tr>
+      <tr class="even">
         <td>Tuesday</td>
         <td>5:30 - 7:00 PM</td>
       </tr>
       <tr class="odd">
+        <td>Wednesday</td>
+        <td>12:30 - 1:30 PM</td>
+      </tr>
+      <tr class="even">
+        <td>Wednesday</td>
+        <td>6:30 - 9:00 PM</td>
+      </tr>
+      <tr class="odd">
         <td>Thursday</td>
-        <td>9:00 - 10:30 AM</td>
+        <td>9:30 - 11:00 AM</td>
       </tr>
       <tr class="even">
         <td>Thursday</td>
         <td>6:30 - 8:00 PM</td>
+      </tr>
+      <tr class="odd">
+        <td>Friday</td>
+        <td>12:30 - 1:30 PM</td>
       </tr>
       <tr class="even">
         <td>Saturday</td>
@@ -162,13 +193,33 @@
       </tr>
       <tr class="odd">
         <td>Monday</td>
-        <td>6:00 - 8:00 PM</td>
+        <td>9:30 - 11:00 AM</td>
+      </tr>
+      <tr class="even">
+        <td>Monday</td>
+        <td>6:30 - 8:00 PM</td>
       </tr>
       <tr class="odd">
+        <td>Tuesday</td>
+        <td>12:00 - 1:00 PM</td>
+      </tr>
+      <tr class="even">
         <td>Wednesday</td>
-        <td>9:00 - 10:30 AM</td>
+        <td>9:30 - 11:00 AM</td>
       </tr>
       <tr class="odd">
+        <td>Thursday</td>
+        <td>12:00 - 1:00 PM</td>
+      </tr>
+      <tr class="even">
+        <td>Thursday</td>
+        <td>5:30 - 6:30 PM</td>
+      </tr>
+      <tr class="odd">
+        <td>Friday</td>
+        <td>9:30 - 11:00 AM</td>
+      </tr>
+      <tr class="even">
         <td>Saturday</td>
         <td>9:00 - 10:30 AM</td>
       </tr>
@@ -180,8 +231,16 @@
         <td>Monday</td>
         <td>11:00 AM - 12:00 PM</td>
       </tr>
-      <tr class="odd">
+      <tr class="even">
         <td>Wednesday</td>
+        <td>11:00 AM - 12:00 PM</td>
+      </tr>
+      <tr class="odd">
+        <td>Thursday</td>
+        <td>4:00 - 5:00 PM</td>
+      </tr>
+      <tr class="even">
+        <td>Friday</td>
         <td>11:00 AM - 12:00 PM</td>
       </tr>
 
@@ -189,7 +248,11 @@
         <th id="templeterrace-chanting" colspan="2">Chanting</th>
       </tr>
       <tr class="odd">
-        <td>Sunday</td>
+        <td>Monday</td>
+        <td>12:00 - 12:30 PM</td>
+      </tr>
+      <tr class="even">
+        <td>Saturday</td>
         <td>8:30 - 9:00 AM</td>
       </tr>
 
@@ -205,11 +268,11 @@
         <th id="suncity-beginner" colspan="2">Beginner</th>
       </tr>
       <tr class="odd">
-        <td>Friday</td>
+        <td>Monday</td>
         <td>9:30 - 11:00 AM</td>
       </tr>
       <tr class="even">
-        <td>Monday</td>
+        <td>Friday</td>
         <td>9:30 - 11:00 AM</td>
       </tr>
 
@@ -248,39 +311,17 @@
         <th id="verobeach-beginner" colspan="2">Beginner</th>
       </tr>
       <tr class="odd">
-        <td>Tuesday</td>
+        <td>Monday</td>
         <td>1:00 - 2:00 PM</td>
       </tr>
       <tr class="even">
         <td>Wednesday</td>
         <td>5:30 - 6:30 PM</td>
       </tr>
-
-      <tr>
-        <th id="verobeach-continuing" colspan="2">Continuing or Open House <a href="#verobeach-continuing-fn1" title="See Event Notice each month, local information phone number is (772) 589-5050">*</a></th>
-      </tr>
       <tr class="odd">
-        <td>2nd Saturday of each month</td>
+        <td>2nd Saturday of the Month</td>
         <td>1:00 - 4:00 PM</td>
       </tr>
-      <tr>
-        <td colspan="2" id="verobeach-continuing-fn1">
-          * See Event Notice each month, local information phone number is (772) 589-5050 <a href="#verobeach-continuing">&#8617;</a>
-        </td>
-      </tr>
-
-      <tr>
-        <th id="verobeach-openpractice" colspan="2">Open Practice</th>
-      </tr>
-      <tr class="odd">
-        <td>Tuesday</td>
-        <td>2:00 - 3:00 PM</td>
-      </tr>
-      <tr class="even">
-        <td>Sunday</td>
-        <td>3:00 - 4:00 PM</td>
-      </tr>
-
     </table>
   </div>
 
@@ -295,6 +336,21 @@
       <tr class="odd">
         <td>Thursday</td>
         <td>6:30 - 8:00 PM</td>
+      </tr>
+    </table>
+  </div>
+
+<!-- Lettuce Lake -->
+  <div id="lettucelake" class="schedule">
+    <h2 class="section"><a href="[% gmap(lochash.lettucelake.addr) %]" target="_gmap">Lettuce Lake</a></h2>
+
+    <table class="schedule">
+      <tr>
+        <th id="lettucelake-inthepark" colspan="2">Tai Chi In The Park</th>
+      </tr>
+      <tr class="odd">
+        <td>Monthly, second Saturday</td>
+        <td>9:00 - 10:30 AM</td>
       </tr>
     </table>
   </div>
