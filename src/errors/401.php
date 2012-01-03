@@ -1,5 +1,5 @@
 [% META
-    title = 'Error'
+    title = 'Error: Incorrect Credentials'
     type = 'html'
     description = 'Error'
 %]
