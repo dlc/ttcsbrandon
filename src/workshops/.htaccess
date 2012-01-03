@@ -4,6 +4,6 @@ rewrite_base = site.uris.workshops.replace('^.*?://[^/]+', '');
 %]
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase [% rewrite_base %]/
+    RewriteBase [% rewrite_base %]
     RewriteRule ^$ [% site.uris.members %]2011/ [R=302,L]
 </IfModule>
