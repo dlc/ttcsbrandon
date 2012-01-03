@@ -2,14 +2,14 @@
     type = 'text';
 rewrite_base = site.uris.members.replace('^.*?://[^/]+', '');
 %]
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase [% rewrite_base %]/
 AuthName "[% abbr.ttcsusa %], Brandon, FL"
 AuthType Basic
 AuthBasicProvider file
 AuthUserFile "/hosted/taoist/brandon/htpasswd"
 require valid-user
 
-RewriteBase [% rewrite_base %]
-RewriteRule ^$ [% site.uris.members %]calendar/ [R=302,L]
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase [% rewrite_base %]
+    RewriteRule ^$ [% site.uris.members %]calendar/ [R=302,L]
+</IfModule>
