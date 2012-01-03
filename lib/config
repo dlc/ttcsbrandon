@@ -24,6 +24,7 @@ site.uris = {
     home        = "${site.uri}/"
     humanstxt   = "${site.uri}/humans.txt"
     locations   = "${site.uri}/locations/"
+    members     = "${site.uri}/members/"
     membership  = "${site.uri}/membership/"
     news        = "${site.uri}/news/"
     media       = "${site.uri}/media/"
