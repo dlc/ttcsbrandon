@@ -1,0 +1,44 @@
+[%  META
+      title = 'Class Calendar'
+      type  = 'html'
+      description = 'Calendar of classes and events'
+%]
+      <div id="calendar" class="grid_12">
+        <p id="info">Note: All classes are at our <a href="[% gmap(lochash.brandon.addr) %]" target="_gmap">Brandon location</a> unless stated otherwise.</p>
+        <iframe src="https://www.google.com/calendar/embed?title=TTCS%3A%20Brandon%20Florida%20(Temple%20Terrace%20only)&amp;showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=sevenroot.org_eec22eqgsfbf73i49kpggjonp0%40group.calendar.google.com&amp;color=%23333333&amp;src=sevenroot.org_vbgoihvmmn8nuark5e6e6oq3kc%40group.calendar.google.com&amp;color=%235229A3&amp;src=sevenroot.org_nass5kd23lk06uedm5bpuior1g%40group.calendar.google.com&amp;color=%23B1440E&amp;src=sevenroot.org_glnpjko2vlm1dgle9bqcdrjocc%40group.calendar.google.com&amp;color=%231B887A&amp;ctz=America%2FNew_York&amp;mode=WEEK" style=" border-width:0 " width="950" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+[%#
+Calendar was built thusly:
+
+Site: https://www.google.com/calendar/embedhelper?pli=1
+
+Title: TTCS: Brandon Florida
+
+Show:
+  Title: off
+  Navigation buttons: on
+  Date: On
+  Print icon: On
+  Tabs: On
+  Calendar list: off
+  Time zone: off 
+
+Default View: week
+
+Width: 950
+
+Height: 600
+
+Week starts on: Sunday
+
+Language: English (US)
+
+Calendars:
+ * Beginner Classes (Temple Terrace)
+ * Chanting (Temple Temple)
+ * Continuing Clases (Temple Terrace)
+ * Health Recovery (Temple Terrace)
+
+Time Zone: America/New York
+
+%]
