@@ -1,0 +1,6 @@
+      <!-- welcome message -->
+      <p id="p-x1"><span class="leader">Welcome</span> to the Brandon Florida branch of the <a href="http://www.usa.taoist.org/">[% abbr.ttcsusa %]</a>. Taoist Tai Chi&reg; internal art of [% w("taijiquan") %] is a low impact exercise designed to enhance health. We invite you to join us to learn this ancient Chinese gentle internal art emphasizing relaxation, stretching, health improvement and stress reduction.</p>
+
+      <p id="p-x3">In more than 25 countries around the globe, people are enjoying the many benefits of practicing Taoist Tai Chi&reg; taijiquan in the friendly atmosphere of our volunteer, non-profit organization. Experience <a href="[% site.uris.schedule %]">one of our classes</a> for yourself and discover a genuine path for health and tranquility.</p>
+
+
