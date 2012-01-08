@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# ----------------------------------------------------------------------
+# Nightly rebuild -- Regenerate the list of events every day
+# Assumes it's being run such that ./src is the source templates
+# ----------------------------------------------------------------------
+
+PUBLIST="index.php events/index.php events/events.atom"
+
+if [ -d "src" ]
+then
+    for pubfile in $PUBLIST
+    do
+        touch "src/$pubfile"
+        /bin/sh ./build
+        /bin/sh ./publish "html/$pubfile"
+    done
+else
+    echo "I don't seem to be in the root of the checkout."
+    exit 1
+fi
