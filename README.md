@@ -47,3 +47,7 @@ to the latest photo.
   [tt2]: http://www.tt2.org/download/
   [Perl]: http://www.perl.org/get.html
 
+TODO
+====
+
+  * Integrate https://github.com/codejoust/session.js
