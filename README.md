@@ -51,3 +51,4 @@ TODO
 ====
 
   * Integrate https://github.com/codejoust/session.js
+  * Automate and standardize front page components
