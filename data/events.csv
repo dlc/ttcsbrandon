@@ -1,8 +1,73 @@
-dtime	title	content	Location
-2012-01-07	Janary 2012 Open House	We will be having our <a href="[% site.uris.pdfs %]/2012-01-07-openhouse.pdf">January 2012 Open House</a>, from 11:00 to 1:00 at our <a href="[% gmap(lochash.brandon.addr) %]" rel="external" target="_gmap">Brandon location</a> and from 2:00 to 3:00 at our <a href="[% gmap(lochash.templeterrace.addr) %]" rel="external" target="_gmap">Temple Terrace location</a>.	Brandon, FL
-2012-01-08	New Class Schedule	Our <a href="[% site.uris.schedule %]">new class schedule</a> begins today! The <a href="[% site.uris.calendar %]">calendar</a> has been updated to include the classes at our <a href="[% gmap(lochash.templeterrace.addr) %]" target="_gmap">Temple Terrace</a> location as well as our <a href="[% gmap(lochash.brandon.addr) %]" target="_gmap">Brandon</a> location.	Brandon, FL
-2012-01-14	International Tai Chi Workshop	<a href="http://dunedin.florida.usa.taoist.org/">Dunedin</a> will be hosting an <a href="[% site.uris.pdfs %]/2012-01-14-workshop.pdf">International Tai Chi Workshop</a>, led by Tony Kwong at the <a href="[% gmap("1370 Main Street, Dunedin, FL 34698") %]" target="_gmap">Dunedin center</a>.  Cost for the workshop is is US$175 (meals US$25), and the registration for is <a href="http://dunedin.florida.usa.taoist.org/pdf/WSregistration.pdf">available online</a>.  <a href="[% site.uris.events %]/2012-workshop-dunedin/">More details available here</a>.	Dunedin, FL
-2:012-01-29	Chinese New Year	January 29 will be the Chinese New Year banquet hosted by the <a href="http://stpetersburg.florida.usa.taoist.org/">St. Petersburg branch</a>.  Tickets are $25 each.	St. Petersburg, FL
-2012-03-07	International Instructor Workshop	Cost: US$500 week, US$174 weekend.	Tallahassee, FL
-2012-03-10	Chinese New Year's Banquet		Tallahassee, FL
-2012-05-26	International Workshop and Grand Opening	Cost: US$175	Brandon, FL
+dtime|title|content|location
+2011/01/15|International Workshop and Grand Opening|Fee: $175|Dunedin, FL
+2011/02/05|Chinese New Year's Banquet|Fee: $35|Toronto, Canada
+2011/02/17|Intensive - Tai Chi|Fee: $25\nTeam: Carmen Capilla & Sean Dennison|Dunedin
+2011/02/16|Intensive - Tai Chi|Fee: $25\nTeam: Carmen Capilla & Sean Dennison|St. Petersburg
+2011/02/19|Tai Chi Workshop|Fee: $175|Columbus, OH
+2011/02/20|Chinese New Year Banquet|Fee: $25|St Peteresburg
+2011/03/05|Set Leader Module|Fee: Free|St Petersburg
+2011/03/12|Chinese New Year's Banquet|Fee: $30|Tallahassee, FL
+2011/03/09|International Instructor Workshop|Fee: $500 week, $175 weekend|Tallahassee, FL
+2011/03/12|New Year Banquet|Fee: $25|Tallahassee
+2011/03/09|International Instructor Workshop|Fee: $500|Tallahassee
+2011/03/22|Bye-Bye Snowbirds Luncheon|Fee: $25 + lunch\nTeam: Joe Crossfield/Sue Johnson|Dunedin
+2011/04/09|Beginning Instructor Module|Fee: $25|Sarasota
+2011/04/21|Pre-Graduation Pot Luck and Intensive|Fee: $25\nTeam: Sean Dennison|St Petersburg
+2011/04/29|Tai Chi Workshop|Fee: $175|Raleigh, NC
+2011/05/01|Mother's Day Banquet||Sarasota
+2011/05/14|Tai Chi Intensive|Fee: $25\nTeam: Mike Taylor/Debra Farr|Brandon
+2011/06/04|Lok Hup Workshop and Chang San Feng Banquet|Fee: $300|Brandon
+2011/06/25|International Tai Chi Workshop, 25th/1st Anniversary|Fee: $175|Boulder, CO
+2011/07/09|Tai Chi Workshop|Fee: $175|Ithaca, NY
+2011/07/16|Intensive - Tai Chi|Fee: $25\nTeam: Tom McAlexander/Frank Duffy|Sarasota
+2011/07/16|Tai Chi Workshop, Grand Opening, 20th Anniversary|Fee: $175|Fairbanks, AK
+2011/08/28|Instructor Intensive|Fee: $25\nTeam: Pegoty Packman/Mary Crossfield/Debbie Gates|St Petersburg
+2011/09/03|Cleaning Day!||
+2011/09/10|Tai Chi Workshop, 20th Anniversary|Fee: $175|New England
+2011/09/17|Open House - 911 Bryan Rd, Brandon, FL||
+2011/09/17|Open House - 7308 E Fowler, Tampa, FL||
+2011/09/24|International Workshop, Grand Opening, and W Region Annual Meetin|Fee: $175|Portland, OR
+2011/10/05|SE Regional Meeting and Workshop|Fee: $175|St Petersburg
+2011/10/15|Tai Chi Workshop, SE Region Annual Meeting|Fee: $175|St Petersburg, FL
+2011/10/22|Tai Chi Workshop, NE Region Annual Meeting|Fee: $175|Chicago, IL
+2011/10/29|Autumn Moon Banquet||Dunedin
+2011/11/04|Intensive - Tai Chi|Fee: $35 (includes lunch)\nTeam: Jean Swantish/Sid Gates|Brandon
+2011/11/12|TTCS USA Annual Meeting||Tallahassee, FL
+2011/11/12|CIT Weekend|Fee: $100|Tallahassee, FL
+2011/11/09|International Workshop|Fee: $175|Tallahassee, FL
+2011/11/12|USA Annual Meeting||Tallahassee
+2011/11/09|IIW CIT Weekend||Tallahassee
+2011/12/03|Fung Loy Kok Weekend, Immortal Lu Shrine Opening|Fee: $175|Sarasota, FL
+2011/12/03|Tai Chi Workshop|Fee: $175|New York City, NY
+2011/12/03|Shrine Opening and Workshop|Fee: $175|Sarasota
+2011/12/10|Holiday Party||
+2011/12/17|Tea and Cookies in Temple Terrace||10919 N 56th Street, Temple Terrace, FL 33617
+2012/01/07|Open House - Temple Terrace||7308 East Fowler Avenue, Tampa, FL 33617
+2012/01/07|Open House - Brandon||911 Bryan Road, Brandon, FL 33511
+2012/01/07|Chinese New Year's Banquet|Fee: $35|Toronto, Canada
+2012/01/14|International Workshop and First Anniversary||Dunedin, Florida
+2012/02/11|First Half of Lok Hup Weekend Workshop|Fundraising for the Brandon Renovation\nFee: $300|Portland, OR
+2012/02/18|Tai Chi Workshop|Fee: $175|Columbus, OH
+2012/03/10|Chinese New Year's Banquet|Fee: $30|Tallahassee, FL
+2012/03/07|International Instructor Workshop|Fee:\n$500 week   \n$175 weekend|Tallahassee, FL
+2012/03/24|Tai Chi Workshop and First Anniversary|Fee: $175|Fairbanks, AK
+2012/04/21|Sarasota Intensive|Suggested donation: $25|Sarasota, FL
+2012/04/21|Tai Chi Sword Workshop|Fee: $300|Montgomery, AL
+2012/04/28|Beginning Instructor Module|$25|911 Bryan Road, Brandon, FL 33511
+2012/05/05|Open House - Temple Terrace||10919 N 56th Street, Temple Terrace, FL 33617
+2012/05/05|Open House - Brandon||911 Bryan Road, Brandon, FL 33511
+2012/05/06|Mother's Day Banquet|$25|Sarasota, FL
+2012/05/25|Re-Opening Ceremony - Brandon||
+2012/05/26|International Workshop and Grand Opening|Fee: $175|Brandon, FL
+2012/06/23|International Tai Chi Workshop|Fee: $175|Denver, CO
+2012/07/07|Tai Chi Workshop and Grand Opening|Fee: $175|Ithaca, NY
+2012/08/05|CIT Week||ITTCS Center
+2012/08/09|International Awareness Day||Toronto, Canada
+2012/09/22|International Workshop, First Anniversary and W Region Annual Meet|Fee: $175|Portland, OR
+2012/10/13|Tai Chi Workshop, SE Region Annual Meetinh|Fee: $175|St. Petersburg, FL
+2012/10/20|Tai Chi Workshop, NE Region Annual Meeting|Fee: $175|Chicago, IL
+2012/11/10|TTCS USA Annual Meeting||Tallahassee, FL
+2012/11/10|CIT Weekend|Fee: $175|Tallahassee, FL
+2012/11/07|International Workshop|Fee: $175|Tallahassee, FL
+2012/12/01|First Half of Lok Hup Weekend and Shrine Opening|Fee: $175| Miami, F
+2012/12/08|Tai Chi Workshop|Fee: $175|New York City, NY

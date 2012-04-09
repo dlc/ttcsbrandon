@@ -1,5 +1,5 @@
   <!-- [% evt.title %] -->
   <p id="p-[% date.format("${evt.dtime} 12:00:00", '%Y%m%d') %]">
-    <span class="leader">[% date.format("${evt.dtime} 12:00:00", '%B %e') %]</span> &middot;
-    [% evt.content | eval %]
+    <span class="leader">[% date.format("${evt.dtime} 12:00:00", '%B %e, %Y') %]</span> &middot;
+[% evt.title %][% IF evt.content %] &middot; [% evt.content | eval %][% END %][% IF evt.location %] &middot; <a href="[% gmap(evt.location) %]">[% evt.location %]</a>[% END %]
   </p> 
