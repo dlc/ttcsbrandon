@@ -2,13 +2,12 @@
       title = 'Home'
       type  = 'html'
 %]
-<div id="main" class="grid_12">
+<div id="main" class="container_12">
 
+    <div class="grid_7">
 [% PROCESS "welcome" %]
 
-        <hr/>
-
-      <a href="[% site.uris.pdfs %]/2012-01-14-workshop.pdf"><img src="[% site.uris.images %]/thumbs/2012-01-14-workshop.jpg" class="floater"/></a>
+        <hr />
 
       <h2>Upcoming Branch Events</h2>
 
@@ -18,8 +17,12 @@
       <hr/>
 
       <p id="p-emptystep"><span class="leader">The Empty Step</span> &middot; The <a href="http://dunedin.florida.usa.taoist.org/pdf/201204issue33.pdf">April 2012 edition</a> is now available!  Previous issues are also <a href="http://dunedin.florida.usa.taoist.org/archive.php">available from the archive</a>.</p>
-      <hr/>
+    </div>
 
-      <hr />
+    <div class="grid_5">
+      <a href="[% site.uris.pdfs %]/2012-04-28-beginner-instructor-module.pdf"><img src="[% site.uris.images %]/thumbs/2012-04-28-beginner-instructor-module.jpg" /></a>
+      <!--a href="[% site.uris.pdfs %]/2012-05-05-openhouse.pdf"><img src="[% site.uris.images %]/thumbs/2012-05-05-openhouse.jpg" /></a-->
+      <!--a href="[% site.uris.pdfs %]/2012-05-25-grand-reopening.pdf"><img src="[% site.uris.images %]/thumbs/2012-05-25-grand-reopening.jpg" /></a-->
+    </div>
 </div>
 
