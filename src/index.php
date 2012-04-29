@@ -20,8 +20,7 @@
     </div>
 
     <div class="grid_5">
-      <a href="[% site.uris.pdfs %]/2012-04-28-beginner-instructor-module.pdf"><img src="[% site.uris.images %]/thumbs/2012-04-28-beginner-instructor-module.jpg" /></a>
-      <!--a href="[% site.uris.pdfs %]/2012-05-05-openhouse.pdf"><img src="[% site.uris.images %]/thumbs/2012-05-05-openhouse.jpg" /></a-->
+      <a href="[% site.uris.pdfs %]/2012-05-05-openhouse.pdf"><img src="[% site.uris.images %]/thumbs/2012-05-05-openhouse.jpg" /></a>
       <!--a href="[% site.uris.pdfs %]/2012-05-25-grand-reopening.pdf"><img src="[% site.uris.images %]/thumbs/2012-05-25-grand-reopening.jpg" /></a-->
     </div>
 </div>
