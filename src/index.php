@@ -16,7 +16,7 @@
       <p>See more events on the <a href="[% site.uris.events %]">events page</a>.</p>
       <hr/>
 
-      <p id="p-emptystep"><span class="leader">The Empty Step</span> &middot; The <a href="http://dunedin.florida.usa.taoist.org/pdf/201204issue33.pdf">April 2012 edition</a> is now available!  Previous issues are also <a href="http://dunedin.florida.usa.taoist.org/archive.php">available from the archive</a>.</p>
+      <p id="p-emptystep"><span class="leader">The Empty Step</span> &middot; The <a href="http://dunedin.florida.usa.taoist.org/pdf/201205issue34.pdf">May 2012 edition</a> is now available!  Previous issues are also <a href="http://dunedin.florida.usa.taoist.org/archive.php">available from the archive</a>.</p>
     </div>
 
     <div class="grid_5">
