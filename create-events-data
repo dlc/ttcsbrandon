@@ -64,9 +64,9 @@ while (my ($cal, $uri) = each %URIS) {
 
 @EVENTS = sort { $a->{'start'} cmp $b->{'end'} } @EVENTS;
 
-print "dtime\ttitle\tcontent\tlocation\n";
+print "dtime|title|content|location\n";
 for my $e (@EVENTS) {
-    printf "%s\t%s\t%s\t%s\n",
+    printf "%s|%s|%s|%s\n",
         $e->{'start'},
         $e->{'summary'},
         $e->{'desc'},
