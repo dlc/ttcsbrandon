@@ -35,6 +35,7 @@ while (my ($cal, $uri) = each %URIS) {
 
     $data = get($uri);    
     $data =~ s/\r//g;
+    $data =~ s/\n\s+//gs;
     (@events) = $data =~ /BEGIN:VEVENT(.+?)END:VEVENT/gs;
 
     for my $e (@events) {
