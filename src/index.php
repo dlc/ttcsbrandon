@@ -5,15 +5,15 @@
 <div id="main" class="container_12">
 
     <div class="grid_7">
-        <p><strong>May 25, Friday, from 7 to 8 pm</strong>, will be our <a href="[% site.uris.pdfs %]/2012-05-25-grand-reopening.pdf">Grand Re-Opening ceremonies.</a>  Come watch the lion dance and greet visiting members.  We have many members coming from around Florida and other parts of the USA and your presence will add to the hospitality of the night.</p>
+[% PROCESS "welcome" %]
+        <hr />
 
-         <p><strong>May 26 and 27</strong> will be the <a href="[% site.uris.pdfs %]/2012-05-25-grand-reopening.pdf">International Tai Chi workshop</a> led by Tony Kwong, treasurer of the International Taoist Tai Chi Society Board of Directors.  Also in attendance will be Karen Laughlin, the President of the <a href="http://www.taoist.org/">ITTCS</a>.  If you've never been to a two day workshop and have no immediate plans to go to Orangeville or Tallahassee, you have a wonderful opportunity right in your own backyard.  If you would like to attend, please fill out a registration form, at the center, as soon as possible, so that we get a good read on the numbers to expect.</p>
+        <p><span class="leader">May 25, Friday, from 7 to 8 pm</span>, will be our <a href="[% site.uris.pdfs %]/2012-05-25-grand-reopening.pdf">Grand Re-Opening ceremonies.</a>  Come watch the lion dance and greet visiting members.  We have many members coming from around Florida and other parts of the USA and your presence will add to the hospitality of the night.</p>
+
+         <p><span class="leader">May 26 and 27</span> will be the <a href="[% site.uris.pdfs %]/2012-05-25-grand-reopening.pdf">International Tai Chi workshop</a> led by <a href="http://ittcs.wordpress.com/tag/tony-kwong/" target="ittcs">Tony Kwong</a>, treasurer of the International Taoist Tai Chi Society Board of Directors.  Also in attendance will be Karen Laughlin, the President of the <a href="http://www.taoist.org/" target="ittcs">ITTCS</a>.  If you've never been to a two day workshop and have no immediate plans to go to Orangeville or Tallahassee, you have a wonderful opportunity right in your own backyard.  If you would like to attend, please fill out a <a href="[% site.uris.pdfs %]/2012-05-25-registration-form.pdf">registration form</a>, at the center, as soon as possible, so that we get a good read on the numbers to expect.</p>
 
 
         <hr/>
-[% PROCESS "welcome" %]
-
-        <hr />
 
       <h2>Upcoming Branch Events</h2>
 
@@ -27,7 +27,7 @@
 
     <div class="grid_5">
       <a href="[% site.uris.pdfs %]/2012-05-05-openhouse.pdf"><img src="[% site.uris.images %]/thumbs/2012-05-05-openhouse.jpg" /></a>
-      <!--a href="[% site.uris.pdfs %]/2012-05-25-grand-reopening.pdf"><img src="[% site.uris.images %]/thumbs/2012-05-25-grand-reopening.jpg" /></a-->
+      <a href="[% site.uris.pdfs %]/2012-05-25-grand-reopening.pdf"><img src="[% site.uris.images %]/thumbs/2012-05-25-grand-reopening.jpg" /></a>
     </div>
 </div>
 
