@@ -6,13 +6,13 @@
 %]
 <div id="main" class="container_12">
 
-    <div class="grid_7">
+    <div class="grid_12">
 [% events(100, "events_html") %]
     </div>
 
-    <div class="grid_5">
+    <!--div class="grid_5">
       <a href="[% site.uris.pdfs %]/2012-05-25-grand-reopening.pdf"><img src="[% site.uris.images %]/thumbs/2012-05-25-grand-reopening.jpg" /></a>
-    </div>
+    </div-->
 
   <!--h2><a href="[% site.uris.workshops %]2012/">2012 Workshop Schedule</a></h2-->
   <!--h2><a href="[% site.uris.workshops %]2011/">2011 Workshop Schedule</a></h2-->
