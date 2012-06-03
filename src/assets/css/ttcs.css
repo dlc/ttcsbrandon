@@ -213,6 +213,13 @@ img.floater {
     border-bottom: 0;
 }
 
+#main blockquote {
+    margin: 1em;
+    padding-left: 1em;
+    background: #eee;
+    font-style: italic;
+}
+
 /* Some generic classes */
 .identifier {
   font-style: italic;
