@@ -8,8 +8,8 @@
 
 var iw = new google.maps.InfoWindow();
 var m = new google.maps.Map(document.getElementById("map"), {
-    zoom: 8,
-    center: new google.maps.LatLng(28.022244, -81.732857),
+    zoom: 10,
+    center: new google.maps.LatLng(27.923132, -82.276279),
     mapTypeId: google.maps.MapTypeId.ROADMAP
 });
 
