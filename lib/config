@@ -131,14 +131,14 @@ locations = [
     nonmember => 1
   }
 
-  { id        => "verobeach" 
-    lat       => 27.751608
-    lng       => -80.408936
-    title     => "Vero Beach, Environmental Learning Center"
-    addr      => "255 Live Oak Drive, Vero Beach, FL 32963"
-    desc      => "Located off CR 510 just east of the Intracoastal Waterway"
-    nonmember => 0
-  }
+# { id        => "verobeach" 
+#   lat       => 27.751608
+#   lng       => -80.408936
+#   title     => "Vero Beach, Environmental Learning Center"
+#   addr      => "255 Live Oak Drive, Vero Beach, FL 32963"
+#   desc      => "Located off CR 510 just east of the Intracoastal Waterway"
+#   nonmember => 0
+# }
 
   { id        => "suncity"
     lat       => 27.711043
