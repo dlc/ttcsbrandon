@@ -5,6 +5,9 @@
 # Assumes it's being run such that ./src is the source templates
 # ----------------------------------------------------------------------
 
+PATH=/usr/local/bin:/usr/bin:/bin
+export PATH
+
 PUBLIST="index.php events/index.php events/events.atom"
 
 if [ -d "src" ]

@@ -1,3 +1,5 @@
 #!/bin/sh
 
+PATH=/usr/local/bin:/usr/bin:/bin
+
 ttree -f ./ttree.cfg $@
