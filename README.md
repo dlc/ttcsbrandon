@@ -18,20 +18,28 @@ Andy Wardley, David Cross, and Darren Chamberlain.
 In order to build the site, you'll need a clone of this repo, a (relatively)
 modern [Perl][], and a copy of [Template Toolkit][tt2] installed, with
 all its dependencies. No database is used, and very few assumptions are
-made about the type of web server or its capabilities, beyond being Apache.
+made about the type of web server or its capabilities, beyond being Apache
+with PHP enabled.
 
 The commands to run are:
 
     $ git clone git://github.com/dlc/ttcsbrandon.git
     $ cd ttcsbrandon
+    $ perl create-events-data > data/events.csv
     $ sh build -a
-    $ sh publish site
-    $ sh publish images
 
 The resulting site will be built into ./html, and it is then
 suitable for uploading to a web server.  You might need to edit the
 configuration bits in lib/config, specifically the uri line, so that
 they are consistent with the environment to which you're publishing.
+
+To publish:
+
+    $ sh publish site
+    $ sh publish images
+
+This assumes you're using ncftp and have a saved site named "taichi";
+there are no embedded passwords.
 
 Adding Photos
 =============
