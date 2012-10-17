@@ -10,8 +10,15 @@ export PATH
 
 PUBLIST="index.php events/index.php events/events.atom"
 
-if [ -d "src" ]
+if [ -d "src" ] && [ -d "data" ]
 then
+
+    if [ -r "create-events-data" ]
+    then
+        perl create-events-data > data/events.csv
+        git commit -m'Updated event data.' data/events.csv
+    fi
+
     for pubfile in $PUBLIST
     do
         touch "src/$pubfile"
