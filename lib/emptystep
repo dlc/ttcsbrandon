@@ -1,0 +1,12 @@
+[%
+   issue_number     = "38"
+   issue_year       = "2012"
+   issue_month      = "09"
+   issue_month_name = "September"
+
+   issue_base_url   = "http://dunedin.florida.usa.taoist.org"
+   issue_url        = "$issue_base_url/pdf/${issue_year}${issue_month}issue${issue_number}.pdf"
+   archive_url      = "$issue_base_url/acrhive.php"
+%]
+      <p id="p-emptystep"><span class="leader">The Empty Step</span> &middot; The <a href="[% issue_url %]">[% issue_month_name %] [% issue_year %] edition</a> is now available!  Previous issues are also <a href="[% archive_url %]">available from the archive</a>.</p>
+
