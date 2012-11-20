@@ -40,4 +40,9 @@
             END;
         END;
     END;
+
+    # Call as: pdf_thumb("2012-01-01-foo")
+    MACRO pdf_thumb(fname) BLOCK;
+      %]<a href="[% site.uris.pdfs %]/[% fname %].pdf"><img src="[% site.uris.images %]/thumbs/[% fname %].jpg" /></a>[% 
+    END;
 -%]
