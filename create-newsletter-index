@@ -1,0 +1,29 @@
+#!/bin/sh
+
+if cd src/newsletters
+then
+    (
+    cat << HEADER
+[%  META
+      title = 'Email Newsletters'
+      type  = 'html'
+%]
+<div id="main" class="grid_12">
+<ul>
+HEADER
+
+        ls -1d *-* | sort -r | \
+        while read d
+        do
+            ds=`perl -MPOSIX=strftime -MTime::ParseDate=parsedate -wle 'print strftime "%B %e, %Y", localtime(parsedate shift)' "$d"`
+            echo "<li><a href=\"$d/\">$ds</a></li>"
+        done
+        echo "</ul>"
+        echo "</div>"
+
+        ) > index.html
+
+else
+    echo "Can't chdir src/newsletters"
+    exit 1
+fi
