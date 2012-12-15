@@ -65,13 +65,14 @@ while (my ($cal, $uri) = each %URIS) {
 
 @EVENTS = sort { $a->{'start'} cmp $b->{'start'} } @EVENTS;
 
-print "dtime|title|content|location\n";
+print "dtime|title|content|location|source\n";
 for my $e (@EVENTS) {
-    printf "%s|%s|%s|%s\n",
+    printf "%s|%s|%s|%s|%s\n",
         $e->{'start'},
         $e->{'summary'},
         $e->{'desc'},
-        $e->{'location'};
+        $e->{'location'},
+        $e->{'source'};
 }
 
 sub extract_date {
