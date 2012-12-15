@@ -21,8 +21,7 @@
 [% PROCESS "emptystep" %]
 
     <hr />
-      [% pdf_thumb("2012-12-09-holiday-party") %]
-
+      [% pdf_thumb("2013-01-13-openhouse") %]
 
     </div>
 </div>
