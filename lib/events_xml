@@ -2,7 +2,9 @@
     <title>[% evt.title %]</title>
     <link href="[% me %]"/>
     <id>[% me %]</id>
-    <updated>[% date.format(date.now, "%Y-%m-%dT%H:%M:%SZ", gmt = 1) %]</updated>
+    <updated>[% evt.dtime.replace("/", "-") %]T12:00:00Z</updated>
+    <published>[% date.format(date.now, "%Y-%m-%dT%H:%M:%SZ", gmt = 1) %]</published>
     <summary type="html">[% evt.content | eval | html%]</summary>
+    <category term="[% evt.source %]" label="Original Calendar"/>
   </entry>
 
