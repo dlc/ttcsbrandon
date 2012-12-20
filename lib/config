@@ -120,7 +120,7 @@ locations = [
     lng       => -82.393545
     title     => "Temple Terrace, Sherwood Forest"
     addr      => "10919 N 56th Street, Temple Terrace, FL 33617"
-    desc      => "South of Fowler and north of Whiteway, on the east side of 56th St.  We are in the southern most building in Sherwood Forest, next to Emma's Cakes."
+    desc      => "0.2 miles south of Fowler Avenue on the east side of 56th Street in the Sherwood Forest Center"
     nonmember => 0
   }
 
@@ -160,14 +160,14 @@ locations = [
     nonmember => 1
   }
 
-  { id        => "lettucelake"
-    lat       => 27.849055
-    lng       => -82.226693
-    title     => "Lettuce Lake Park"
-    addr      => "6920 E Fletcher Avenue, Tampa, FL 33637"
-    desc      => "Fletcher Avenue at Hillsborough River (just went of Interstate 75)"
-    nonmember => 0
-  }
+# { id        => "lettucelake"
+#   lat       => 27.849055
+#   lng       => -82.226693
+#   title     => "Lettuce Lake Park"
+#   addr      => "6920 E Fletcher Avenue, Tampa, FL 33637"
+#   desc      => "Fletcher Avenue at Hillsborough River (just went of Interstate 75)"
+#   nonmember => 0
+# }
 ]
 
 lochash = { };
