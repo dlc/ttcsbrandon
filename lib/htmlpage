@@ -36,10 +36,10 @@ END %]
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/960.css" />
     <link rel="stylesheet" type="text/css" media="all" href="[% site.uris.css %]/ttcs.css" />
 [% IF page.prev
-%]    <link rel="prev" href="[% site.uris.media %][% page.prev %]" />
+%]    <link rel="prev" href="[% site.uris.home %][% page.prev %]" />
 [% END;
    IF page.next
-%]    <link rel="next" href="[% site.uris.media %][% page.next %]" />
+%]    <link rel="next" href="[% site.uris.home %][% page.next %]" />
 [% END;
 %]
     <script src="[% site.uris.js %]/plinks.js" type="text/javascript"></script>
