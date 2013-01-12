@@ -6,7 +6,14 @@
 %]
 <div id="main" class="grid_12">
 
-  <h1 class="section centered">2011 Workshop Schedule</h1>
+  <h1 class="section centered">
+  [% IF template.prev %]<a href="[% site.uris.home %][% template.prev %]">&lt;&lt;</a> &nbsp; [% END %]
+  2011 Workshop Schedule
+  [% IF template.next %] &nbsp; <a href="[% site.uris.home %][% template.next %]">&gt;&gt;</a>[% END %]
+  </h1>
+<p id="info">
+[% IF template.pdf_version %]A <a href="[% site.uris.pdf %]/[% template.pdf_version %]">printable PDF version of the schedule</a> is also available. [% END %]
+</p>
 
   <table class="schedule">
     <tr>
