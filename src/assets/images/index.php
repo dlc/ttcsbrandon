@@ -1,3 +1,3 @@
 [% META
     type = 'text'
-%]<?php location("[% site.uris.home %]"); ?>
+%]<?php header("Location: [% site.uris.home %]"); ?>
