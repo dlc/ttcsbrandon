@@ -2,17 +2,17 @@
       title       = 'Class Schedules'
       description = 'Class Schedules'
       type        = 'html'
-      pdf_version = '2012-09-09-schedule.pdf'
+      pdf_version = '2012-01-12-schedule.pdf'
 %]
 <div id="main" class="grid_12">
-  <h1 class="section">Class Schedules - Effective September 9, 2012</h1>
+  <h1 class="section">Class Schedules - Effective January 12, 2013</h1>
 [% IF template.pdf_version %]
   <p id="info">A <a href="[% site.uris.pdf %]/[% template.pdf_version %]">printable PDF version of the schedule</a> is also available.</p>
 [% END %]
 
   <!-- Brandon Center -->
   <div id="brandon" class="schedule">
-    <h2 class="section"><a href="[% gmap(lochash.brandon.addr) %]" target="_gmap">Brandon Center</a></h2>
+    <h2 class="section"><a href="[% gmap(lochash.brandon.addr) %]" title="[% lochash.brandon.title %] - [% lochash.brandon.addr %]" target="_gmap">Brandon Center</a></h2>
 
     <table class="schedule">
       <!-- Beginner -->
@@ -49,15 +49,15 @@
       </tr>
       <tr class="even">
         <td>Thursday</td>
-        <td>6:30 - 8:30 PM</td>
+        <td>4:30 - 6:30 PM</td>
       </tr>
       <tr class="odd">
         <td>Friday</td>
-        <td>12:00AM - 2:00PM</td>
+        <td>12:00 AM - 2:00 PM</td>
       </tr>
       <tr class="even">
         <td>Saturday</td>
-        <td>8:30 - 10:00 AM</td>
+        <td>10:00 AM - 12:00 PM</td>
       </tr>
       <tr class="odd">
         <td>Sunday</td>
@@ -89,18 +89,14 @@
         <td>6:00 - 8:00 PM</td>
       </tr>
       <tr class="even">
-        <td>Thursday</td>
-        <td>4:30 - 6:30 PM</td>
-      </tr>
-      <tr class="odd">
         <td>Friday</td>
         <td>9:00 - 11:00 AM</td>
       </tr>
-      <tr class="even">
+      <tr class="odd">
         <td>Saturday</td>
         <td>10:00AM - 12:00 PM</td>
       </tr>
-      <tr class="odd">
+      <tr class="even">
         <td>Sunday</td>
         <td>10:00AM - 12:00 PM</td>
       </tr>
@@ -126,6 +122,15 @@
         <td>3:00 - 4:00 PM</td>
       </tr>
 
+      <!-- Open Practice -->
+      <tr>
+        <th id="brandon-openpractice" colspan="2">Open Practice</th>
+      </tr>
+      <tr class="odd">
+        <td>Thursday</td>
+        <td>4:30 PM</td>
+      </tr>
+
       <!-- Chanting -->
       <tr>
         <th id="brandon-chanting" colspan="2">Chanting</th>
@@ -140,7 +145,7 @@
 
   <!-- Temple Terrace -->
   <div id="templeterrace" class="schedule">
-    <h2 class="section"><a href="[% gmap(lochash.templeterrace.addr) %]" target="_gmap">Temple Terrace</a></h2>
+    <h2 class="section"><a href="[% gmap(lochash.templeterrace.addr) %]" title="[% lochash.templeterrace.title %] - [% lochash.templeterrace.addr %]" target="_gmap">Temple Terrace</a></h2>
 
     <table class="schedule">
       <tr>
@@ -164,16 +169,16 @@
         <td>12:00 - 1:00 PM</td>
       </tr>
       <tr class="odd">
-        <td>Wednesday</td>
-        <td>6:30 - 8:00 PM</td>
-      </tr>
-      <tr class="even">
         <td>Thursday</td>
         <td>9:30 - 11:00 AM</td>
       </tr>
-      <tr class="odd">
+      <tr class="even">
         <td>Thursday</td>
-        <td>12:00 - 1:00 PM</td>
+        <td>7:30 - 9:30 PM</td>
+      </tr>
+      <tr class="odd">
+        <td>Friday</td>
+        <td>12:00 PM - 1:00 PM </td>
       </tr>
       <tr class="even">
         <td>Saturday</td>
@@ -193,21 +198,25 @@
       </tr>
       <tr class="odd">
         <td>Tuesday</td>
-        <td>12:00 - 1:00 PM</td>
+        <td>11:00 AM - 12:30 PM</td>
       </tr>
       <tr class="even">
         <td>Wednesday</td>
         <td>9:30 - 11:00 AM</td>
       </tr>
       <tr class="odd">
-        <td>Thursday</td>
-        <td>11:00 AM - 12:00 PM</td>
+        <td>Wednesday</td>
+        <td>7:30 - 9:30 PM</td>
       </tr>
       <tr class="even">
+        <td>Thursday</td>
+        <td>11:00 AM - 12:30 PM</td>
+      </tr>
+      <tr class="odd">
         <td>Friday</td>
         <td>9:30 - 11:00 AM</td>
       </tr>
-      <tr class="odd">
+      <tr class="even">
         <td>Saturday</td>
         <td>9:00 - 10:30 AM</td>
       </tr>
@@ -228,12 +237,30 @@
         <td>11:00 AM - 12:00 PM</td>
       </tr>
 
+      <!-- Open Practice -->
+      <tr>
+        <th id="templeterrace-openpractice" colspan="2">Open Practice</th>
+      </tr>
+      <tr class="odd">
+        <td>Monday</td>
+        <td>8:00 8:30 PM</td>
+      </tr>
+      <tr class="even">
+        <td>Saturnday</td>
+        <td>8:30 - 9:00 AM</td>
+      </tr>
+
+      <!-- Chanting -->
       <tr>
         <th id="templeterrace-chanting" colspan="2">Chanting</th>
       </tr>
       <tr class="odd">
+        <td>Monday</td>
+        <td>12:00 PM - 12:30 PM</td>
+      </tr>
+      <tr class="even">
         <td>Saturday</td>
-        <td>8:15 - 8:30 AM</td>
+        <td>12:00 PM - 12:30 PM</td>
       </tr>
 
     </table>
@@ -241,7 +268,7 @@
 
   <!-- Sun City Center -->
   <div id="suncity" class="schedule">
-    <h2 class="section">Sun City Center</h2>
+    <h2 class="section"><a href="[% gmap("${lochash.suncity.lat},${lochash.suncity.lng}") %]" title="[% lochash.suncity.title %]" target="_gmap">Sun City Center at King's Point</a></h2>
 
     <table class="schedule">
       <tr>
@@ -251,7 +278,7 @@
         <td>Monday</td>
         <td>9:30 - 11:00 AM</td>
       </tr>
-      <tr class="odd">
+      <tr class="even">
         <td>Friday</td>
         <td>9:30 - 11:00 AM</td>
       </tr>
@@ -268,7 +295,7 @@
 
   <!-- Tampa -->
   <div id="palmaceia" class="schedule">
-    <h2 class="section"><a href="[% gmap(lochash.palmaceia.addr) %]" target="_gmap">Tampa: Palma Ceia Presbyterian Church</a></h2>
+    <h2 class="section"><a href="[% gmap(lochash.palmaceia.addr) %]" title="[% lochash.palmaceia.title %] - [% lochash.palmaceia.addr %]"target="_gmap">Tampa: Palma Ceia Presbyterian Church</a></h2>
 
     <table class="schedule">
       <tr>
@@ -284,11 +311,11 @@
 
   <!-- Wesley Chapel -->
   <div id="wesleychapel" class="schedule">
-    <h2 class="section"><a href="[% gmap(lochash.wesleychapel.addr) %]" target="_gmap">Wesley Chapel: Trinity Church of Wesley Chapel</a></h2>
+    <h2 class="section"><a href="[% gmap(lochash.wesleychapel.addr) %]" title="[% lochash.wesleychapel.title %] - [% lochash.wesleychapel.addr %]" target="_gmap">Wesley Chapel: Trinity Church of Wesley Chapel</a></h2>
 
     <table class="schedule">
       <tr>
-        <th id="wesleychapel-fun" colspan="2">Tai Chi For Fun And Fitness</th>
+        <th id="wesleychapel-beginner" colspan="2">Beginner</th>
       </tr>
       <tr class="odd">
         <td>Thursday</td>
@@ -296,23 +323,5 @@
       </tr>
     </table>
   </div>
-
-<!-- Lettuce Lake -->
-  <div id="lettucelake" class="schedule">
-    <h2 class="section"><a href="[% gmap(lochash.lettucelake.addr) %]" target="_gmap">Lettuce Lake</a></h2>
-
-    <table class="schedule">
-      <tr>
-        <th id="lettucelake-inthepark" colspan="2">Tai Chi In The Park</th>
-      </tr>
-      <tr class="odd">
-        <td>Monthly, second Saturday</td>
-        <td>9:00 - 10:30 AM</td>
-      </tr>
-    </table>
-  </div>
-
-  <br />
-  <br />
 
 </div>
