@@ -1,0 +1,91 @@
+#!/usr/bin/env perl
+
+# ----------------------------------------------------------------------
+# This script takes several ical URIs, combines them, and generates a
+# data file containing a list of today's classes.
+# ----------------------------------------------------------------------
+
+# Fields: calendar id, start date, end date, api key
+use constant GCAL_URI => 'https://www.googleapis.com/calendar/v3/calendars/%s/events?timeMax=%s&timeMin=%s&timeZone=EDT&key=%s';
+
+use strict;
+use vars qw(%URIS @EVENTS);
+
+use Data::Dumper;
+use JSON qw(from_json);
+use Time::ParseDate qw(parsedate);
+use POSIX qw(strftime);
+
+%URIS = (
+    'brandon' => {
+        'Beginner Class' => 'sevenroot.org_u5mi1no108k0vc0bb5geb35j3s%40group.calendar.google.com',
+        'Continuing Class' => 'sevenroot.org_6jtpg87ahvbu7jopplj39gsmb4%40group.calendar.google.com',
+        'Chanting' => 'sevenroot.org_65t4899ma32h0ombtj0sbmdksg%40group.calendar.google.com',
+        'Health Recovery' => 'sevenroot.org_7p6uts3g40dtp3vdvado9gnf58%40group.calendar.google.com',
+    },
+    'temple-terrace' => {
+        'Beginner Class' => 'sevenroot.org_eec22eqgsfbf73i49kpggjonp0%40group.calendar.google.com',
+        'Chanting' => 'sevenroot.org_vbgoihvmmn8nuark5e6e6oq3kc%40group.calendar.google.com',
+        'Continuing Class' => 'sevenroot.org_nass5kd23lk06uedm5bpuior1g%40group.calendar.google.com',
+        'Health Recovery' => 'sevenroot.org_glnpjko2vlm1dgle9bqcdrjocc%40group.calendar.google.com',
+    },
+    'events' => {
+        'Branch Events' => 'sevenroot.org_ju71aol0lv57fr40lo9j7jqkm4%40group.calendar.google.com',
+    }
+);
+
+my $key = shift;
+my $loc = lc (shift || 'brandon');
+my $date = shift || strftime "%Y-%m-%d", localtime;
+
+die "Missing API key\n" unless $key;
+die "Unknown location '$loc'\n" unless $URIS{ $loc };
+
+my $pdate      = parsedate $date;
+my $start_date = strftime "%Y-%m-%dT00%%3A00%%3A00-05%%3A00", localtime $pdate;
+my $end_date   = strftime "%Y-%m-%dT23%%3A59%%3A59-05%%3A00", localtime $pdate;
+
+my @classes;
+while (my ($cname, $cal_id) = each %{ $URIS{ $loc } }) {
+    my $uri = sprintf GCAL_URI, $cal_id, $end_date, $start_date, $key;
+
+    my $data = from_json(get($uri));
+
+    push @classes, @{ $data->{'items'} || [] };
+}
+
+@classes = sort { $a->{'start_time'} cmp $b->{'start_time'} } map {
+       (my $st = $_->{'start'}->{'dateTime'}) =~ s/.*T(\d\d:\d\d).*/$1/;
+       (my $et = $_->{'end'}->{'dateTime'}) =~ s/.*T(\d\d:\d\d).*/$1/;
+       (my $lc = ($_->{'location'} ||= "")) =~ s/^\s*(\S.+\S)\s*$/$1/;
+
+       +{
+            summary     => $_->{'summary'},
+            location    => $lc,
+            htmllink    => $_->{'htmlLink'},
+            start_time  => $st,
+            end_time    => $et,
+        }
+    } @classes;
+
+#print Dumper(\@classes);
+
+print "summary|start_time|end_time|location|link\n";
+for my $class (@classes) {
+    printf "%s|%s|%s|%s|%s\n",
+        $class->{'summary'},
+        $class->{'start_time'},
+        $class->{'end_time'},
+        $class->{'location'},
+        $class->{'htmllink'};
+}
+
+sub get {
+    my $data;
+
+    if (my $uri = shift) {
+        $data = `curl -sSk '$uri'`;
+    }
+
+    return $data;
+}
