@@ -1,7 +1,7 @@
 [%
     # Don't edit by hand!
-    issue_id     = "201301issue1"
-    issue_month  = "January"
+    issue_id     = "201302issue02"
+    issue_month  = "February"
 
     issue_base_url   = "http://dunedin.florida.usa.taoist.org"
     issue_url        = "$issue_base_url/pdf/${issue_id}.pdf"
