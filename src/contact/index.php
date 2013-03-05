@@ -31,4 +31,6 @@ Email: <a href="mailto:brandon.fl@taoist.org">brandon.fl@taoist.org</a>
 
     <div id="photo" class="grid_5">
       <img src="[% site.uris.images %]/building.jpg" alt="Building of the [% abbr.ttcsusa %], Brandon, Florida Branch">
+      <hr />
+      <img src="[% site.uris.images %]/stay-on-the-path.jpg" alt="From our center in Denver">
 </div>
