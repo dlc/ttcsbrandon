@@ -4,8 +4,8 @@ Taoist Tai Chi Society of the USA, Brandon, Florida Branch
 This code encapsulates the website for the Brandon, Florida branch of
 the Taoist Tai Chi Society of the USA.  It is mostly a clone of the
 good work that Paul Peck did in his tenure as volunteer webmaster.
-The final site will live at http://brandon.florida.usa.taoist.org/,
-but has not yet been deployed.
+The main site lives at http://brandon.florida.usa.taoist.org/,
+but it is easy to pick up and move to another host.
 
 Building the Site
 =================
@@ -28,9 +28,9 @@ The commands to run are:
     $ perl create-events-data > data/events.csv
     $ sh build -a
 
-The resulting site will be built into ./html, and it is then
+The resulting site will be built into `./html`, and it is then
 suitable for uploading to a web server.  You might need to edit the
-configuration bits in lib/config, specifically the uri line, so that
+configuration bits in `lib/config`, specifically the uri line, so that
 they are consistent with the environment to which you're publishing.
 
 To publish:
@@ -51,12 +51,15 @@ the new photos and contain next/previous links.  When it finishes running,
 `create-photo-pages` will modify `src/.htaccess` so that `media/` redirects
 to the latest photo.
 
-  [ptt]: http://oreilly.com/catalog/9780596004767
-  [tt2]: http://www.tt2.org/download/
-  [Perl]: http://www.perl.org/get.html
-
 TODO
 ====
 
+  * Rebuild interface using [Bootstrap][]
   * Integrate https://github.com/codejoust/session.js
   * Automate and standardize front page components
+
+
+  [ptt]: http://oreilly.com/catalog/9780596004767
+  [tt2]: http://www.tt2.org/download/
+  [Perl]: http://www.perl.org/get.html
+  [Bootstrap]: http://twitter.github.com/bootstrap/
