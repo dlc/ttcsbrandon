@@ -4,9 +4,9 @@
     MACRO ul_hotlink(l, t, s, a) BLOCK;
       u = s ? site.uris.$s : site.uris.$l;
       IF page.section == l;
-      %]<li class="active[% a %]"><a href="[% u %]">[% t %]</a></li>[% 
+      %]<li class="active[% a %]"><a href="[% u %]" title="[% t %]">[% t %]</a></li>[% 
       ELSE;
-      %]<li[% IF a %] class="[% a %]"[% END %]><a href="[% u %]">[% t %]</a></li>[%
+      %]<li[% IF a %] class="[% a %]"[% END %]><a href="[% u %]" title="[% t %]">[% t %]</a></li>[%
       END;
     END;
 
@@ -42,7 +42,7 @@
     END;
 
     # Call as: pdf_thumb("2012-01-01-foo")
-    MACRO pdf_thumb(fname) BLOCK;
-      %]<a href="[% site.uris.pdfs %]/[% fname %].pdf"><img src="[% site.uris.images %]/thumbs/[% fname %].jpg" /></a>[% 
+    MACRO pdf_thumb(fname, title) BLOCK;
+      %]<div id="pdf-thumb"><a href="[% site.uris.pdfs %]/[% fname %].pdf"[% IF title %] title="[% title | html %]"[% END %]><img src="[% site.uris.images %]/thumbs/[% fname %].jpg" /></a></div>[% 
     END;
 -%]
