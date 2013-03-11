@@ -209,7 +209,7 @@ img.floater {
 }
 
 #main p:hover a.plink, #main p a:hover.plink {
-    color: #c8a8ff;
+    color: #ccc;
     border-bottom: 0;
 }
 
