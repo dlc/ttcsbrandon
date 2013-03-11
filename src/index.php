@@ -21,7 +21,7 @@
     </div>
     <div class="grid_6">
 
-[% pdf_thumb("2013-05-25-international-workshop") %]
+[% pdf_thumb("2013-05-25-international-workshop", "International Tai Chi Workshop, May 25-26, 2013") %]
 
         <hr />
 
