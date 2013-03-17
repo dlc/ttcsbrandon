@@ -136,6 +136,39 @@ body {
   width: 950px;
 }
 
+#location-cluster {
+  text-align: center;
+}
+
+#location-cluster ul {
+  display: inline;
+  list-style-type: none;
+  list-style: none;
+}
+
+#location-cluster ul li {
+  display: inline;
+  padding: 5px;
+  margin: 5px 0;
+  size: 120%;
+}
+
+#location-cluster ul li a {
+  text-decoration: none;
+}
+
+#location-cluster ul li a:hover {
+  text-decoration: underline;
+  color: [% colors.links.visited %];
+}
+
+#location-cluster ul li a[href^=mailto] {
+  background:transparent url([% site.uris.images %]/email.gif) center right no-repeat;
+  display:inline-block;
+  padding-right: 20px;
+
+}
+
 #info {
   text-align: center;
   font-style: italic;
