@@ -1,10 +1,10 @@
   <entry>[% SET me = "${site.uris.events}#p-$dt" %]
-    <title>[% evt.title %]</title>
+    <title>[% evt.title | html %]</title>
     <link href="[% me %]"/>
     <id>[% me %]</id>
     <updated>[% evt.dtime.replace("/", "-") %]T12:00:00Z</updated>
     <published>[% date.format(date.now, "%Y-%m-%dT%H:%M:%SZ", gmt = 1) %]</published>
-    <summary type="html">[% evt.content | eval | html%]</summary>
+    <summary type="html">[% evt.content | eval | html %]</summary>
     <category term="[% evt.source %]" label="Original Calendar"/>
   </entry>
 
