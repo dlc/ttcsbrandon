@@ -44,9 +44,11 @@ while (my ($cal, $uri) = each %URIS) {
         my ($summary)   = $e =~ /^SUMMARY:(.*)/m;
         my ($desc)      = $e =~ /^DESCRIPTION:(.*)/m;
         my ($loc)       = $e =~ /^LOCATION:(.*)/m;
+        my ($lmod)      = $e =~ /^LAST-MODIFIED:(.*)/m;
 
         $start      = extract_date($start);
         $end        = extract_date($end);
+        $lmod       = extract_date($lmod);
 
         for ($summary, $desc, $loc) {
             s/\\(?!n)//g;
@@ -59,20 +61,22 @@ while (my ($cal, $uri) = each %URIS) {
             'desc'      => $desc,
             'location'  => $loc,
             'source'    => $cal,
+            'lastmod'   => $lmod,
         };
     }
 }
 
 @EVENTS = sort { $a->{'start'} cmp $b->{'start'} } @EVENTS;
 
-print "dtime|title|content|location|source\n";
+print "dtime|title|content|location|source|lastmod\n";
 for my $e (@EVENTS) {
-    printf "%s|%s|%s|%s|%s\n",
+    printf "%s|%s|%s|%s|%s|%s\n",
         $e->{'start'},
         $e->{'summary'},
         $e->{'desc'},
         $e->{'location'},
-        $e->{'source'};
+        $e->{'source'},
+        $e->{'lastmod'};
 }
 
 sub extract_date {
