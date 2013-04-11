@@ -9,3 +9,71 @@
 %]
       <p id="p-emptystep"><span class="leader">The Empty Step</span> &middot; The <a href="[% issue_url %]">[% issue_month %] [% issue_year %] edition</a> is now available!  Previous issues are also <a href="[% archive_url %]">available from the archive</a>.</p>
 
+<div>
+    <p>2013:
+        <a target="_blank" href="[% issue_base_url %]/pdf/201301issue01.pdf">Jan</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201302issue02.pdf">Feb</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201303issue03.pdf">Mar</a>
+    </p>
+</div>
+
+<div>
+    <p>2012: 
+        <a target="_blank" href="[% issue_base_url %]/pdf/201212issue41.pdf">Dec</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201211issue40.pdf">Nov</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201210issue39.pdf">Oct</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201209issue38.pdf">Sep</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201208issue37.pdf">Aug</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201207issue36.pdf">Jul</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201206issue35.pdf">Jun</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201205issue34.pdf">May</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201204issue33.pdf">Apr</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201203issue32.pdf">Mar</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201202issue31.pdf">Feb</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201201issue30.pdf">Jan</a>
+    </p>
+</div>
+
+<div>
+    <p>2011:
+        <a target="_blank" href="[% issue_base_url %]/pdf/201112issue29.pdf">Dec</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201111issue28.pdf">Nov</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201110issue27.pdf">Oct</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201109issue26.pdf">Sep</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201108issue25.pdf">Aug</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201107issue24.pdf">Jul</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201106issue32.pdf">Jun</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201105issue22.pdf">May</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201104issue21.pdf">Apr</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201103issue20.pdf">Mar</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/201102issue19.pdf">Feb</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20110101issue18.pdf">Jan</a>
+    </p>
+</div>
+
+<div>
+    <p>2010:
+        <a target="_blank" href="[% issue_base_url %]/pdf/20101201issue17.pdf">Dec</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20101101issue16.pdf">Nov</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20101001issue15.pdf">Oct</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20100901issue14.pdf">Sep</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20100801issue13.pdf">Aug</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20100701issue12.pdf">Jul</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20100601issue11.pdf">Jun</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20100501issue10.pdf">May</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20100401issue09.pdf">Apr</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20100301issue08.pdf">Mar</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20100201issue07.pdf">Feb</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20100101issue06.pdf">Jan</a>
+    </p>
+</div>
+
+<div>
+    <p>2009:
+        <a target="_blank" href="[% issue_base_url %]/pdf/20091201issue05.pdf">Dec</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20091101issue04.pdf">Nov</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20091001issue03.pdf">Oct</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20090901issue02.pdf">Sep</a>
+        <a target="_blank" href="[% issue_base_url %]/pdf/20090801issue01.pdf">Aug</a>
+    </p>
+</div>
