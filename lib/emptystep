@@ -10,14 +10,16 @@
       <p id="p-emptystep"><span class="leader">The Empty Step</span> &middot; The <a href="[% issue_url %]">[% issue_month %] [% issue_year %] edition</a> is now available!  Previous issues are also <a href="[% archive_url %]">available from the archive</a>.</p>
 
 <div>
-    <p>2013:
+    <p>
+
+    <span>2013</span>:
         <a title="January 2013" href="[% issue_base_url %]/pdf/201301issue01.pdf">Jan</a> &middot;
         <a title="February 2013" href="[% issue_base_url %]/pdf/201302issue02.pdf">Feb</a> &middot;
         <a title="March 2013" href="[% issue_base_url %]/pdf/201303issue03.pdf">Mar</a>
 
       <br/>
 
-    2012: 
+    <span>2012</span>:
         <a title="January 2012" href="[% issue_base_url %]/pdf/201201issue30.pdf">Jan</a> &middot;
         <a title="February 2012" href="[% issue_base_url %]/pdf/201202issue31.pdf">Feb</a> &middot;
         <a title="March 2012" href="[% issue_base_url %]/pdf/201203issue32.pdf">Mar</a> &middot;
@@ -33,7 +35,7 @@
 
       <br/>
 
-    2011:
+    <span>2011</span>:
         <a title="January 2011" href="[% issue_base_url %]/pdf/20110101issue18.pdf">Jan</a> &middot;
         <a title="February 2011" href="[% issue_base_url %]/pdf/201102issue19.pdf">Feb</a> &middot;
         <a title="March 2011" href="[% issue_base_url %]/pdf/201103issue20.pdf">Mar</a> &middot;
@@ -49,7 +51,7 @@
 
       <br/>
 
-    2010:
+    <span>2010</span>:
         <a title="January 2010" href="[% issue_base_url %]/pdf/20100101issue06.pdf">Jan</a> &middot;
         <a title="February 2010" href="[% issue_base_url %]/pdf/20100201issue07.pdf">Feb</a> &middot;
         <a title="March 2010" href="[% issue_base_url %]/pdf/20100301issue08.pdf">Mar</a> &middot;
@@ -65,7 +67,7 @@
 
       <br/>
 
-    2009:
+    <span>2009</span>:
         <span title="January 2009">Jan</span> &middot;
         <span title="February 2009">Feb</span> &middot;
         <span title="March 2009">Mar</span> &middot;
