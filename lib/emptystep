@@ -11,61 +11,72 @@
 
 <div>
     <p>2013:
-        <a href="[% issue_base_url %]/pdf/201301issue01.pdf">Jan</a>
-        <a href="[% issue_base_url %]/pdf/201302issue02.pdf">Feb</a>
-        <a href="[% issue_base_url %]/pdf/201303issue03.pdf">Mar</a>
-    </p>
+        <a title="January 2013" href="[% issue_base_url %]/pdf/201301issue01.pdf">Jan</a> &middot;
+        <a title="February 2013" href="[% issue_base_url %]/pdf/201302issue02.pdf">Feb</a> &middot;
+        <a title="March 2013" href="[% issue_base_url %]/pdf/201303issue03.pdf">Mar</a>
 
-    <p>2012: 
-        <a href="[% issue_base_url %]/pdf/201212issue41.pdf">Dec</a>
-        <a href="[% issue_base_url %]/pdf/201211issue40.pdf">Nov</a>
-        <a href="[% issue_base_url %]/pdf/201210issue39.pdf">Oct</a>
-        <a href="[% issue_base_url %]/pdf/201209issue38.pdf">Sep</a>
-        <a href="[% issue_base_url %]/pdf/201208issue37.pdf">Aug</a>
-        <a href="[% issue_base_url %]/pdf/201207issue36.pdf">Jul</a>
-        <a href="[% issue_base_url %]/pdf/201206issue35.pdf">Jun</a>
-        <a href="[% issue_base_url %]/pdf/201205issue34.pdf">May</a>
-        <a href="[% issue_base_url %]/pdf/201204issue33.pdf">Apr</a>
-        <a href="[% issue_base_url %]/pdf/201203issue32.pdf">Mar</a>
-        <a href="[% issue_base_url %]/pdf/201202issue31.pdf">Feb</a>
-        <a href="[% issue_base_url %]/pdf/201201issue30.pdf">Jan</a>
-    </p>
+      <br/>
 
-    <p>2011:
-        <a href="[% issue_base_url %]/pdf/201112issue29.pdf">Dec</a>
-        <a href="[% issue_base_url %]/pdf/201111issue28.pdf">Nov</a>
-        <a href="[% issue_base_url %]/pdf/201110issue27.pdf">Oct</a>
-        <a href="[% issue_base_url %]/pdf/201109issue26.pdf">Sep</a>
-        <a href="[% issue_base_url %]/pdf/201108issue25.pdf">Aug</a>
-        <a href="[% issue_base_url %]/pdf/201107issue24.pdf">Jul</a>
-        <a href="[% issue_base_url %]/pdf/201106issue32.pdf">Jun</a>
-        <a href="[% issue_base_url %]/pdf/201105issue22.pdf">May</a>
-        <a href="[% issue_base_url %]/pdf/201104issue21.pdf">Apr</a>
-        <a href="[% issue_base_url %]/pdf/201103issue20.pdf">Mar</a>
-        <a href="[% issue_base_url %]/pdf/201102issue19.pdf">Feb</a>
-        <a href="[% issue_base_url %]/pdf/20110101issue18.pdf">Jan</a>
-    </p>
+    2012: 
+        <a title="January 2012" href="[% issue_base_url %]/pdf/201201issue30.pdf">Jan</a> &middot;
+        <a title="February 2012" href="[% issue_base_url %]/pdf/201202issue31.pdf">Feb</a> &middot;
+        <a title="March 2012" href="[% issue_base_url %]/pdf/201203issue32.pdf">Mar</a> &middot;
+        <a title="April 2012" href="[% issue_base_url %]/pdf/201204issue33.pdf">Apr</a> &middot;
+        <a title="May 2012" href="[% issue_base_url %]/pdf/201205issue34.pdf">May</a> &middot;
+        <a title="June 2012" href="[% issue_base_url %]/pdf/201206issue35.pdf">Jun</a> &middot;
+        <a title="July 2012" href="[% issue_base_url %]/pdf/201207issue36.pdf">Jul</a> &middot;
+        <a title="August 2012" href="[% issue_base_url %]/pdf/201208issue37.pdf">Aug</a> &middot;
+        <a title="September 2012" href="[% issue_base_url %]/pdf/201209issue38.pdf">Sep</a> &middot;
+        <a title="October 2012" href="[% issue_base_url %]/pdf/201210issue39.pdf">Oct</a> &middot;
+        <a title="November 2012" href="[% issue_base_url %]/pdf/201211issue40.pdf">Nov</a> &middot;
+        <a title="December 2012" href="[% issue_base_url %]/pdf/201212issue41.pdf">Dec</a>
 
-    <p>2010:
-        <a href="[% issue_base_url %]/pdf/20101201issue17.pdf">Dec</a>
-        <a href="[% issue_base_url %]/pdf/20101101issue16.pdf">Nov</a>
-        <a href="[% issue_base_url %]/pdf/20101001issue15.pdf">Oct</a>
-        <a href="[% issue_base_url %]/pdf/20100901issue14.pdf">Sep</a>
-        <a href="[% issue_base_url %]/pdf/20100801issue13.pdf">Aug</a>
-        <a href="[% issue_base_url %]/pdf/20100701issue12.pdf">Jul</a>
-        <a href="[% issue_base_url %]/pdf/20100601issue11.pdf">Jun</a>
-        <a href="[% issue_base_url %]/pdf/20100501issue10.pdf">May</a>
-        <a href="[% issue_base_url %]/pdf/20100401issue09.pdf">Apr</a>
-        <a href="[% issue_base_url %]/pdf/20100301issue08.pdf">Mar</a>
-        <a href="[% issue_base_url %]/pdf/20100201issue07.pdf">Feb</a>
-        <a href="[% issue_base_url %]/pdf/20100101issue06.pdf">Jan</a>
-    </p>
+      <br/>
 
-    <p>2009:
-        <a href="[% issue_base_url %]/pdf/20091201issue05.pdf">Dec</a>
-        <a href="[% issue_base_url %]/pdf/20091101issue04.pdf">Nov</a>
-        <a href="[% issue_base_url %]/pdf/20091001issue03.pdf">Oct</a>
-        <a href="[% issue_base_url %]/pdf/20090901issue02.pdf">Sep</a>
-        <a href="[% issue_base_url %]/pdf/20090801issue01.pdf">Aug</a>
+    2011:
+        <a title="January 2011" href="[% issue_base_url %]/pdf/20110101issue18.pdf">Jan</a> &middot;
+        <a title="February 2011" href="[% issue_base_url %]/pdf/201102issue19.pdf">Feb</a> &middot;
+        <a title="March 2011" href="[% issue_base_url %]/pdf/201103issue20.pdf">Mar</a> &middot;
+        <a title="April 2011" href="[% issue_base_url %]/pdf/201104issue21.pdf">Apr</a> &middot;
+        <a title="May 2011" href="[% issue_base_url %]/pdf/201105issue22.pdf">May</a> &middot;
+        <a title="June 2011" href="[% issue_base_url %]/pdf/201106issue32.pdf">Jun</a> &middot;
+        <a title="July 2011" href="[% issue_base_url %]/pdf/201107issue24.pdf">Jul</a> &middot;
+        <a title="August 2011" href="[% issue_base_url %]/pdf/201108issue25.pdf">Aug</a> &middot;
+        <a title="September 2011" href="[% issue_base_url %]/pdf/201109issue26.pdf">Sep</a> &middot;
+        <a title="October 2011" href="[% issue_base_url %]/pdf/201110issue27.pdf">Oct</a> &middot;
+        <a title="November 2011" href="[% issue_base_url %]/pdf/201111issue28.pdf">Nov</a> &middot;
+        <a title="December 2011" href="[% issue_base_url %]/pdf/201112issue29.pdf">Dec</a> 
+
+      <br/>
+
+    2010:
+        <a title="January 2010" href="[% issue_base_url %]/pdf/20100101issue06.pdf">Jan</a> &middot;
+        <a title="February 2010" href="[% issue_base_url %]/pdf/20100201issue07.pdf">Feb</a> &middot;
+        <a title="March 2010" href="[% issue_base_url %]/pdf/20100301issue08.pdf">Mar</a> &middot;
+        <a title="April 2010" href="[% issue_base_url %]/pdf/20100401issue09.pdf">Apr</a> &middot;
+        <a title="May 2010" href="[% issue_base_url %]/pdf/20100501issue10.pdf">May</a> &middot;
+        <a title="June 2010" href="[% issue_base_url %]/pdf/20100601issue11.pdf">Jun</a> &middot;
+        <a title="July 2010" href="[% issue_base_url %]/pdf/20100701issue12.pdf">Jul</a> &middot;
+        <a title="August 2010" href="[% issue_base_url %]/pdf/20100801issue13.pdf">Aug</a> &middot;
+        <a title="September 2010" href="[% issue_base_url %]/pdf/20100901issue14.pdf">Sep</a> &middot;
+        <a title="October 2010" href="[% issue_base_url %]/pdf/20101001issue15.pdf">Oct</a> &middot;
+        <a title="November 2010" href="[% issue_base_url %]/pdf/20101101issue16.pdf">Nov</a> &middot;
+        <a title="December 2010" href="[% issue_base_url %]/pdf/20101201issue17.pdf">Dec</a>
+
+      <br/>
+
+    2009:
+        <span title="January 2009">Jan</span> &middot;
+        <span title="February 2009">Feb</span> &middot;
+        <span title="March 2009">Mar</span> &middot;
+        <span title="April 2009">Apr</span> &middot;
+        <span title="May 2009">May</span> &middot;
+        <span title="June 2009">Jun</span> &middot;
+        <span title="July 2009">Jul</span> &middot;
+        <a title="August 2009" href="[% issue_base_url %]/pdf/20090801issue01.pdf">Aug</a> &middot;
+        <a title="September 2009" href="[% issue_base_url %]/pdf/20090901issue02.pdf">Sep</a> &middot;
+        <a title="October 2009" href="[% issue_base_url %]/pdf/20091001issue03.pdf">Oct</a> &middot;
+        <a title="November 2009" href="[% issue_base_url %]/pdf/20091101issue04.pdf">Nov</a> &middot;
+        <a title="December 2009" href="[% issue_base_url %]/pdf/20091201issue05.pdf">Dec</a>
     </p>
 </div>
