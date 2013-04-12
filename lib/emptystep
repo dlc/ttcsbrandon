@@ -2,6 +2,7 @@
     # Don't edit by hand!
     issue_id     = "201303issue03"
     issue_month  = "March"
+    issue_year   = "2013"
 
     issue_base_url   = "http://dunedin.florida.usa.taoist.org"
     issue_url        = "$issue_base_url/pdf/${issue_id}.pdf"
