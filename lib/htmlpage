@@ -80,6 +80,7 @@ END %]
           [% ul_hotlink("events",      "Events")       %]
           [% ul_hotlink("membership",  "Membership")   %]
           [% ul_hotlink("media",       "Media")        %]
+          [% ul_hotlink("video",       "Video")        %]
           [% ul_hotlink("about",       "About Us")     %]
           [% ul_hotlink("contact",     "Contact")      %]
         </ul>
