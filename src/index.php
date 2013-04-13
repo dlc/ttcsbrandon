@@ -21,7 +21,10 @@
     </div>
     <div class="grid_6">
 
+[% pdf_thumb("2013-05-04-openhouse", "Open House, May 4, 2013") %]
+<!--
 [% pdf_thumb("2013-05-25-international-workshop", "International Tai Chi Workshop, May 25-26, 2013") %]
+-->
 
         <hr />
 
