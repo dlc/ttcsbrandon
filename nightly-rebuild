@@ -8,7 +8,7 @@
 PATH=/usr/local/bin:/usr/bin:/bin
 export PATH
 
-PUBLIST="index.php events/index.php events/events.atom humans.txt"
+PUBLIST="index.php events/index.php events/events.atom humans.txt sitemap.xml"
 
 if [ -d "src" ] && [ -d "data" ]
 then
