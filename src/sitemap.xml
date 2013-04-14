@@ -8,7 +8,10 @@
    u = site.uris.$p;
    IF NOT u.search("/assets") AND
       NOT u.search("github") AND
-      p != "home";            # Because it's included above
+      p != "home" AND         # Because it's included above
+      p != "sitemap" AND      # No need to include myself
+      p != "robotstxt"        # This would never be crawled
+      ;
 %]
   <url>
     <loc>[% site.uris.$p %]</loc>
