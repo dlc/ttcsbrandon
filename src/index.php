@@ -4,7 +4,7 @@
 %]
 <div id="main" class="container_12">
 
-    <div class="grid_7">
+    <div class="grid_6">
 
 [% PROCESS "welcome" %]
 
@@ -16,23 +16,20 @@
 
         <hr />
 
+[% PROCESS "emptystep" %]
+
+    </div>
+    <div class="grid_6">
+
+[% pdf_thumb("2013-05-25-international-workshop", "International Tai Chi Workshop, May 25-26, 2013") %]
+
+        <hr />
+
       <h2>Upcoming Events</h2>
 
 [% events(3, "events_html") %]
 
       <p>See more events on the <a href="[% site.uris.events %]">events page</a>.</p>
-
-        <hr />
-
-[% PROCESS "emptystep" %]
-
-    </div>
-    <div class="grid_5">
-
-[% pdf_thumb("2013-05-04-openhouse", "Open House, May 4, 2013") %]
-        <hr />
-
-[% pdf_thumb("2013-05-25-international-workshop", "International Tai Chi Workshop, May 25-26, 2013") %]
 
 
 
