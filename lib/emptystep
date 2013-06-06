@@ -1,7 +1,7 @@
 [%
     # Don't edit by hand!
-    issue_id     = "201303issue04"
-    issue_month  = "April"
+    issue_id     = "201306issue05"
+    issue_month  = "June"
     issue_year   = "2013"
 
     issue_base_url   = "http://dunedin.florida.usa.taoist.org"
@@ -17,7 +17,9 @@
         <a title="January 2013" href="[% issue_base_url %]/pdf/201301issue01.pdf">Jan</a> &middot;
         <a title="February 2013" href="[% issue_base_url %]/pdf/201302issue02.pdf">Feb</a> &middot;
         <a title="March 2013" href="[% issue_base_url %]/pdf/201303issue03.pdf">Mar</a> &middot;
-        <a title="April 2013" href="[% issue_base_url %]/pdf/201304issue04.pdf">Apr</a>
+        <a title="April 2013" href="[% issue_base_url %]/pdf/201304issue04.pdf">Apr</a> &middot;
+        <span title="May 2013">May</span> &middot;
+        <a title="June 2013" href="[% issue_base_url %]/pdf/201306issue05.pdf">Jun</a>
 
       <br/>
 
