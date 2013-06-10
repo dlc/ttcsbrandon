@@ -10,9 +10,9 @@
 
         <hr />
 
-    <p id="p-1"><span class="leader">Tampa Tribune Article</span> &middot; John Ceballos from the Tampa Tribune <a href="http://www2.tbo.com/news/brandon/2013/mar/07/taoist-tai-chi-offers-a-variety-of-health-benefits-ar-652286/" title="&quot;Taoist Tai Chi offers a variety of health benefit&quot;, March 07, 2013">published an article about our center</a>, which features interviews with a few of our members, and provides a little history and a lot of exposure. There are even a few pictures.</p>
+    <p id="p-1"><span class="leader"><a href="http://ittcs.wordpress.com/2013/06/07/brandon-fl-hosts-international-workshop/" title="Brandon, FL, Hosts International Workshop">Brandon, FL, Hosts International Workshop</a></span> &middot; <em>May 25 and 26 were special days here in the Tampa Bay area&mdash;they marked Brandon's International Taoist Tai Chi&reg; Workshop 2013, led by Jim Nicholson.</em> Read the rest of the article on the <a href="http://ittcs.wordpress.com/2013/06/07/brandon-fl-hosts-international-workshop/" title="Brandon, FL, Hosts International Workshop">ITTCS web site</a>.</p>
 
-    <p><a href="http://www2.tbo.com/news/brandon/2013/mar/07/taoist-tai-chi-offers-a-variety-of-health-benefits-ar-652286/" title="&quot;Taoist Tai Chi offers a variety of health benefit&quot;, March 07, 2013"><img src="[% site.uris.images %]/tbo.jpg" alt="Members practicing the tai chi form"></a></p>
+    <p><a href="http://ittcs.wordpress.com/2013/06/07/brandon-fl-hosts-international-workshop/" title="Brandon, FL, Hosts International Workshop"><img src="http://ittcs.files.wordpress.com/2013/06/dsc8670.jpg?w=460" alt="Members practicing the tai chi form" width="460" height="247"></a></p>
 
     </div>
     <div class="grid_6">
