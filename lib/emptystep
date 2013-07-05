@@ -19,7 +19,7 @@
         <a title="March 2013" href="[% issue_base_url %]/pdf/201303issue03.pdf">Mar</a> &middot;
         <a title="April 2013" href="[% issue_base_url %]/pdf/201304issue04.pdf">Apr</a> &middot;
         <span title="May 2013">May</span> &middot;
-        <a title="June 2013" href="[% issue_base_url %]/pdf/201306issue05.pdf">Jun</a>
+        <a title="June 2013" href="[% issue_base_url %]/pdf/201306issue05.pdf">Jun</a> &middot;
         <a title="July 2013" href="[% issue_base_url %]/pdf/201307issue06.pdf">Jul</a>
 
       <br/>
