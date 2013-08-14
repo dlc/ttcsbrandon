@@ -4,7 +4,7 @@
 %]
 <div id="main" class="container_12">
 
-    <div class="grid_6">
+    <div class="grid_7">
 
 [% PROCESS "welcome" %]
 
@@ -14,8 +14,16 @@
 
     <p><a href="http://ittcs.wordpress.com/2013/06/07/brandon-fl-hosts-international-workshop/" title="Brandon, FL, Hosts International Workshop"><img src="http://ittcs.files.wordpress.com/2013/06/dsc8670.jpg?w=460" alt="Members practicing the tai chi form" width="460" height="247"></a></p>
 
+        <hr/>
+
+[% PROCESS "emptystep" %]
+
     </div>
-    <div class="grid_6">
+    <div class="grid_5">
+
+[% pdf_thumb("2013-09-07-openhouse", "Open House") %]
+
+<hr/>
 
       <h2>Upcoming Events</h2>
 
@@ -25,8 +33,6 @@
 
         <hr />
 
-
-[% PROCESS "emptystep" %]
 
 
     </div>
