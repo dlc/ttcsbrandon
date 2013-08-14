@@ -6,7 +6,7 @@
 
     issue_base_url   = "http://dunedin.florida.usa.taoist.org"
     issue_url        = "$issue_base_url/pdf/${issue_id}.pdf"
-    archive_url      = "$issue_base_url/acrhive.php"
+    archive_url      = "$issue_base_url/archive.php"
 %]
       <p id="p-emptystep"><span class="leader">The Empty Step</span> &middot; The <a href="[% issue_url %]">[% issue_month %] [% issue_year %] edition</a> is now available!  Previous issues are also <a href="[% archive_url %]">available from the archive</a>.</p>
 
