@@ -9,31 +9,22 @@ use strict;
 use vars qw(%URIS @EVENTS);
 
 use Data::Dumper;
-use LWP::Simple qw(get);
 use Time::ParseDate qw(parsedate);
 use POSIX qw(strftime);
 
 # This should be replaced by a call to the gcal API
 %URIS = (
-    #'Beginner Classes (Brandon)'            => 'http://www.google.com/calendar/ical/sevenroot.org_u5mi1no108k0vc0bb5geb35j3s%40group.calendar.google.com/public/basic.ics',
-    #'Beginner Classes (Temple Terrace)'     => 'http://www.google.com/calendar/ical/sevenroot.org_eec22eqgsfbf73i49kpggjonp0%40group.calendar.google.com/public/basic.ics',
-    'Branch Events'                         => 'http://www.google.com/calendar/ical/sevenroot.org_ju71aol0lv57fr40lo9j7jqkm4%40group.calendar.google.com/public/basic.ics',
-    #'Chanting (Brandon)'                    => 'http://www.google.com/calendar/ical/sevenroot.org_65t4899ma32h0ombtj0sbmdksg%40group.calendar.google.com/public/basic.ics',
-    #'Chanting (Temple Terrace)'             => 'http://www.google.com/calendar/ical/sevenroot.org_vbgoihvmmn8nuark5e6e6oq3kc%40group.calendar.google.com/public/basic.ics',
-    #'Continuing Classes (Brandon)'          => 'http://www.google.com/calendar/ical/sevenroot.org_6jtpg87ahvbu7jopplj39gsmb4%40group.calendar.google.com/public/basic.ics',
-    #'Continuing Classes (Temple Terrace)'   => 'http://www.google.com/calendar/ical/sevenroot.org_nass5kd23lk06uedm5bpuior1g%40group.calendar.google.com/public/basic.ics',
-    #'Health Recovery (Brandon)'             => 'http://www.google.com/calendar/ical/sevenroot.org_7p6uts3g40dtp3vdvado9gnf58%40group.calendar.google.com/public/basic.ics',
-    #'Health Recovery (Temple Terrace)'      => 'http://www.google.com/calendar/ical/sevenroot.org_glnpjko2vlm1dgle9bqcdrjocc%40group.calendar.google.com/public/basic.ics',
-    'ITTCS - Workshop Calendar'             => 'http://www.google.com/calendar/ical/sevenroot.org_ttup851cghkelmok01996t67d4%40group.calendar.google.com/public/basic.ics',
-    'Tampa Bay Area Events'                 => 'http://www.google.com/calendar/ical/sevenroot.org_lpoeervqb9glnn89erv431lieo%40group.calendar.google.com/public/basic.ics',
-    'TTCS USA - Workshop Schedule'          => 'http://www.google.com/calendar/ical/sevenroot.org_eaimolq0gsk3v2jva2f60m68n0%40group.calendar.google.com/public/basic.ics',
+    'Branch Events'                 => 'http://www.google.com/calendar/ical/sevenroot.org_ju71aol0lv57fr40lo9j7jqkm4%40group.calendar.google.com/public/basic.ics',
+    'ITTCS - Workshop Calendar'     => 'http://www.google.com/calendar/ical/sevenroot.org_ttup851cghkelmok01996t67d4%40group.calendar.google.com/public/basic.ics',
+    'Tampa Bay Area Events'         => 'http://www.google.com/calendar/ical/sevenroot.org_lpoeervqb9glnn89erv431lieo%40group.calendar.google.com/public/basic.ics',
+    'TTCS USA - Workshop Schedule'  => 'http://www.google.com/calendar/ical/sevenroot.org_eaimolq0gsk3v2jva2f60m68n0%40group.calendar.google.com/public/basic.ics',
 );
 
 while (my ($cal, $uri) = each %URIS) {
     warn "Fetching `$cal' calendar...\n";
     my ($data, @events);
 
-    $data = get($uri);    
+    $data = get($uri);
     $data =~ s/\r//g;
     $data =~ s/\n\s+//gs;
     (@events) = $data =~ /BEGIN:VEVENT(.+?)END:VEVENT/gs;
@@ -87,4 +78,9 @@ sub extract_date {
     }
 
     return $d;
+}
+
+sub get {
+    my $uri = shift;
+    `curl -sSkL "$uri"`;
 }
