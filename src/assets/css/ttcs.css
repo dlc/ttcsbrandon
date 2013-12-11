@@ -311,12 +311,14 @@ table.payments {
   padding: 1em;
   width: 95%;
   margin: 1em;
-}
-
-table.payments th {
-  font-weight: bold;
+  border: 1px solid black;
 }
 
 table.payments tr:hover {
   background: #eee;
+}
+
+table.payments td {
+  padding: 3px;
+  border: 1px solid black;
 }
