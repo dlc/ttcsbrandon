@@ -10,20 +10,14 @@
 
         <hr />
 
-      <h2>Upcoming Events</h2>
-
-      <p>See more events on the <a href="[% site.uris.events %]">events page</a>.</p>
-
-[% events(5, "events_html") %]
+[% PROCESS "emptystep" %]
 
     </div>
     <div class="grid_6">
 
-[% pdf_thumb("2014-01-11-openhouse", "Open House") %]
+[% PROCESS "events_hp_block" %]
 
         <hr/>
-
-[% PROCESS "emptystep" %]
 
 
     </div>
