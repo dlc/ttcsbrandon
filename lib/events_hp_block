@@ -1,0 +1,7 @@
+
+      <h2>Upcoming Events</h2>
+
+      <p>See more events on the <a href="[% site.uris.events %]">events page</a>.</p>
+
+[% events(5, "events_html") %]
+
