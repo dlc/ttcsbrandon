@@ -1,8 +1,8 @@
 [%
     # Don't edit by hand!
-    issue_id     = "201308-09issue07"
-    issue_month  = "Aug/Sept"
-    issue_year   = "2013"
+    issue_id     = "201401issue01"
+    issue_month  = "January"
+    issue_year   = "2014"
 
     issue_base_url   = "http://dunedin.florida.usa.taoist.org"
     issue_url        = "$issue_base_url/pdf/${issue_id}.pdf"
@@ -12,6 +12,11 @@
 
 <div>
     <p>
+
+    <span>2014</span>:
+        <a title="January 2014" href="[% issue_base_url %]/pdf/201401issue01.pdf">Jan</a>
+
+      <br />
 
     <span>2013</span>:
         <a title="January 2013" href="[% issue_base_url %]/pdf/201301issue01.pdf">Jan</a> &middot;
