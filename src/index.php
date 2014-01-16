@@ -10,14 +10,16 @@
 
         <hr />
 
-[% PROCESS "emptystep" %]
+[% PROCESS "events_hp_block" %]
 
     </div>
     <div class="grid_6">
 
-[% PROCESS "events_hp_block" %]
+[% pdf_thumb("2014-02-15-chanting", "Chanting") %]
 
         <hr/>
+
+[% PROCESS "emptystep" %]
 
 
     </div>
