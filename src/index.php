@@ -15,10 +15,6 @@
     </div>
     <div class="grid_6">
 
-[% pdf_thumb("2014-04-12-openhouse") %]
-
-        <hr />
-
 [% PROCESS "emptystep" %]
 
     </div>
